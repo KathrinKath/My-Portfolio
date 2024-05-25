@@ -310,8 +310,8 @@ nav ul li a:hover {
 /* Settings fot the smiley and "hire me" boxes */
 .hire-me {
   margin: 1.5rem;
-  top: 15%;
-  left: 85%;
+  top: 18%;
+  left: 82%;
   position: fixed;
   z-index: 1;
   transform: translateY(-50%);
@@ -417,7 +417,7 @@ nav ul li a:hover {
   border-radius: 50%;
 }
 
-.smiley:hover .face::before {
+.hire-me:hover .face::before {
   width: 3.5rem;
   height: 2rem;
   top: 6rem;
@@ -428,12 +428,12 @@ nav ul li a:hover {
   border-bottom-right-radius: 3rem;
 }
 
-.smiley:hover .face {
+.hire-me:hover .face {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 1rem;
 }
 
-.smiley:hover .face .eye {
+.hire-me:hover .face .eye {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
 }
 
@@ -1174,9 +1174,6 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.8);
-  }
 }
 @media screen and (max-width: 1200px) {
   .slider-box {
@@ -1188,10 +1185,6 @@ footer:hover {
   }
   .slider span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(25rem);
-  }
-  .hire-me {
-    transform: translateY(-50%) scale(0.8);
-    left: 80%;
   }
   .portfolio-item {
     display: flex;
@@ -1235,10 +1228,6 @@ footer:hover {
   }
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
-  }
-  .hire-me {
-    transform: translateY(-50%) scale(0.7);
-    left: 75%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1289,10 +1278,6 @@ footer:hover {
   .backtotop a {
     text-transform: capitalize;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.7);
-    left: 72%;
-  }
 }
 @media screen and (min-width: 551px) and (max-width: 768px) {
   .contact-form,
@@ -1310,10 +1295,6 @@ footer:hover {
   input,
   textarea {
     max-width: 25rem;
-  }
-  .hire-me {
-    transform: translateY(-50%) scale(0.6);
-    left: 70%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1334,10 +1315,6 @@ footer:hover {
     transition-property: none !important;
     transform: none !important;
     animation: none !important;
-  }
-  .hire-me {
-    transform: translateY(-50%) scale(0.5);
-    left: 65%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 550px) {
@@ -1387,49 +1364,36 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.5);
-    left: 65%;
-  }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
-    margin: 0;
-    width: 100%;
     overflow-x: hidden;
+    width: 100%;
+    margin: 0;
     float: left;
   }
   header,
   footer {
-    width: 100%;
+    width: 150%;
   }
   nav ul {
+    padding-left: 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-left: 0;
+    justify-content: center;
   }
   section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0;
-    width: 100%;
-  }
-  .hire-me {
-    top: 13%;
-    left: 65%;
-    transform: translateY(-50%) scale(0.5);
+    width: 120%;
+    margin-left: 15%;
   }
   .portfolio-item {
+    width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15rem;
   }
   .contact-form,
   .contact-directly,
@@ -1443,8 +1407,8 @@ footer:hover {
   label,
   input,
   textarea {
-    display: flex;
     text-align: left;
+    display: flex;
     margin-left: -1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

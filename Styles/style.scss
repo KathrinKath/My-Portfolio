@@ -256,7 +256,7 @@ nav ul li a:hover {
 }
 /* Settings fot the smiley and "hire me" boxes */
 .hire-me {
-  @include sizesNgaps($margin: 1.5rem, $top: 15%, $left: 85%);
+  @include sizesNgaps($margin: 1.5rem, $top: 18%, $left: 82%);
   @include displaySet($position: fixed, $zIndx: 1);
   transform: translateY(-50%);
 }
@@ -343,18 +343,18 @@ nav ul li a:hover {
   background-color: #000000;
   border-radius: 50%;
 }
-.smiley:hover .face::before {
+.hire-me:hover .face::before {
   @include sizesNgaps($width: 3.5rem, $height: 2rem, $top: 6rem, $left: 3rem);
   background-color: rgb(236, 140, 177);
   border: 0.5rem solid rgb(236, 140, 177);
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
 }
-.smiley:hover .face {
+.hire-me:hover .face {
   box-shadow: $boxShadow;
   border: 1rem;
 }
-.smiley:hover .face .eye {
+.hire-me:hover .face .eye {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
 }
 /* Settings and design for all portfolio items in the website */
@@ -982,6 +982,10 @@ footer:hover {
   .my-files {
     width: 40rem;
   }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.8);
+  //   // left: 85%;
+  // }
 }
 @media screen and (max-width: 1400px) {
   h2 {
@@ -1016,9 +1020,10 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.8);
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.8);
+  //   // left: 80%;
+  // }
 }
 @media screen and (max-width: 1200px) {
   .slider-box {
@@ -1030,10 +1035,10 @@ footer:hover {
   .slider span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(25rem);
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.8);
-    left: 80%;
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.8);
+  //   // left: 80%;
+  // }
   .portfolio-item {
     @include displaySet(
       $dspl: flex,
@@ -1081,10 +1086,10 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.7);
-    left: 75%;
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.7);
+  //   // left: 75%;
+  // }
 }
 @media screen and (max-width: 768px) {
   .slider-box {
@@ -1130,10 +1135,10 @@ footer:hover {
   .backtotop a {
     text-transform: capitalize;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.7);
-    left: 72%;
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.7);
+  //   // left: 72%;
+  // }
 }
 @media screen and (min-width: 551px) and (max-width: 768px) {
   .contact-form,
@@ -1154,10 +1159,10 @@ footer:hover {
   textarea {
     max-width: 25rem;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.6);
-    left: 70%;
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.6);
+  //   left: 70%;
+  // }
 }
 @media screen and (max-width: 576px) {
   .slider-box {
@@ -1177,10 +1182,10 @@ footer:hover {
     transform: none !important;
     animation: none !important;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.5);
-    left: 65%;
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.5);
+  //   left: 65%;
+  // }
 }
 @media screen and (min-width: 481px) and (max-width: 550px) {
   .contact-form,
@@ -1234,52 +1239,46 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.5);
-    left: 65%;
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.5);
+  //   left: 55%;
+  //   top: 12%;
+  // }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
-    @include sizesNgaps($margin: 0, $width: 100%);
     overflow-x: hidden;
+    width: 100%;
+    margin: 0;
     float: left;
   }
   header,
   footer {
-    width: 100%;
+    width: 150%;
   }
   nav ul {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center,
-      $txtAln: center
-    );
     padding-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   section {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center
-    );
-    @include sizesNgaps($margin: 4rem 0, $width: 100%);
+    width: 120%;
+    margin-left: 15%;
   }
-  .hire-me {
-    @include sizesNgaps($top: 13%, $left: 65%);
-    transform: translateY(-50%) scale(0.5);
-  }
+  // .hire-me {
+  //   transform: translateY(-50%) scale(0.7);
+  //   // left: 55%;
+  //   // top: 13%;
+  // }
   .portfolio-item {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center
-    );
     width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact-form,
   .contact-directly,
@@ -1293,7 +1292,8 @@ footer:hover {
   label,
   input,
   textarea {
-    @include displaySet($dspl: flex, $txtAln: left);
+    text-align: left;
+    display: flex;
     margin-left: -1.5rem;
   }
 }
