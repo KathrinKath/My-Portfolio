@@ -982,10 +982,10 @@ footer:hover {
   .my-files {
     width: 40rem;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.8);
-  //   // left: 85%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.8);
+    left: 85%;
+  }
 }
 @media screen and (max-width: 1400px) {
   h2 {
@@ -1020,10 +1020,10 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.8);
-  //   // left: 80%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.8);
+    left: 80%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .slider-box {
@@ -1035,10 +1035,10 @@ footer:hover {
   .slider span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(25rem);
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.8);
-  //   // left: 80%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.8);
+    left: 80%;
+  }
   .portfolio-item {
     @include displaySet(
       $dspl: flex,
@@ -1086,10 +1086,10 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.7);
-  //   // left: 75%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.7);
+    left: 75%;
+  }
 }
 @media screen and (max-width: 768px) {
   .slider-box {
@@ -1135,10 +1135,10 @@ footer:hover {
   .backtotop a {
     text-transform: capitalize;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.7);
-  //   // left: 72%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.7);
+    left: 72%;
+  }
 }
 @media screen and (min-width: 551px) and (max-width: 768px) {
   .contact-form,
@@ -1159,10 +1159,10 @@ footer:hover {
   textarea {
     max-width: 25rem;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.6);
-  //   left: 70%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.6);
+    left: 70%;
+  }
 }
 @media screen and (max-width: 576px) {
   .slider-box {
@@ -1182,10 +1182,10 @@ footer:hover {
     transform: none !important;
     animation: none !important;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.5);
-  //   left: 65%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.5);
+    left: 65%;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 550px) {
   .contact-form,
@@ -1239,11 +1239,11 @@ footer:hover {
   .portfolio-item:hover .portfolio-item-image {
     display: flex;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.5);
-  //   left: 55%;
-  //   top: 12%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.5);
+    left: 55%;
+    top: 12%;
+  }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
@@ -1268,11 +1268,11 @@ footer:hover {
     width: 120%;
     margin-left: 15%;
   }
-  // .hire-me {
-  //   transform: translateY(-50%) scale(0.7);
-  //   // left: 55%;
-  //   // top: 13%;
-  // }
+  .hire-me {
+    transform: translateY(-50%) scale(0.7);
+    left: 55%;
+    top: 13%;
+  }
   .portfolio-item {
     width: 15rem;
     display: flex;
