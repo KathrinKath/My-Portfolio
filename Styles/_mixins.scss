@@ -1,0 +1,79 @@
+@import "./variables";
+
+@mixin displaySet($dspl: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null, $position: null, $flxWrp: null, $zIndx: null) {
+    @if $dspl != null {
+      display: $dspl;
+    }
+    @if $flxDrc != null {
+      flex-direction: $flxDrc;
+    }
+    @if $jusCont != null {
+      justify-content: $jusCont;
+    }
+    @if $alItms != null {
+      align-items: $alItms;
+    }
+    @if $txtAln != null {
+      text-align: $txtAln;
+    }
+    @if $position != null {
+      position: $position;
+    }
+    @if $flxWrp != null {
+        flex-wrap: $flxWrp;
+    }
+    @if $zIndx != null {
+        z-index: $zIndx;
+    }
+  }
+
+// @mixin displaySet ($dspl, $flxDrc,$jusCont, $alItms, $txtAln, $position) {
+//     display: $dspl;
+//     flex-direction: $flxDrc;
+//     justify-content: $jusCont;
+//     align-items: $alItms;
+//     text-align: $txtAln;
+//     position: $position;
+// }
+//@include displaySet($dspl: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null, $position: null, $flxWrp: null, $zIndx: null);
+
+@mixin sizesNgaps($padding: null, $margin: null, $width: null,$max-width: null, $height: null,$max-height:null, $top: null, $left: null, $right: null, $bottom: null, $min-width: null, $min-height: null) {
+    @if $padding != null {
+      padding: $padding;
+    }
+    @if $margin != null {
+     margin: $margin;
+    }
+    @if $width != null {
+        width: $width;
+    }
+    @if $max-width != null {
+        max-width: $max-width;
+    }
+    @if $height != null {
+        height: $height;
+    }
+    @if $max-height != null {
+        max-height: $max-height;
+    }
+    @if $top != null {
+        top: $top;
+    }
+    @if $left != null {
+        left: $left;
+    }
+    @if $right != null {
+        right: $right;
+    }
+    @if $bottom != null {
+        bottom: $bottom;
+    }
+    @if $min-width != null {
+        min-width: $min-width;
+    }
+    @if $min-height != null {
+        min-height: $min-height;
+    }
+  }
+
+//   @include sizesNgaps($padding: null, $margin: null, $width: null, $max-width: null, $height: null, $max-height: null, $top: null, $left: null, $right: null, $bottom: null, $min-width: null, $min-height: null);
