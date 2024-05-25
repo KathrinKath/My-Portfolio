@@ -1247,7 +1247,7 @@ footer:hover {
   }
   header,
   footer {
-    width: 150%;
+    width: 100%;
   }
   nav ul {
     @include displaySet(
@@ -1260,11 +1260,17 @@ footer:hover {
     padding-left: 0;
   }
   section {
-    @include sizesNgaps($margin: 4rem 0, $width: 120%);
+    @include displaySet(
+      $dspl: flex,
+      $flxDrc: column,
+      $jusCont: center,
+      $alItms: center
+    );
+    @include sizesNgaps($margin: 4rem 0, $width: 100%);
   }
   .hire-me {
     @include sizesNgaps($top: 13%, $left: 65%);
-    transform: translateY(-50%) scale(0.7);
+    transform: translateY(-50%) scale(0.5);
   }
   .portfolio-item {
     @include displaySet(
