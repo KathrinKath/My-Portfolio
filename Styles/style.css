@@ -13,7 +13,13 @@
 
 body {
   font-family: "Courgette", cursive;
-  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-image: linear-gradient(
+    -45deg,
+    rgb(241, 50, 216),
+    rgb(208, 98, 230),
+    rgb(124, 197, 245),
+    rgb(158, 158, 235)
+  );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -21,7 +27,12 @@ body {
 section {
   padding: 3.2rem 0;
   margin: 2rem;
-  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-image: linear-gradient(
+    -45deg,
+    rgb(124, 195, 243),
+    rgba(225, 245, 116, 0.918),
+    rgb(253, 54, 253)
+  );
   background-size: 400% 400%;
   animation: gradient 30s ease infinite;
   border-radius: 3rem;
@@ -50,7 +61,8 @@ h4 {
 
 h3:hover,
 h4:hover {
-  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff,
+    0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
   font-weight: bolder;
 }
 
@@ -68,7 +80,10 @@ h4:hover {
 
 h2:hover {
   color: rgb(247, 15, 235);
-  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
+    -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0,
+    1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2),
+    1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
   font-size: 4rem;
 }
 
@@ -111,7 +126,9 @@ h5 {
   border-radius: 4rem;
   color: #000000;
   border: 0.2rem solid rgb(165, 166, 168);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .paragraph-div i {
   color: #a009f7;
@@ -173,7 +190,12 @@ header h1 {
   z-index: 900;
   font-family: "Poetsen One", sans-serif;
   letter-spacing: 0.3rem;
-  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 h1::before,
@@ -203,7 +225,10 @@ nav ul li {
   display: inline;
   position: relative;
   margin: 0 3rem;
-  text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
+  text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
+    -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0,
+    1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2),
+    1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
   letter-spacing: 0.2rem;
 }
 
@@ -267,7 +292,8 @@ nav ul li a:hover {
   border-radius: 50%;
   border: 0.5rem solid #a009f7;
   animation: colorWaveAnimation 6s infinite;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /* Settings and design of the images inside the about me paragraph */
@@ -278,7 +304,8 @@ nav ul li a:hover {
   border-radius: 4rem;
   margin: 2rem 1rem 0 2rem;
   border: 0.5rem outset;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .paragraph-div img:hover {
@@ -333,7 +360,9 @@ nav ul li a:hover {
   font-weight: bold;
   color: #fff;
   border-radius: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .hire-me-textbox:hover {
@@ -455,7 +484,9 @@ nav ul li a:hover {
   min-height: 19rem;
   border: 0.8rem outset rgba(213, 95, 236, 0.6156862745);
   border-radius: 1.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: transform 0.3s;
   background-color: #c6acf0;
 }
@@ -466,7 +497,11 @@ nav ul li a:hover {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   transform: scale(1.05);
   background-color: rgba(160, 235, 130, 0.5215686275);
-  background-image: radial-gradient(rgb(124, 195, 243), rgba(178, 245, 116, 0.918), rgb(231, 119, 231));
+  background-image: radial-gradient(
+    rgb(124, 195, 243),
+    rgba(178, 245, 116, 0.918),
+    rgb(231, 119, 231)
+  );
 }
 
 .portfolio-item h5 {
@@ -544,7 +579,10 @@ nav ul li a:hover {
 
 /* settings and design for the carousel slider presentation */
 .slider-box {
-  box-shadow: 0px 1px 2px 0px rgba(137, 45, 223, 0.7), 1px 2px 4px 0px rgba(81, 224, 15, 0.7), 2px 4px 8px 0px rgba(119, 15, 238, 0.7), 2px 4px 16px 0px rgba(233, 6, 157, 0.7);
+  box-shadow: 0px 1px 2px 0px rgba(137, 45, 223, 0.7),
+    1px 2px 4px 0px rgba(81, 224, 15, 0.7),
+    2px 4px 8px 0px rgba(119, 15, 238, 0.7),
+    2px 4px 16px 0px rgba(233, 6, 157, 0.7);
   padding: 10rem;
   border-radius: 3rem;
 }
@@ -589,18 +627,18 @@ nav ul li a:hover {
   position: absolute;
   border-radius: 3rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 3s;
   border: #a009f7 outset 0.3rem;
 }
 
-html[data-page=index-english] #portfolio .container .h3-title,
-html[data-page=index-german] #portfolio .container .h3-title {
+html[data-page="index-english"] #portfolio .container .h3-title,
+html[data-page="index-german"] #portfolio .container .h3-title {
   margin-bottom: 3rem;
 }
 
-html[data-page=index-english] .h4-title,
-html[data-page=index-german] .h4-title {
+html[data-page="index-english"] .h4-title,
+html[data-page="index-german"] .h4-title {
   margin-top: 3rem;
 }
 
@@ -639,8 +677,16 @@ html[data-page=index-german] .h4-title {
   width: 5rem;
   height: 4rem;
   background-color: rgba(235, 89, 240, 0.8);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(198, 8, 236), rgb(12, 149, 240), rgb(122, 122, 231));
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(241, 50, 216),
+    rgb(198, 8, 236),
+    rgb(12, 149, 240),
+    rgb(122, 122, 231)
+  );
   background-size: 300% 300%;
   animation: gradient 15s ease infinite;
 }
@@ -653,7 +699,9 @@ html[data-page=index-german] .h4-title {
   width: 6rem;
   height: 6rem;
   background-color: rgba(235, 89, 240, 0.8);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .tool p,
@@ -704,7 +752,9 @@ html[data-page=index-german] .h4-title {
   border-radius: 3rem;
   background-color: rgba(212, 163, 236, 0.8705882353);
   border: 0.1rem solid rgba(177, 177, 177, 0.548);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   line-height: 3rem;
 }
 .contact-form a,
@@ -768,7 +818,9 @@ input {
   height: 3rem;
   border-radius: 1rem;
   font-size: 1.2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 textarea {
@@ -779,7 +831,9 @@ textarea {
   border-radius: 1rem;
   resize: none;
   font-size: 1.2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 input:hover,
@@ -808,7 +862,9 @@ textarea:hover {
 }
 
 .skills-table td:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-shadow: 0.3rem 0rem 0.6rem rgb(153, 228, 110);
   font-weight: bold;
 }
@@ -848,7 +904,8 @@ textarea:hover {
 }
 
 .elements-table td:hover {
-  text-shadow: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4, 0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4,
+    0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
   font-weight: bold;
   font-size: large;
 }
@@ -885,7 +942,12 @@ textarea:hover {
   animation: colorWaveAnimation 6s infinite;
   color: #a009f7;
   transition: background-image 0.5s ease-in-out;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 192, 203, 0.644),
+    rgba(228, 207, 168, 0.644),
+    rgba(204, 236, 168, 0.596)
+  );
 }
 .backtotop i {
   color: #a009f7;
@@ -897,7 +959,12 @@ textarea:hover {
 .backtotop:hover {
   color: #530680;
   z-index: 1000;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  background-image: linear-gradient(
+    135deg,
+    rgb(236, 199, 236),
+    rgb(198, 198, 228),
+    rgb(193, 224, 193)
+  );
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 1.5rem;
   font-weight: bolder;
@@ -916,7 +983,12 @@ textarea:hover {
   border: #fff 0.5rem solid;
   animation: colorWaveAnimation 6s infinite;
   color: #a009f7;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 192, 203, 0.644),
+    rgba(228, 207, 168, 0.644),
+    rgba(204, 236, 168, 0.596)
+  );
 }
 .languages img {
   margin: 0 auto;
@@ -932,7 +1004,12 @@ textarea:hover {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 1.5rem;
   z-index: 1000;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  background-image: linear-gradient(
+    135deg,
+    rgb(236, 199, 236),
+    rgb(198, 198, 228),
+    rgb(193, 224, 193)
+  );
 }
 
 /* Settings for the Footer of the pages */
@@ -1145,7 +1222,8 @@ footer:hover {
   }
   h2:hover {
     color: #530680;
-    text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+    text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff,
+      0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
     font-weight: bolder;
   }
   .profile-picture img {
@@ -1412,7 +1490,7 @@ footer:hover {
     padding-left: 0;
   }
   section {
-    margin: 0 0 0 15%;
+    margin: 3rem 0;
     width: 120%;
   }
   .hire-me {
@@ -1443,4 +1521,4 @@ footer:hover {
     text-align: left;
     margin-left: -1.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

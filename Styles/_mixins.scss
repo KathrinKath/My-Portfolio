@@ -27,14 +27,6 @@
     }
   }
 
-// @mixin displaySet ($dspl, $flxDrc,$jusCont, $alItms, $txtAln, $position) {
-//     display: $dspl;
-//     flex-direction: $flxDrc;
-//     justify-content: $jusCont;
-//     align-items: $alItms;
-//     text-align: $txtAln;
-//     position: $position;
-// }
 //@include displaySet($dspl: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null, $position: null, $flxWrp: null, $zIndx: null);
 
 @mixin sizesNgaps($padding: null, $margin: null, $width: null,$max-width: null, $height: null,$max-height:null, $top: null, $left: null, $right: null, $bottom: null, $min-width: null, $min-height: null) {
