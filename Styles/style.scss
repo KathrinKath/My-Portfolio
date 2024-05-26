@@ -7,6 +7,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  list-style-type: none;
 }
 :root {
   font-size: 100%;
@@ -41,8 +42,7 @@ h4 {
 }
 h3:hover,
 h4:hover {
-  text-shadow: $hHover;
-  font-weight: bolder;
+  @include fontNtext($font-weight: bolder, $txtShdw: $hHover);
 }
 .h2-title,
 .h3-title,
@@ -57,9 +57,11 @@ h4:hover {
   }
 }
 h2:hover {
-  color: rgb(247, 15, 235);
-  text-shadow: $h2Hover;
-  font-size: 4rem;
+  @include fontNtext(
+    $font-size: 4rem,
+    $color: rgb(247, 15, 235),
+    $txtShdw: $h2Hover
+  );
 }
 /*Settings and design for all the H3 titles */
 .h3-title {
@@ -68,8 +70,7 @@ h2:hover {
   }
 }
 h3:hover {
-  color: rgb(0, 195, 255);
-  font-size: 3rem;
+  @include fontNtext($font-size: 3rem, $color: rgb(0, 195, 255));
 }
 /*Settings and design for all the H4 titles */
 .h4-title {
@@ -78,28 +79,30 @@ h3:hover {
   }
 }
 h4:hover {
-  color: rgb(15, 180, 0);
-  font-size: 2.5rem;
+  @include fontNtext($font-size: 2.5rem, $color: rgb(15, 180, 0));
 }
 /* settings for all h5 (project titles) in the website */
 h5 {
-  color: #443e3e;
-  font-weight: bolder;
-  font-size: xx-large;
+  @include fontNtext(
+    $font-size: xx-large,
+    $font-weight: bolder,
+    $color: #443e3e
+  );
 }
 /* Settings and designs for all paragraphs in the website */
 .paragraph-div {
   @include displaySet($dspl: flex, $jusCont: center, $txtAln: left);
   @include sizesNgaps($padding: 0.5rem, $margin: 1rem 0);
+  @include fontNtext(
+    $color: #000000,
+    $bgColor: #d4a3ecde,
+    $border: 0.2rem solid rgb(165, 166, 168),
+    $borderRds: 4rem,
+    $boxShdw: $mainShadow
+  );
   font-family: "Kalam", cursive;
-  background-color: #d4a3ecde;
-  border-radius: 4rem;
-  color: #000000;
-  border: 0.2rem solid rgb(165, 166, 168);
-  box-shadow: $mainShadow;
   i {
-    color: $primaryColor;
-    font-size: xx-large;
+    @include fontNtext($font-size: xx-large, $color: $primaryColor);
   }
   p {
     @include displaySet(
@@ -121,12 +124,14 @@ h5 {
 /* Settings and design for all buttons in the website */
 button {
   @include sizesNgaps($padding: 1rem, $margin: 1rem 0 1.5rem);
-  border-radius: 2rem;
-  background-color: $primaryColor;
-  color: $mainTextColor;
-  font-size: xx-large;
+  @include fontNtext(
+    $font-size: xx-large,
+    $color: $mainTextColor,
+    $bgColor: $primaryColor,
+    $borderRds: 2rem,
+    $boxShdw: $boxShadow
+  );
   cursor: pointer;
-  box-shadow: $boxShadow;
 }
 button:hover {
   box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
@@ -146,12 +151,10 @@ header {
   border-bottom-right-radius: 1rem;
 }
 header h1 {
+  @include fontNtext($font-size: 6rem, $ltrSpc: 0.3rem, $txtShdw: $h1Shadow);
   margin: 0;
-  font-size: 6rem;
   z-index: 900;
   font-family: "Poetsen One", sans-serif;
-  letter-spacing: 0.3rem;
-  text-shadow: $h1Shadow;
 }
 h1::before,
 h1::after {
@@ -170,7 +173,6 @@ nav ul {
     $jusCont: center,
     $alItms: center
   );
-  list-style-type: none;
   font-size: xx-large;
   margin-top: 1rem;
 }
@@ -187,9 +189,8 @@ nav ul li a {
   padding: 0.5rem;
 }
 nav ul li a:hover {
+  @include fontNtext($font-size: 2.15rem, $font-weight: bolder);
   animation: textColorChanging 6s infinite;
-  font-size: 2.15rem;
-  font-weight: bolder;
 }
 .dropdown-portfolio {
   @include displaySet($dspl: none, $position: absolute, $zIndx: 1000);
@@ -256,7 +257,7 @@ nav ul li a:hover {
 }
 /* Settings fot the smiley and "hire me" boxes */
 .hire-me {
-  @include sizesNgaps($margin: 1.5rem, $top: 18%, $left: 82%);
+  @include sizesNgaps($margin: 1.5rem, $top: 13%, $left: 85%);
   @include displaySet($position: fixed, $zIndx: 1);
   transform: translateY(-50%);
 }
@@ -271,17 +272,21 @@ nav ul li a:hover {
     $top: -3rem,
     $right: 10rem
   );
-  font-size: larger;
-  background-color: #a009f7ad;
-  font-weight: bold;
-  color: $mainTextColor;
-  border-radius: 2rem;
-  box-shadow: $mainShadow;
+  @include fontNtext(
+    $font-size: larger,
+    $font-weight: bold,
+    $color: $mainTextColor,
+    $bgColor: $primaryColor,
+    $borderRds: 2rem,
+    $boxShdw: $mainShadow
+  );
 }
 .hire-me-textbox:hover {
-  box-shadow: 0rem 0rem 1rem 1rem #a4e9f5;
-  border: 0.1rem solid gray;
-  text-shadow: $boxShadow;
+  @include fontNtext(
+    $txtShdw: $boxShadow,
+    $border: 0.1rem solid gray,
+    $boxShdw: 0rem 0rem 1rem 1rem #a4e9f5
+  );
 }
 .face {
   @include displaySet($dspl: flex, $position: relative);
@@ -298,9 +303,11 @@ nav ul li a:hover {
     $top: 5.5rem,
     $left: 2.5rem
   );
+  @include fontNtext(
+    $bgColor: rgba(226, 125, 164, 0.692),
+    $border: 0.4rem solid rgba(223, 126, 163, 0.692)
+  );
   position: absolute;
-  background-color: rgba(226, 125, 164, 0.692);
-  border: 0.4rem solid rgba(223, 126, 163, 0.692);
   border-bottom-left-radius: 0rem;
   border-bottom-right-radius: 0rem;
   transition: 0.5s;
@@ -308,14 +315,15 @@ nav ul li a:hover {
 /* Hover effect */
 .face:hover::before {
   @include sizesNgaps($width: 4rem, $height: 2rem, $top: 6.5rem, $left: 2.5rem);
-  background-color: rgb(235, 99, 151);
-  border: 0.4rem solid rgb(226, 89, 142);
+  @include fontNtext(
+    $bgColor: rgb(235, 99, 151),
+    $border: 0.4rem solid rgb(226, 89, 142)
+  );
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
 .face:hover {
-  box-shadow: $boxShadow;
-  border: 1rem;
+  @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
 }
 .face:hover .eye {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
@@ -327,8 +335,7 @@ nav ul li a:hover {
 .eyes .eye {
   @include displaySet($dspl: block, $position: relative);
   @include sizesNgaps($margin: 0 0.25rem, $width: 2rem, $height: 2rem);
-  background-color: $mainTextColor;
-  border-radius: 50%;
+  @include fontNtext($bgColor: $mainTextColor, $borderRds: 50%);
 }
 .eyes .eye::before {
   content: "";
@@ -338,21 +345,21 @@ nav ul li a:hover {
     $top: 50%,
     $left: 1rem
   );
+  @include fontNtext($bgColor: #000000, $borderRds: 50%);
   position: absolute;
   transform: translate(-50%, -50%);
-  background-color: #000000;
-  border-radius: 50%;
 }
 .hire-me:hover .face::before {
   @include sizesNgaps($width: 3.5rem, $height: 2rem, $top: 6rem, $left: 3rem);
-  background-color: rgb(236, 140, 177);
-  border: 0.5rem solid rgb(236, 140, 177);
+  @include fontNtext(
+    $bgColor: rgb(236, 140, 177),
+    $border: 0.5rem solid rgb(236, 140, 177)
+  );
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
 }
 .hire-me:hover .face {
-  box-shadow: $boxShadow;
-  border: 1rem;
+  @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
 }
 .hire-me:hover .face .eye {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
@@ -371,19 +378,23 @@ nav ul li a:hover {
     $min-width: 25rem,
     $min-height: 19rem
   );
-  border: 0.8rem outset #d55fec9d;
-  border-radius: 1.5rem;
-  box-shadow: $mainShadow;
+  @include fontNtext(
+    $bgColor: #c6acf0,
+    $border: 0.8rem outset #d55fec9d,
+    $borderRds: 1.5rem,
+    $boxShdw: $mainShadow
+  );
   transition: transform 0.3s;
-  background-color: #c6acf0;
 }
 .portfolio-item:hover {
-  border: 1rem outset transparent;
+  @include fontNtext(
+    $bgColor: #a0eb8285,
+    $bgImage: $portfolioBg,
+    $border: 1rem outset transparent,
+    $boxShdw: $boxShadow
+  );
   animation: colorWaveAnimation 6s infinite;
-  box-shadow: $boxShadow;
   transform: scale(1.05);
-  background-color: #a0eb8285;
-  background-image: $portfolioBg;
 }
 .portfolio-item h5 {
   margin-bottom: 1rem;
@@ -393,29 +404,28 @@ nav ul li a:hover {
   font-size: x-large;
 }
 .portfolio-item a {
+  @include fontNtext(
+    $font-size: larger,
+    $font-weight: bold,
+    $color: $mainTextColor,
+    $bgColor: $primaryColor,
+    $borderRds: 1.5rem
+  );
   display: inline-block;
   padding: 1rem;
-  background-color: $primaryColor;
-  color: $mainTextColor;
-  text-decoration: none;
-  border-radius: 1.5rem;
-  font-weight: bold;
-  font-size: larger;
 }
 .portfolio-item a:hover {
+  @include fontNtext($font-size: x-large, $bgColor: #2eade7);
   box-shadow: $boxShadow;
   border: 0.5rem solid $mainTextColor;
   animation: BlackWhiteAnimation 4s infinite;
-  font-size: x-large;
-  background-color: #2eade7;
 }
 .portfolio-item-icons {
   @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
   margin-top: 1rem;
 }
 .portfolio-item-icons i {
-  font-size: 1.5rem;
-  color: #530680;
+  @include fontNtext($font-size: 1.5rem, $color: $hoverTitle);
   margin: 0.7rem 0.5rem 0 0.5rem;
 }
 .portfolio-item-image {
@@ -445,9 +455,8 @@ nav ul li a:hover {
 }
 /* settings and design for the carousel slider presentation */
 .slider-box {
-  box-shadow: $sliderShadow;
+  @include fontNtext($borderRds: 3rem, $boxShdw: $sliderShadow);
   padding: 10rem;
-  border-radius: 3rem;
 }
 .slider {
   @include displaySet(
@@ -481,11 +490,10 @@ nav ul li a:hover {
 }
 .slider span img {
   @include sizesNgaps($width: 100%, $height: 100%, $top: 0, $left: 0);
+  @include fontNtext($borderRds: 3rem, $border: $primaryColor outset 0.3rem);
   position: absolute;
-  border-radius: 3rem;
   object-fit: cover;
   transition: 3s;
-  border: $primaryColor outset 0.3rem;
 }
 html[data-page="index-english"] #portfolio .container .h3-title,
 html[data-page="index-german"] #portfolio .container .h3-title {
@@ -520,9 +528,8 @@ html[data-page="index-german"] .h4-title {
 }
 .skill i,
 .tool i {
-  font-size: 2rem;
+  @include fontNtext($font-size: 2rem, $color: $mainTextColor);
   padding: 1rem;
-  color: $mainTextColor;
   border-radius: 5rem;
 }
 .skill i:first-child,
@@ -553,13 +560,11 @@ html[data-page="index-german"] .h4-title {
 }
 .skill i:hover,
 .tool i:hover {
-  font-size: 3rem;
-  color: #ffd900;
+  @include fontNtext($font-size: 3rem, $color: #ffd900);
 }
 .tool p:hover,
 .skill p:hover {
-  font-size: larger;
-  font-weight: 900;
+  @include fontNtext($font-size: larger, $font-weight: 900);
 }
 
 /* Settings and design for all contact options */
@@ -579,23 +584,25 @@ html[data-page="index-german"] .h4-title {
     $max-width: 40rem,
     $min-height: 20rem
   );
-  font-size: x-large;
-  line-height: 2rem;
-  border-radius: 3rem;
-  background-color: #d4a3ecde;
-  border: 0.1rem solid rgba(177, 177, 177, 0.548);
-  box-shadow: $mainShadow;
-  line-height: 3rem;
+  @include fontNtext(
+    $font-size: x-large,
+    $bgColor: #d4a3ecde,
+    $lnHeight: 3rem,
+    $border: 0.1rem solid rgba(177, 177, 177, 0.548),
+    $borderRds: 3rem,
+    $boxShdw: $mainShadow
+  );
   a {
     color: #000000;
   }
   a:hover {
-    font-size: xx-large;
-    text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
+    @include fontNtext(
+      $font-size: xx-large,
+      $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
+    );
   }
   i {
-    color: $primaryColor;
-    font-size: x-large;
+    @include fontNtext($font-size: x-large, $color: $primaryColor);
   }
   i:hover {
     transform: scale(1.5);
@@ -607,8 +614,10 @@ html[data-page="index-german"] .h4-title {
 .contact-form:hover,
 .contact-directly:hover,
 .my-files:hover {
-  text-shadow: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253);
-  box-shadow: $boxShadow;
+  @include fontNtext(
+    $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
+    $boxShdw: $boxShadow
+  );
 }
 .contact-options-list,
 .files-list {
@@ -633,9 +642,11 @@ input {
     $width: 27rem,
     $height: 3rem
   );
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  box-shadow: $mainShadow;
+  @include fontNtext(
+    $borderRds: 1rem,
+    $font-size: 1.2rem,
+    $boxShdw: $mainShadow
+  );
 }
 textarea {
   @include sizesNgaps(
@@ -657,33 +668,31 @@ textarea:hover {
 }
 /* Settings and design of the skills table - portfolio page */
 .skills-table table {
-  @include displaySet(
-    $dspl: flex,
-    $flxDrc: null,
-    $jusCont: center,
-    $alItms: center
-  );
+  @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
   border-collapse: collapse;
   width: 100%;
   font-size: large;
 }
 .skills-table td {
   @include sizesNgaps($padding: 1rem, $width: 7rem);
-  border: 0.1rem solid #ffffff00;
+  @include fontNtext($border: 0.1rem solid #ffffff00, $borderRds: 50%);
   text-align: center;
-  border-radius: 50%;
 }
 .skills-table td:hover {
-  box-shadow: $mainShadow;
-  text-shadow: 0.3rem 0rem 0.6rem rgb(153, 228, 110);
-  font-weight: bold;
+  @include fontNtext(
+    $boxShdw: 0.3rem 0rem 0.6rem rgb(153, 228, 110),
+    $txtShdw: 50%,
+    $font-weight: bold
+  );
 }
 .skills-table table i {
   @include sizesNgaps($padding: 1rem, $width: 6rem);
-  font-size: 3rem;
-  color: $primaryColor;
-  background-color: #f05ce98a;
-  border-radius: 50%;
+  @include fontNtext(
+    $font-size: 3rem,
+    $color: $primaryColor,
+    $bgColor: #f05ce98a,
+    $borderRds: 50%
+  );
 }
 .skills-table table i:hover {
   animation: tableAnimation 4s infinite;
@@ -702,26 +711,28 @@ textarea:hover {
 }
 .elements-table td {
   @include sizesNgaps($padding: 0.5rem 3.5rem, $max-width: 5rem, $height: auto);
-  border: 0.1rem solid #ffffff00;
+  @include fontNtext(
+    $bgColor: #feffff00,
+    $border: 0.1rem solid #ffffff00,
+    $borderRds: 50%
+  );
   text-align: center;
-  border-radius: 50%;
-  background-color: #feffff00;
 }
 .elements-table td:hover {
-  text-shadow: $elementsTbHover;
-  font-weight: bold;
-  font-size: large;
+  @include fontNtext(
+    $font-size: large,
+    $font-weight: bold,
+    $txtShdw: $elementsTbHover
+  );
 }
 .elements-table table i {
   @include displaySet($dspl: flex, $jusCont: center, $txtAln: center);
   @include sizesNgaps($padding: 1rem, $margin: 0 0 0 0.3rem, $width: 1rem);
-  font-size: 1.5rem;
-  color: $primaryColor;
+  @include fontNtext($font-size: 1.5rem, $color: $primaryColor);
   border-radius: 50%;
 }
 .elements-table table i:hover {
-  font-size: 2rem;
-  color: #530680;
+  @include fontNtext($font-size: 2rem, $color: $hoverTitle);
 }
 /* Settings and design for Back to top button */
 .backtotop {
@@ -732,14 +743,15 @@ textarea:hover {
     $right: 1.5rem
   );
   @include displaySet($position: fixed, $zIndx: 0);
+  @include fontNtext(
+    $font-size: larger,
+    $color: $primaryColor,
+    $bgImage: $floatBtnBg
+  );
+  @include fontNtext($border: $mainTextColor 0.5rem solid, $borderRds: 2rem);
   transform: translateY(-50%);
-  font-size: larger;
-  border-radius: 2rem;
-  border: $mainTextColor 0.5rem solid;
   animation: colorWaveAnimation 6s infinite;
-  color: $primaryColor;
   transition: background-image 0.5s ease-in-out;
-  background-image: $floatBtnBg;
   i {
     color: $primaryColor;
   }
@@ -748,37 +760,44 @@ textarea:hover {
   }
 }
 .backtotop:hover {
-  color: #530680;
+  @include fontNtext(
+    $font-weight: bold,
+    $color: $hoverTitle,
+    $bgImage: $floatBtnBgHover,
+    $border: 1.5rem,
+    $boxShdw: $boxShadow
+  );
   z-index: 1000;
-  background-image: $floatBtnBgHover;
-  box-shadow: $boxShadow;
-  border: 1.5rem;
-  font-weight: bolder;
 }
 /* Adjust the location and activity of the button "change language" */
 .languages {
   @include sizesNgaps($padding: 0.8rem, $top: 70%, $right: 1.5rem);
   @include displaySet($position: fixed, $zIndx: 0);
+  @include fontNtext(
+    $font-size: large,
+    $color: $primaryColor,
+    $bgImage: $floatBtnBg
+  );
+  @include fontNtext($border: $mainTextColor 0.5rem solid, $borderRds: 2rem);
   transform: translateY(-50%);
-  font-size: large;
-  border-radius: 2rem;
-  border: $mainTextColor 0.5rem solid;
   animation: colorWaveAnimation 6s infinite;
-  color: $primaryColor;
-  background-image: $floatBtnBg;
   img {
     @include sizesNgaps($margin: 0 auto, $width: 2rem, $height: 2rem);
     display: block;
   }
 }
 .languages:hover {
-  color: #530680;
-  text-shadow: $boxShadow;
-  font-weight: bolder;
-  box-shadow: $boxShadow;
-  border: 1.5rem;
+  @include fontNtext(
+    $font-weight: bolder,
+    $color: $hoverTitle,
+    $bgImage: $floatBtnBgHover
+  );
+  @include fontNtext(
+    $txtShdw: $boxShadow,
+    $border: 1.5rem,
+    $boxShdw: $boxShadow
+  );
   z-index: 1000;
-  background-image: $floatBtnBgHover;
 }
 /* Settings for the Footer of the pages */
 footer {
@@ -788,13 +807,15 @@ footer {
     $width: 100%,
     $bottom: 0
   );
-  background-color: $primaryColor;
-  color: $mainTextColor;
+  @include fontNtext(
+    $font-size: larger,
+    $color: $mainTextColor,
+    $bgColor: $primaryColor,
+    $ltrSpc: 0.18rem
+  );
   text-align: center;
   border-top: 0.5rem solid transparent;
   animation: colorWaveAnimation 6s infinite;
-  font-size: larger;
-  letter-spacing: 0.18rem;
 }
 footer p::before,
 footer p::after {
@@ -993,9 +1014,11 @@ footer:hover {
     background-color: transparent !important;
   }
   h2:hover {
-    color: #530680;
-    text-shadow: $hHover;
-    font-weight: bolder;
+    @include fontNtext(
+      $font-weight: bolder,
+      $color: $hoverTitle,
+      $txtShdw: $hHover
+    );
   }
   .profile-picture img {
     @include sizesNgaps($max-width: 20rem, $max-height: 20rem);
@@ -1039,14 +1062,6 @@ footer:hover {
     transform: translateY(-50%) scale(0.8);
     left: 80%;
   }
-  .portfolio-item {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center
-    );
-  }
   .portfolio-items {
     @include displaySet(
       $dspl: flex,
@@ -1067,24 +1082,11 @@ footer:hover {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(18rem);
   }
   .portfolio-item {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center
-    );
     width: 30rem;
-  }
-  .portfolio-item-image {
-    display: none;
-    margin-bottom: 1rem;
   }
   .portfolio-item-image img {
     @include sizesNgaps($width: 16rem, $height: 8rem);
     border-radius: 1rem;
-  }
-  .portfolio-item:hover .portfolio-item-image {
-    display: flex;
   }
   .hire-me {
     transform: translateY(-50%) scale(0.7);
@@ -1116,7 +1118,6 @@ footer:hover {
     margin: 1rem 0;
   }
   .portfolio-item {
-    @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
     width: 28rem;
   }
   .languages p {
@@ -1137,10 +1138,8 @@ footer:hover {
   }
   .hire-me {
     transform: translateY(-50%) scale(0.7);
-    left: 72%;
+    left: 70%;
   }
-}
-@media screen and (min-width: 551px) and (max-width: 768px) {
   .contact-form,
   .contact-directly,
   .my-files {
@@ -1159,10 +1158,6 @@ footer:hover {
   textarea {
     max-width: 25rem;
   }
-  .hire-me {
-    transform: translateY(-50%) scale(0.6);
-    left: 70%;
-  }
 }
 @media screen and (max-width: 576px) {
   .slider-box {
@@ -1173,14 +1168,6 @@ footer:hover {
   }
   .slider span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(10rem);
-  }
-  header,
-  main,
-  footer,
-  img {
-    transition-property: none !important;
-    transform: none !important;
-    animation: none !important;
   }
   .hire-me {
     transform: translateY(-50%) scale(0.5);
@@ -1209,35 +1196,12 @@ footer:hover {
   textarea {
     width: 18rem;
   }
-  nav ul {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center,
-      $txtAln: center
-    );
-    padding-left: 0;
-  }
   .portfolio-item {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center
-    );
     width: 20rem;
-  }
-  .portfolio-item-image {
-    display: none;
-    margin-bottom: 1rem;
   }
   .portfolio-item-image img {
     @include sizesNgaps($width: 12rem, $height: 6rem);
     border-radius: 1rem;
-  }
-  .portfolio-item:hover .portfolio-item-image {
-    display: flex;
   }
   .hire-me {
     transform: translateY(-50%) scale(0.5);
@@ -1256,14 +1220,6 @@ footer:hover {
   footer {
     width: 150%;
   }
-  nav ul {
-    padding-left: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   section {
     width: 120%;
     margin-left: 15%;
@@ -1275,10 +1231,6 @@ footer:hover {
   }
   .portfolio-item {
     width: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .contact-form,
   .contact-directly,
