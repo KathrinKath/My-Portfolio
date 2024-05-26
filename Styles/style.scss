@@ -1,5 +1,16 @@
 @import "./variables";
 @import "./mixins";
+@import "./animations";
+@include gradient;
+@include revealLetters;
+@include tableAnimation;
+@include colorWaveAnimation;
+@include rotate;
+@include pulsate;
+@include lightingAnimation;
+@include BlackWhiteAnimation;
+@include colorListAnimation;
+@include textColorChanging;
 /* General setitngs and design */
 * {
   margin: 0;
@@ -118,8 +129,10 @@ h5 {
   }
 }
 .paragraph-div:hover {
-  border: 0.4rem solid rgb(165, 166, 168);
-  box-shadow: $boxShadow;
+  @include fontNtext(
+    $border: 0.4rem solid rgb(165, 166, 168),
+    $boxShdw: $boxShadow
+  );
 }
 /* Settings and design for all buttons in the website */
 button {
@@ -141,8 +154,7 @@ button:hover {
 /* header designs and settings */
 header {
   @include displaySet($dspl: flex, $jusCont: space-between, $alItms: center);
-  background-color: $primaryColor;
-  color: $mainTextColor;
+  @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
   padding: 1.25rem 0;
   border-bottom: 0.5rem solid transparent;
   background-size: 600% auto;
@@ -503,7 +515,6 @@ html[data-page="index-english"] .h4-title,
 html[data-page="index-german"] .h4-title {
   margin-top: 3rem;
 }
-
 /* Settings and design of "skills and tools" section */
 .tools-set,
 .skills-set {
@@ -566,7 +577,6 @@ html[data-page="index-german"] .h4-title {
 .skill p:hover {
   @include fontNtext($font-size: larger, $font-weight: 900);
 }
-
 /* Settings and design for all contact options */
 .contact-options-divs {
   @include displaySet($dspl: flex, $jusCont: center, $alItms: flex-start);
@@ -624,7 +634,6 @@ html[data-page="index-german"] .h4-title {
   text-align: left;
 }
 /* Settings and design of the contact form */
-
 .form {
   margin: 1rem 0 0 1rem;
   font-size: xx-large;
@@ -679,11 +688,7 @@ textarea:hover {
   text-align: center;
 }
 .skills-table td:hover {
-  @include fontNtext(
-    $boxShdw: 0.3rem 0rem 0.6rem rgb(153, 228, 110),
-    $txtShdw: 50%,
-    $font-weight: bold
-  );
+  @include fontNtext($boxShdw: $mainShadow, $txtShdw: 50%, $font-weight: bold);
 }
 .skills-table table i {
   @include sizesNgaps($padding: 1rem, $width: 6rem);
@@ -776,9 +781,10 @@ textarea:hover {
   @include fontNtext(
     $font-size: large,
     $color: $primaryColor,
-    $bgImage: $floatBtnBg
+    $bgImage: $floatBtnBg,
+    $border: $mainTextColor 0.5rem solid,
+    $borderRds: 2rem
   );
-  @include fontNtext($border: $mainTextColor 0.5rem solid, $borderRds: 2rem);
   transform: translateY(-50%);
   animation: colorWaveAnimation 6s infinite;
   img {
@@ -790,9 +796,7 @@ textarea:hover {
   @include fontNtext(
     $font-weight: bolder,
     $color: $hoverTitle,
-    $bgImage: $floatBtnBgHover
-  );
-  @include fontNtext(
+    $bgImage: $floatBtnBgHover,
     $txtShdw: $boxShadow,
     $border: 1.5rem,
     $boxShdw: $boxShadow
@@ -827,148 +831,6 @@ footer p::after {
 footer:hover {
   animation: lightingAnimation 3s linear infinite;
 }
-/* Animation effects */
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes revealLetters {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes tableAnimation {
-  0% {
-    color: $primaryColor;
-  }
-  50% {
-    color: #00ff00;
-  }
-  100% {
-    color: $primaryColor;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: perspective(100rem) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(100rem) rotateY(360deg);
-  }
-}
-@keyframes pulsate {
-  0% {
-    border-color: #d4a3e769;
-    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
-  }
-  50% {
-    border-color: #a009f779;
-    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
-  }
-  100% {
-    border-color: #ff00ff65;
-    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
-  }
-}
-@keyframes BlackWhiteAnimation {
-  0% {
-    border-color: rgb(255, 253, 253);
-  }
-  25% {
-    border-color: rgb(190, 188, 188);
-  }
-  50% {
-    border-color: rgb(117, 116, 116);
-  }
-  75% {
-    border-color: rgb(190, 188, 188);
-  }
-  100% {
-    border-color: rgb(255, 253, 253);
-  }
-}
-@keyframes colorListAnimation {
-  0% {
-    background-color: #e2b5b5;
-  }
-  25% {
-    background-color: gold;
-  }
-  50% {
-    background-color: #00ff00;
-  }
-  75% {
-    background-color: rgb(241, 186, 147);
-  }
-  100% {
-    background-color: #b4a0ec;
-  }
-}
-@keyframes textColorChanging {
-  0% {
-    color: rgb(238, 96, 219);
-  }
-  16.67% {
-    color: rgb(238, 96, 96);
-  }
-  33.33% {
-    color: rgb(235, 193, 9);
-  }
-  50% {
-    color: rgb(63, 60, 60);
-  }
-  66.67% {
-    color: rgb(51, 51, 235);
-  }
-  83.33% {
-    color: rgb(96, 233, 238);
-  }
-  100% {
-    color: rgb(68, 240, 105);
-  }
-}
-@keyframes colorWaveAnimation {
-  0% {
-    border-color: rgb(238, 96, 219);
-  }
-  16.67% {
-    border-color: rgb(238, 96, 96);
-  }
-  33.33% {
-    border-color: rgb(138, 41, 230);
-  }
-  50% {
-    border-color: rgb(96, 174, 238);
-  }
-  66.67% {
-    border-color: rgb(51, 51, 235);
-  }
-  83.33% {
-    border-color: rgb(96, 233, 238);
-  }
-  100% {
-    border-color: rgb(68, 240, 105);
-  }
-}
-@keyframes lightingAnimation {
-  0% {
-    color: gray;
-  }
-  100% {
-    color: $mainTextColor;
-    text-shadow: 2rem 2rem 2rem $mainTextColor;
-  }
-}
 /* General settigs and adjustments for smaller and lawer quality screens */
 @media screen and (max-width: 1800px) {
   h1::before,
@@ -988,7 +850,6 @@ footer:hover {
   .contact-options-divs {
     @include displaySet($dspl: flex, $flxDrc: column, $alItms: center);
   }
-
   .portfolio-item {
     @include displaySet(
       $dspl: flex,
