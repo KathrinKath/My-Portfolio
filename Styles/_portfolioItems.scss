@@ -19,77 +19,77 @@
 .portfolio-items {
   @include displaySet($dspl: flex, $jusCont: space-between, $flxWrp: wrap);
   @include sizesNgaps($padding: 0 1rem, $margin: 1.5rem 0 0 0);
-}
-.portfolio-item {
-  @include sizesNgaps(
-    $padding: 1rem,
-    $margin: 0 0 2rem 0,
-    $width: calc(33.33% - 1.25rem),
-    $max-width: 35rem,
-    $min-width: 25rem,
-    $min-height: 19rem
-  );
-  @include fontNtext(
-    $bgColor: #c6acf0,
-    $border: 0.8rem outset #d55fec9d,
-    $borderRds: 1.5rem,
-    $boxShdw: $mainShadow
-  );
-  transition: transform 0.3s;
-  &:hover {
-    @include fontNtext(
-      $bgColor: #a0eb8285,
-      $bgImage: $portfolioBg,
-      $border: 1rem outset transparent,
-      $boxShdw: $boxShadow
+  .portfolio-item {
+    @include sizesNgaps(
+      $padding: 1rem,
+      $margin: 0 0 2rem 0,
+      $width: calc(33.33% - 1.25rem),
+      $max-width: 35rem,
+      $min-width: 25rem,
+      $min-height: 19rem
     );
-    animation: colorWaveAnimation 6s infinite;
-    transform: scale(1.05);
-    .portfolio-item-image {
-      @include displaySet(
-        $dspl: flex,
-        $flxDrc: column,
-        $jusCont: center,
-        $alItms: center
-      );
-    }
-  }
-  p {
-    margin-bottom: 1.5rem;
-    font-size: x-large;
-  }
-  a {
     @include fontNtext(
-      $font-size: larger,
-      $font-weight: bold,
-      $color: $mainTextColor,
-      $bgColor: $primaryColor,
-      $borderRds: 1.5rem
+      $bgColor: #c6acf0,
+      $border: 0.8rem outset #d55fec9d,
+      $borderRds: 1.5rem,
+      $boxShdw: $mainShadow
     );
-    display: inline-block;
-    padding: 1rem;
+    transition: transform 0.3s;
     &:hover {
-      @include fontNtext($font-size: x-large, $bgColor: #2eade7);
-      box-shadow: $boxShadow;
-      border: 0.5rem solid $mainTextColor;
-      animation: BlackWhiteAnimation 4s infinite;
+      @include fontNtext(
+        $bgColor: #a0eb8285,
+        $bgImage: $portfolioBg,
+        $border: 1rem outset transparent,
+        $boxShdw: $boxShadow
+      );
+      animation: colorWaveAnimation 6s infinite;
+      transform: scale(1.05);
+      .portfolio-item-image {
+        @include displaySet(
+          $dspl: flex,
+          $flxDrc: column,
+          $jusCont: center,
+          $alItms: center
+        );
+      }
     }
-  }
-}
-.portfolio-item-icons {
-  @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
-  margin-top: 1rem;
-  i {
-    @include fontNtext($font-size: 1.5rem, $color: $hoverTitle);
-    margin: 0.7rem 0.5rem 0 0.5rem;
-  }
-}
-.portfolio-item-image {
-  @include sizesNgaps($padding: 0, $margin: 0 0 1rem 0);
-  display: none;
-  img {
-    @include sizesNgaps($padding: 0, $width: 30rem, $height: 15rem);
-    border-radius: 1rem;
+    p {
+      margin-bottom: 1.5rem;
+      font-size: x-large;
+    }
+    a {
+      @include fontNtext(
+        $font-size: larger,
+        $font-weight: bold,
+        $color: $mainTextColor,
+        $bgColor: $primaryColor,
+        $borderRds: 1.5rem
+      );
+      display: inline-block;
+      padding: 1rem;
+      &:hover {
+        @include fontNtext($font-size: x-large, $bgColor: #2eade7);
+        box-shadow: $boxShadow;
+        border: 0.5rem solid $mainTextColor;
+        animation: BlackWhiteAnimation 4s infinite;
+      }
+    }
+    .portfolio-item-icons {
+      @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
+      margin-top: 1rem;
+      i {
+        @include fontNtext($font-size: 1.5rem, $color: $hoverTitle);
+        margin: 0.7rem 0.5rem 0 0.5rem;
+      }
+    }
+    .portfolio-item-image {
+      @include sizesNgaps($padding: 0, $margin: 0 0 1rem 0);
+      display: none;
+      img {
+        @include sizesNgaps($padding: 0, $width: 30rem, $height: 15rem);
+        border-radius: 1rem;
+      }
+    }
   }
 }
 .show-first {

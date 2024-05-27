@@ -171,8 +171,12 @@ html[data-page="index-german"] .h4-title {
 }
 /* Settings and design for all contact options */
 .contact-options-divs {
-  @include displaySet($dspl: flex, $jusCont: center, $alItms: flex-start);
-  gap: 3rem;
+  @include displaySet(
+    $dspl: flex,
+    $jusCont: center,
+    $alItms: flex-start,
+    $gap: 3rem
+  );
   padding: 1rem;
   border-radius: 3rem;
   .contact-form,

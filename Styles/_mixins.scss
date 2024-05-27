@@ -32,7 +32,8 @@
   $alItms: null,
   $txtAln: null,
   $flxWrp: null,
-  $transform: null
+  $transform: null,
+  $gap: null
 ) {
   @if $dspl != null {
     display: $dspl;
@@ -81,6 +82,9 @@
   }
   @if $transform != null {
     transform: $transform;
+  }
+  @if $gap != null {
+    gap: $gap;
   }
 }
 //@include displaySet($dspl: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null, $position: null, $flxWrp: null, $zIndx: null, $dspl: null, $position: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null $flxWrp: null, $transform: null);
