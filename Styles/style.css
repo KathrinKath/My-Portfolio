@@ -139,7 +139,7 @@
     color: rgb(68, 240, 105);
   }
 }
-/* General setitngs and design */
+/* General settings and design */
 * {
   margin: 0;
   padding: 0;
@@ -183,6 +183,8 @@ h4 {
   display: inline;
   position: relative;
   z-index: 900;
+  display: inline;
+  position: relative;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -246,6 +248,9 @@ h5 {
   display: flex;
   justify-content: center;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
   padding: 0.5rem;
   margin: 1rem 0;
   color: #000000;
@@ -264,6 +269,9 @@ h5 {
   flex-direction: column;
   position: relative;
   z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   padding: 1.5rem 0;
   margin: 0 0 0 1rem;
   animation: revealLetters 3s forwards;
@@ -299,14 +307,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   background-color: #a009f7;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   padding: 1.25rem 0;
   border-bottom: 0.5rem solid transparent;
   background-size: 600% auto;
   animation: colorWaveAnimation 6s infinite;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 }
 
 header h1 {
@@ -323,6 +334,7 @@ h1::after {
   content: "\e682";
   position: relative;
   z-index: 900;
+  position: relative;
   font-family: "FontAwesome";
   padding: 0 10rem;
 }
@@ -336,11 +348,17 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-size: xx-large;
   margin-top: 1rem;
 }
 
 nav ul li {
+  display: inline;
+  position: relative;
   display: inline;
   position: relative;
   margin: 0 3rem;
@@ -365,6 +383,8 @@ nav ul li a:hover {
   display: none;
   position: absolute;
   z-index: 1000;
+  display: none;
+  position: absolute;
   top: 75%;
   left: 50%;
   min-width: 25rem;
@@ -397,6 +417,8 @@ nav ul li a:hover {
 .profile-picture {
   display: flex;
   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .profile-picture img {
@@ -405,6 +427,7 @@ nav ul li a:hover {
   height: 30rem;
   position: static;
   z-index: 900;
+  position: static;
   border-radius: 50%;
   border: 0.5rem solid #a009f7;
   animation: colorWaveAnimation 6s infinite;
@@ -416,6 +439,7 @@ nav ul li a:hover {
   /* Settings of images inside the div paragraph, p_img_1 and p_img_2 */
   position: relative;
   z-index: 900;
+  position: relative;
   border-radius: 4rem;
   margin: 2rem 1rem 0 2rem;
   border: 0.5rem outset;
@@ -455,6 +479,7 @@ nav ul li a:hover {
   left: 85%;
   position: fixed;
   z-index: 1;
+  position: fixed;
   transform: translateY(-50%);
 }
 
@@ -463,6 +488,8 @@ nav ul li a:hover {
 }
 
 .hire-me-textbox {
+  display: flex;
+  position: absolute;
   display: flex;
   position: absolute;
   padding: 1rem;
@@ -486,6 +513,8 @@ nav ul li a:hover {
 .face {
   display: flex;
   position: relative;
+  display: flex;
+  position: relative;
   margin: 0 0 0 5rem;
   width: 10rem;
   height: 10rem;
@@ -502,9 +531,9 @@ nav ul li a:hover {
   left: 2.5rem;
   background-color: rgba(226, 125, 164, 0.692);
   border: 0.4rem solid rgba(223, 126, 163, 0.692);
-  position: absolute;
   border-bottom-left-radius: 0rem;
   border-bottom-right-radius: 0rem;
+  position: absolute;
   transition: 0.5s;
 }
 
@@ -532,11 +561,15 @@ nav ul li a:hover {
 .eyes {
   display: flex;
   position: relative;
+  display: flex;
+  position: relative;
   top: 1.5rem;
   left: 2rem;
 }
 
 .eyes .eye {
+  display: block;
+  position: relative;
   display: block;
   position: relative;
   margin: 0 0.25rem;
@@ -580,6 +613,9 @@ nav ul li a:hover {
 
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -641,6 +677,9 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
 }
 
@@ -664,6 +703,10 @@ nav ul li a:hover {
 }
 
 .portfolio-item:hover .portfolio-item-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -695,6 +738,10 @@ nav ul li a:hover {
   align-items: center;
   position: relative;
   z-index: 900;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   padding: 0rem;
   margin: auto;
   width: 20rem;
@@ -751,10 +798,18 @@ html[data-page=index-german] .h4-title {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .tool,
 .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -790,6 +845,9 @@ html[data-page=index-german] .h4-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 6rem;
   height: 6rem;
   background-color: rgba(235, 89, 240, 0.8);
@@ -798,6 +856,10 @@ html[data-page=index-german] .h4-title {
 
 .tool p,
 .skill p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -824,6 +886,9 @@ html[data-page=index-german] .h4-title {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 3rem;
   padding: 1rem;
   border-radius: 3rem;
@@ -835,6 +900,8 @@ html[data-page=index-german] .h4-title {
   display: inline-block;
   position: static;
   z-index: 900;
+  display: inline-block;
+  position: static;
   padding: 1.5rem;
   margin: 0 1rem;
   max-width: 40rem;
@@ -897,6 +964,8 @@ input,
 textarea {
   display: flex;
   text-align: left;
+  display: flex;
+  text-align: left;
   margin: -2rem 0;
 }
 
@@ -930,6 +999,9 @@ textarea:hover {
 
 /* Settings and design of the skills table - portfolio page */
 .skills-table table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -971,6 +1043,10 @@ textarea:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-collapse: collapse;
   width: 100%;
   font-size: small;
@@ -996,6 +1072,9 @@ textarea:hover {
   display: flex;
   justify-content: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   padding: 1rem;
   margin: 0 0 0 0.3rem;
   width: 1rem;
@@ -1017,6 +1096,7 @@ textarea:hover {
   right: 1.5rem;
   position: fixed;
   z-index: 0;
+  position: fixed;
   font-size: larger;
   color: #a009f7;
   background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
@@ -1049,6 +1129,7 @@ textarea:hover {
   right: 1.5rem;
   position: fixed;
   z-index: 0;
+  position: fixed;
   font-size: large;
   color: #a009f7;
   background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
@@ -1101,7 +1182,7 @@ footer:hover {
   animation: lightingAnimation 3s linear infinite;
 }
 
-/* General settigs and adjustments for smaller and lawer quality screens */
+/* General settings and adjustments for smaller and lower quality screens */
 @media screen and (max-width: 1800px) {
   h1::before,
   h1::after,
@@ -1121,8 +1202,15 @@ footer:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1200,6 +1288,10 @@ footer:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1238,6 +1330,11 @@ footer:hover {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(13rem);
   }
   nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1285,6 +1382,10 @@ footer:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 40rem;
   }
   input,
@@ -1318,6 +1419,10 @@ footer:hover {
     min-height: 46rem;
   }
   .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -11,7 +11,7 @@
 @include BlackWhiteAnimation;
 @include colorListAnimation;
 @include textColorChanging;
-/* General setitngs and design */
+/* General settings and design */
 * {
   margin: 0;
   padding: 0;
@@ -155,12 +155,11 @@ button:hover {
 header {
   @include displaySet($dspl: flex, $jusCont: space-between, $alItms: center);
   @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
+  @include borderBottomRds($bbLeftRds: 1rem, $bbRightRds: 1rem);
   padding: 1.25rem 0;
   border-bottom: 0.5rem solid transparent;
   background-size: 600% auto;
   animation: colorWaveAnimation 6s infinite;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 }
 header h1 {
   @include fontNtext($font-size: 6rem, $ltrSpc: 0.3rem, $txtShdw: $h1Shadow);
@@ -282,7 +281,8 @@ nav ul li a:hover {
     $padding: 1rem,
     $max-width: 8rem,
     $top: -3rem,
-    $right: 10rem
+    $right: 10rem,
+    $zIndx: 1
   );
   @include fontNtext(
     $font-size: larger,
@@ -319,9 +319,8 @@ nav ul li a:hover {
     $bgColor: rgba(226, 125, 164, 0.692),
     $border: 0.4rem solid rgba(223, 126, 163, 0.692)
   );
+  @include borderBottomRds($bbLeftRds: 0rem, $bbRightRds: 0rem);
   position: absolute;
-  border-bottom-left-radius: 0rem;
-  border-bottom-right-radius: 0rem;
   transition: 0.5s;
 }
 /* Hover effect */
@@ -331,8 +330,7 @@ nav ul li a:hover {
     $bgColor: rgb(235, 99, 151),
     $border: 0.4rem solid rgb(226, 89, 142)
   );
-  border-bottom-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
+  @include borderBottomRds($bbLeftRds: 1.5rem, $bbRightRds: 1.5rem);
 }
 .face:hover {
   @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
@@ -367,8 +365,7 @@ nav ul li a:hover {
     $bgColor: rgb(236, 140, 177),
     $border: 0.5rem solid rgb(236, 140, 177)
   );
-  border-bottom-left-radius: 3rem;
-  border-bottom-right-radius: 3rem;
+  @include borderBottomRds($bbLeftRds: 3rem, $bbRightRds: 3rem);
 }
 .hire-me:hover .face {
   @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
@@ -831,7 +828,7 @@ footer p::after {
 footer:hover {
   animation: lightingAnimation 3s linear infinite;
 }
-/* General settigs and adjustments for smaller and lawer quality screens */
+/* General settings and adjustments for smaller and lower quality screens */
 @media screen and (max-width: 1800px) {
   h1::before,
   h1::after,

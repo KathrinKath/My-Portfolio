@@ -1,14 +1,26 @@
 @import "./variables";
 
 @mixin displaySet(
+  $padding: null,
+  $margin: null,
+  $width: null,
+  $max-width: null,
+  $height: null,
+  $max-height: null,
+  $top: null,
+  $left: null,
+  $right: null,
+  $bottom: null,
+  $min-width: null,
+  $min-height: null,
+  $zIndx: null,
   $dspl: null,
+  $position: null,
   $flxDrc: null,
   $jusCont: null,
   $alItms: null,
   $txtAln: null,
-  $position: null,
-  $flxWrp: null,
-  $zIndx: null
+  $flxWrp: null
 ) {
   @if $dspl != null {
     display: $dspl;
@@ -34,8 +46,28 @@
   @if $zIndx != null {
     z-index: $zIndx;
   }
+  @if $dspl != null {
+    display: $dspl;
+  }
+  @if $position != null {
+    position: $position;
+  }
+  @if $flxDrc != null {
+    flex-direction: $flxDrc;
+  }
+  @if $jusCont != null {
+    justify-content: $jusCont;
+  }
+  @if $alItms != null {
+    align-items: $alItms;
+  }
+  @if $txtAln != null {
+    text-align: $txtAln;
+  }
+  @if $flxWrp != null {
+    flex-wrap: $flxWrp;
+  }
 }
-
 //@include displaySet($dspl: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null, $position: null, $flxWrp: null, $zIndx: null);
 
 @mixin sizesNgaps(
@@ -50,7 +82,8 @@
   $right: null,
   $bottom: null,
   $min-width: null,
-  $min-height: null
+  $min-height: null,
+  $zIndx: null
 ) {
   @if $padding != null {
     padding: $padding;
@@ -145,3 +178,14 @@
 }
 
 // @include fontNtext($font-size: null, $font-weight: null, $color: null, $bgColor: null, $bgImage: null, $ltrSpc: null, $lnHeight: null, $fontFmly: null,  $txtShdw: null, $border: null, $borderRds:null, $boxShdw: null);
+
+@mixin borderBottomRds($bbLeftRds: null, $bbRightRds: null) {
+  @if $bbLeftRds != null {
+    border-bottom-left-radius: $bbLeftRds;
+  }
+  @if $bbRightRds != null {
+    border-bottom-right-radius: $bbRightRds;
+  }
+}
+
+// @include borderBottom($bbLeftRds: null, $bbRightRds: null);
