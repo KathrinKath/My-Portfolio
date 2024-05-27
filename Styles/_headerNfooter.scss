@@ -1,0 +1,128 @@
+@import "./variables";
+@import "./mixins";
+@import "./animations";
+@import "./basicSettings";
+@include gradient;
+@include revealLetters;
+@include tableAnimation;
+@include colorWaveAnimation;
+@include rotate;
+@include pulsate;
+@include lightingAnimation;
+@include BlackWhiteAnimation;
+@include colorListAnimation;
+@include textColorChanging;
+
+// Header part
+
+/* header designs and settings */
+header {
+  @include displaySet($dspl: flex, $jusCont: space-between, $alItms: center);
+  @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
+  @include borderBottomRds($bbLeftRds: 1rem, $bbRightRds: 1rem);
+  padding: 1.25rem 0;
+  border-bottom: 0.5rem solid transparent;
+  background-size: 600% auto;
+  animation: colorWaveAnimation 6s infinite;
+  &:hover {
+    animation: lightingAnimation 3s linear infinite;
+  }
+  h1 {
+    @include fontNtext(
+      $font-size: 6rem,
+      $ltrSpc: 0.3rem,
+      $txtShdw: $h1Shadow,
+      $fontFmly: "poetsen One"
+    );
+    margin: 0;
+    z-index: 999;
+    &::before,
+    &::after {
+      content: "\e682";
+      @include displaySet($position: relative, $zIndx: 999);
+      font-family: "FontAwesome";
+      padding: 0 10rem;
+    }
+  }
+}
+nav ul {
+  @include displaySet(
+    $dspl: flex,
+    $flxDrc: row,
+    $jusCont: center,
+    $alItms: center
+  );
+  font-size: xx-large;
+  margin-top: 1rem;
+  li {
+    @include displaySet($dspl: inline, $position: relative);
+    margin: 0 3rem;
+    text-shadow: $navShadow;
+    letter-spacing: 0.2rem;
+    a {
+      color: $mainTextColor;
+      text-decoration: none;
+      border-radius: 2rem;
+      padding: 0.5rem;
+      &:hover {
+        @include fontNtext($font-size: 2.15rem, $font-weight: bolder);
+        animation: textColorChanging 6s infinite;
+      }
+    }
+  }
+}
+.dropdown-portfolio {
+  @include displaySet($dspl: none, $position: absolute, $zIndx: 1000);
+  @include sizesNgaps($top: 75%, $left: 50%, $min-width: 25rem);
+  background-color: #b48ee5;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+  li {
+    display: block;
+    a {
+      color: $mainTextColor;
+      padding: 0 0.5rem;
+    }
+    &:hover {
+      position: relative;
+    }
+  }
+}
+.dropdown:hover .dropdown-portfolio {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+//Footer part
+
+/* Settings for the Footer of the pages */
+footer {
+  @include sizesNgaps(
+    $padding: 1.5rem 0,
+    $margin: 2rem 0 0 0,
+    $width: 100%,
+    $bottom: 0
+  );
+  @include fontNtext(
+    $font-size: larger,
+    $color: $mainTextColor,
+    $bgColor: $primaryColor,
+    $ltrSpc: 0.18rem
+  );
+  text-align: center;
+  border-top: 0.5rem solid transparent;
+  animation: colorWaveAnimation 6s infinite;
+  &:hover {
+    animation: lightingAnimation 3s linear infinite;
+  }
+  p {
+    &::before,
+    &::after {
+      content: "\f004";
+      font-family: "FontAwesome";
+      position: relative;
+      padding: 0 15rem;
+    }
+  }
+}

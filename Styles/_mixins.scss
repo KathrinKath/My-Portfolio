@@ -1,4 +1,15 @@
 @import "./variables";
+@import "./animations";
+@include gradient;
+@include revealLetters;
+@include tableAnimation;
+@include colorWaveAnimation;
+@include rotate;
+@include pulsate;
+@include lightingAnimation;
+@include BlackWhiteAnimation;
+@include colorListAnimation;
+@include textColorChanging;
 
 @mixin displaySet(
   $padding: null,
@@ -20,7 +31,8 @@
   $jusCont: null,
   $alItms: null,
   $txtAln: null,
-  $flxWrp: null
+  $flxWrp: null,
+  $transform: null
 ) {
   @if $dspl != null {
     display: $dspl;
@@ -67,8 +79,11 @@
   @if $flxWrp != null {
     flex-wrap: $flxWrp;
   }
+  @if $transform != null {
+    transform: $transform;
+  }
 }
-//@include displaySet($dspl: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null, $position: null, $flxWrp: null, $zIndx: null);
+//@include displaySet($dspl: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null, $position: null, $flxWrp: null, $zIndx: null, $dspl: null, $position: null, $flxDrc: null, $jusCont: null, $alItms: null, $txtAln: null $flxWrp: null, $transform: null);
 
 @mixin sizesNgaps(
   $padding: null,

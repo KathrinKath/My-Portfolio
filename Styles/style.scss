@@ -1,6 +1,11 @@
 @import "./variables";
 @import "./mixins";
 @import "./animations";
+@import "./basicSettings";
+@import "./headerNfooter";
+@import "./stickyButtons";
+@import "./portfolioItems";
+@import "./responsive";
 @include gradient;
 @include revealLetters;
 @include tableAnimation;
@@ -11,232 +16,21 @@
 @include BlackWhiteAnimation;
 @include colorListAnimation;
 @include textColorChanging;
-/* General settings and design */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  list-style-type: none;
-}
-:root {
-  font-size: 100%;
-}
-body {
-  font-family: "Courgette", cursive;
-  background-image: $bodyBg;
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-section {
-  @include sizesNgaps($padding: 3.2rem 0, $margin: 2rem);
-  background-image: $sectionBg;
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
-  border-radius: 3rem;
-  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
-}
-.container {
-  @include sizesNgaps($padding: 0 1.25rem, $margin: 0 auto, $max-width: 100%);
-  text-align: center;
-}
-h2,
-h3,
-h4 {
-  @include displaySet($dspl: inline, $position: relative, $zIndx: 900);
-  color: $mainTextColor;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  text-shadow: $boxShadow;
-  letter-spacing: 0.2rem;
-}
-h3:hover,
-h4:hover {
-  @include fontNtext($font-weight: bolder, $txtShdw: $hHover);
-}
-.h2-title,
-.h3-title,
-.h4-title {
-  margin: 1.5rem 0 2rem;
-  z-index: 900;
-}
-/*Settings and design for all the H2 titles */
-.h2-title {
-  h2 {
-    font-size: 3.5rem;
-  }
-}
-h2:hover {
-  @include fontNtext(
-    $font-size: 4rem,
-    $color: rgb(247, 15, 235),
-    $txtShdw: $h2Hover
-  );
-}
-/*Settings and design for all the H3 titles */
-.h3-title {
-  h3 {
-    font-size: 2.5rem;
-  }
-}
-h3:hover {
-  @include fontNtext($font-size: 3rem, $color: rgb(0, 195, 255));
-}
-/*Settings and design for all the H4 titles */
-.h4-title {
-  h4 {
-    font-size: 2rem;
-  }
-}
-h4:hover {
-  @include fontNtext($font-size: 2.5rem, $color: rgb(15, 180, 0));
-}
-/* settings for all h5 (project titles) in the website */
-h5 {
-  @include fontNtext(
-    $font-size: xx-large,
-    $font-weight: bolder,
-    $color: #443e3e
-  );
-}
-/* Settings and designs for all paragraphs in the website */
-.paragraph-div {
-  @include displaySet($dspl: flex, $jusCont: center, $txtAln: left);
-  @include sizesNgaps($padding: 0.5rem, $margin: 1rem 0);
-  @include fontNtext(
-    $color: #000000,
-    $bgColor: #d4a3ecde,
-    $border: 0.2rem solid rgb(165, 166, 168),
-    $borderRds: 4rem,
-    $boxShdw: $mainShadow
-  );
-  font-family: "Kalam", cursive;
-  i {
-    @include fontNtext($font-size: xx-large, $color: $primaryColor);
-  }
-  p {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $position: relative,
-      $zIndx: 900
-    );
-    @include sizesNgaps($padding: 1.5rem 0, $margin: 0 0 0 1rem);
-    animation: revealLetters 3s forwards;
-    opacity: 0;
-    font-size: x-large;
-  }
-}
-.paragraph-div:hover {
-  @include fontNtext(
-    $border: 0.4rem solid rgb(165, 166, 168),
-    $boxShdw: $boxShadow
-  );
-}
-/* Settings and design for all buttons in the website */
-button {
-  @include sizesNgaps($padding: 1rem, $margin: 1rem 0 1.5rem);
-  @include fontNtext(
-    $font-size: xx-large,
-    $color: $mainTextColor,
-    $bgColor: $primaryColor,
-    $borderRds: 2rem,
-    $boxShdw: $boxShadow
-  );
-  cursor: pointer;
-}
-button:hover {
-  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
-  transform: scale(1.1);
-}
+
 /* pages designs and adjustments */
-/* header designs and settings */
-header {
-  @include displaySet($dspl: flex, $jusCont: space-between, $alItms: center);
-  @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
-  @include borderBottomRds($bbLeftRds: 1rem, $bbRightRds: 1rem);
-  padding: 1.25rem 0;
-  border-bottom: 0.5rem solid transparent;
-  background-size: 600% auto;
-  animation: colorWaveAnimation 6s infinite;
-}
-header h1 {
-  @include fontNtext($font-size: 6rem, $ltrSpc: 0.3rem, $txtShdw: $h1Shadow);
-  margin: 0;
-  z-index: 900;
-  font-family: "Poetsen One", sans-serif;
-}
-h1::before,
-h1::after {
-  content: "\e682";
-  @include displaySet($position: relative, $zIndx: 900);
-  font-family: "FontAwesome";
-  padding: 0 10rem;
-}
-header:hover {
-  animation: lightingAnimation 3s linear infinite;
-}
-nav ul {
-  @include displaySet(
-    $dspl: flex,
-    $flxDrc: row,
-    $jusCont: center,
-    $alItms: center
-  );
-  font-size: xx-large;
-  margin-top: 1rem;
-}
-nav ul li {
-  @include displaySet($dspl: inline, $position: relative);
-  margin: 0 3rem;
-  text-shadow: $navShadow;
-  letter-spacing: 0.2rem;
-}
-nav ul li a {
-  color: $mainTextColor;
-  text-decoration: none;
-  border-radius: 2rem;
-  padding: 0.5rem;
-}
-nav ul li a:hover {
-  @include fontNtext($font-size: 2.15rem, $font-weight: bolder);
-  animation: textColorChanging 6s infinite;
-}
-.dropdown-portfolio {
-  @include displaySet($dspl: none, $position: absolute, $zIndx: 1000);
-  @include sizesNgaps($top: 75%, $left: 50%, $min-width: 25rem);
-  background-color: #b48ee5;
-  border-radius: 2rem;
-  transform: translateX(-50%);
-}
-.dropdown-portfolio li {
-  display: block;
-}
-.dropdown-portfolio li a {
-  color: $mainTextColor;
-  padding: 0 0.5rem;
-}
-.dropdown-portfolio li a:hover {
-  position: relative;
-}
-.dropdown:hover .dropdown-portfolio {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
+
 /* Setting for elements from main section of the website */
 /* Settings and design of the main picture */
 .profile-picture {
   @include displaySet($dspl: flex, $jusCont: center);
-}
-.profile-picture img {
-  @include sizesNgaps($margin: 4rem 1rem 1rem, $width: 30rem, $height: 30rem);
-  @include displaySet($position: static, $zIndx: 900);
-  border-radius: 50%;
-  border: 0.5rem solid $primaryColor;
-  animation: colorWaveAnimation 6s infinite;
-  box-shadow: $imgShadow;
+  img {
+    @include sizesNgaps($margin: 4rem 1rem 1rem, $width: 30rem, $height: 30rem);
+    @include displaySet($position: static, $zIndx: 900);
+    border-radius: 50%;
+    border: 0.5rem solid $primaryColor;
+    animation: colorWaveAnimation 6s infinite;
+    box-shadow: $imgShadow;
+  }
 }
 /* Settings and design of the images inside the about me paragraph */
 .paragraph-div img {
@@ -246,221 +40,25 @@ nav ul li a:hover {
   margin: 2rem 1rem 0 2rem;
   border: 0.5rem outset;
   box-shadow: $imgShadow;
-}
-.paragraph-div img:hover {
-  width: 30rem;
-  border-color: $primaryColor;
+  &:hover {
+    width: 30rem;
+    border-color: $primaryColor;
+  }
 }
 .p_img_1 img {
   @include sizesNgaps($width: 20rem, $height: 20rem);
   border-color: rgb(219, 105, 230);
   z-index: 3;
+  &:hover {
+    height: 30rem;
+  }
 }
 .p_img_2 img {
   @include sizesNgaps($width: 22rem, $height: auto);
   border-color: rgb(166, 105, 223);
-}
-.p_img_1 img:hover {
-  height: 30rem;
-}
-.p_img_2 img:hover {
-  height: 50rem;
-}
-/* Settings fot the smiley and "hire me" boxes */
-.hire-me {
-  @include sizesNgaps($margin: 1.5rem, $top: 13%, $left: 85%);
-  @include displaySet($position: fixed, $zIndx: 1);
-  transform: translateY(-50%);
-}
-.hire-me:hover {
-  z-index: 1000;
-}
-.hire-me-textbox {
-  @include displaySet($dspl: flex, $position: absolute);
-  @include sizesNgaps(
-    $padding: 1rem,
-    $max-width: 8rem,
-    $top: -3rem,
-    $right: 10rem,
-    $zIndx: 1
-  );
-  @include fontNtext(
-    $font-size: larger,
-    $font-weight: bold,
-    $color: $mainTextColor,
-    $bgColor: $primaryColor,
-    $borderRds: 2rem,
-    $boxShdw: $mainShadow
-  );
-}
-.hire-me-textbox:hover {
-  @include fontNtext(
-    $txtShdw: $boxShadow,
-    $border: 0.1rem solid gray,
-    $boxShdw: 0rem 0rem 1rem 1rem #a4e9f5
-  );
-}
-.face {
-  @include displaySet($dspl: flex, $position: relative);
-  @include sizesNgaps($margin: 0 0 0 5rem, $width: 10rem, $height: 10rem);
-  border: 0.8rem solid rgba(255, 197, 5, 0.747);
-  border-radius: 50%;
-  background-color: rgba(255, 209, 5, 0.842);
-}
-.face::before {
-  content: "";
-  @include sizesNgaps(
-    $width: 3rem,
-    $height: 0.6rem,
-    $top: 5.5rem,
-    $left: 2.5rem
-  );
-  @include fontNtext(
-    $bgColor: rgba(226, 125, 164, 0.692),
-    $border: 0.4rem solid rgba(223, 126, 163, 0.692)
-  );
-  @include borderBottomRds($bbLeftRds: 0rem, $bbRightRds: 0rem);
-  position: absolute;
-  transition: 0.5s;
-}
-/* Hover effect */
-.face:hover::before {
-  @include sizesNgaps($width: 4rem, $height: 2rem, $top: 6.5rem, $left: 2.5rem);
-  @include fontNtext(
-    $bgColor: rgb(235, 99, 151),
-    $border: 0.4rem solid rgb(226, 89, 142)
-  );
-  @include borderBottomRds($bbLeftRds: 1.5rem, $bbRightRds: 1.5rem);
-}
-.face:hover {
-  @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
-}
-.face:hover .eye {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
-}
-.eyes {
-  @include displaySet($dspl: flex, $position: relative);
-  @include sizesNgaps($top: 1.5rem, $left: 2rem);
-}
-.eyes .eye {
-  @include displaySet($dspl: block, $position: relative);
-  @include sizesNgaps($margin: 0 0.25rem, $width: 2rem, $height: 2rem);
-  @include fontNtext($bgColor: $mainTextColor, $borderRds: 50%);
-}
-.eyes .eye::before {
-  content: "";
-  @include sizesNgaps(
-    $width: 0.75rem,
-    $height: 0.75rem,
-    $top: 50%,
-    $left: 1rem
-  );
-  @include fontNtext($bgColor: #000000, $borderRds: 50%);
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-.hire-me:hover .face::before {
-  @include sizesNgaps($width: 3.5rem, $height: 2rem, $top: 6rem, $left: 3rem);
-  @include fontNtext(
-    $bgColor: rgb(236, 140, 177),
-    $border: 0.5rem solid rgb(236, 140, 177)
-  );
-  @include borderBottomRds($bbLeftRds: 3rem, $bbRightRds: 3rem);
-}
-.hire-me:hover .face {
-  @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
-}
-.hire-me:hover .face .eye {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
-}
-/* Settings and design for all portfolio items in the website */
-.portfolio-items {
-  @include displaySet($dspl: flex, $jusCont: space-between, $flxWrp: wrap);
-  @include sizesNgaps($padding: 0 1rem, $margin: 1.5rem 0 0 0);
-}
-.portfolio-item {
-  @include sizesNgaps(
-    $padding: 1rem,
-    $margin: 0 0 2rem 0,
-    $width: calc(33.33% - 1.25rem),
-    $max-width: 35rem,
-    $min-width: 25rem,
-    $min-height: 19rem
-  );
-  @include fontNtext(
-    $bgColor: #c6acf0,
-    $border: 0.8rem outset #d55fec9d,
-    $borderRds: 1.5rem,
-    $boxShdw: $mainShadow
-  );
-  transition: transform 0.3s;
-}
-.portfolio-item:hover {
-  @include fontNtext(
-    $bgColor: #a0eb8285,
-    $bgImage: $portfolioBg,
-    $border: 1rem outset transparent,
-    $boxShdw: $boxShadow
-  );
-  animation: colorWaveAnimation 6s infinite;
-  transform: scale(1.05);
-}
-.portfolio-item h5 {
-  margin-bottom: 1rem;
-}
-.portfolio-item p {
-  margin-bottom: 1.5rem;
-  font-size: x-large;
-}
-.portfolio-item a {
-  @include fontNtext(
-    $font-size: larger,
-    $font-weight: bold,
-    $color: $mainTextColor,
-    $bgColor: $primaryColor,
-    $borderRds: 1.5rem
-  );
-  display: inline-block;
-  padding: 1rem;
-}
-.portfolio-item a:hover {
-  @include fontNtext($font-size: x-large, $bgColor: #2eade7);
-  box-shadow: $boxShadow;
-  border: 0.5rem solid $mainTextColor;
-  animation: BlackWhiteAnimation 4s infinite;
-}
-.portfolio-item-icons {
-  @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
-  margin-top: 1rem;
-}
-.portfolio-item-icons i {
-  @include fontNtext($font-size: 1.5rem, $color: $hoverTitle);
-  margin: 0.7rem 0.5rem 0 0.5rem;
-}
-.portfolio-item-image {
-  @include sizesNgaps($padding: 0, $margin: 0 0 1rem 0);
-  display: none;
-}
-.portfolio-item-image img {
-  @include sizesNgaps($padding: 0, $width: 30rem, $height: 15rem);
-  border-radius: 1rem;
-}
-.portfolio-item:hover .portfolio-item-image {
-  @include displaySet(
-    $dspl: flex,
-    $flxDrc: column,
-    $jusCont: center,
-    $alItms: center
-  );
-}
-.show-first {
-  display: flex;
-}
-.show-all {
-  display: none;
-}
-.show-all:target {
-  display: flex;
+  &:hover {
+    height: 50rem;
+  }
 }
 /* settings and design for the carousel slider presentation */
 .slider-box {
@@ -483,26 +81,29 @@ nav ul li a:hover {
   );
   transform-style: preserve-3d;
   animation: rotate 40s linear infinite;
-}
-.slider span {
-  @include sizesNgaps($width: 100%, $height: 100%, $top: 0, $left: 0);
-  position: absolute;
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(35rem);
-  transition: 1s;
-  border-radius: 3rem;
-}
-.slider span:hover img {
-  transform: translateY(-2rem) scale(1.2);
-  border: $primaryColor outset 0.5rem;
-}
-.slider span img {
-  @include sizesNgaps($width: 100%, $height: 100%, $top: 0, $left: 0);
-  @include fontNtext($borderRds: 3rem, $border: $primaryColor outset 0.3rem);
-  position: absolute;
-  object-fit: cover;
-  transition: 3s;
+  span {
+    @include sizesNgaps($width: 100%, $height: 100%, $top: 0, $left: 0);
+    position: absolute;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(35rem);
+    transition: 1s;
+    border-radius: 3rem;
+    &:hover img {
+      transform: translateY(-2rem) scale(1.2);
+      border: $primaryColor outset 0.5rem;
+    }
+    img {
+      @include sizesNgaps($width: 100%, $height: 100%, $top: 0, $left: 0);
+      @include fontNtext(
+        $borderRds: 3rem,
+        $border: $primaryColor outset 0.3rem
+      );
+      position: absolute;
+      object-fit: cover;
+      transition: 3s;
+    }
+  }
 }
 html[data-page="index-english"] #portfolio .container .h3-title,
 html[data-page="index-german"] #portfolio .container .h3-title {
@@ -533,46 +134,40 @@ html[data-page="index-german"] .h4-title {
   @include sizesNgaps($margin: 0 1rem, $width: 8rem, $height: 10rem);
   border-radius: 5rem;
   box-sizing: border-box;
-}
-.skill i,
-.tool i {
-  @include fontNtext($font-size: 2rem, $color: $mainTextColor);
-  padding: 1rem;
-  border-radius: 5rem;
-}
-.skill i:first-child,
-.tool i:first-child {
-  @include sizesNgaps($width: 5rem, $height: 4rem);
-  background-color: #eb59f0cc;
-  box-shadow: $mainShadow;
-  background-image: $skillsToolsBg;
-  background-size: 300% 300%;
-  animation: gradient 15s ease infinite;
-}
-.skill i:first-child:hover,
-.tool i:first-child:hover {
-  @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
-  @include sizesNgaps($width: 6rem, $height: 6rem);
-  background-color: #eb59f0cc;
-  box-shadow: $mainShadow;
-}
-.tool p,
-.skill p {
-  @include displaySet(
-    $dspl: flex,
-    $jusCont: center,
-    $alItms: center,
-    $txtAln: center
-  );
-  @include sizesNgaps($padding: 0 1rem, $margin: 1rem 0 0 0, $height: 3rem);
-}
-.skill i:hover,
-.tool i:hover {
-  @include fontNtext($font-size: 3rem, $color: #ffd900);
-}
-.tool p:hover,
-.skill p:hover {
-  @include fontNtext($font-size: larger, $font-weight: 900);
+  i {
+    @include fontNtext($font-size: 2rem, $color: $mainTextColor);
+    padding: 1rem;
+    border-radius: 5rem;
+    &:first-child {
+      @include sizesNgaps($width: 5rem, $height: 4rem);
+      background-color: #eb59f0cc;
+      box-shadow: $mainShadow;
+      background-image: $skillsToolsBg;
+      background-size: 300% 300%;
+      animation: gradient 15s ease infinite;
+      &:hover {
+        @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
+        @include sizesNgaps($width: 6rem, $height: 6rem);
+        background-color: #eb59f0cc;
+        box-shadow: $mainShadow;
+      }
+    }
+    &:hover {
+      @include fontNtext($font-size: 3rem, $color: #ffd900);
+    }
+  }
+  p {
+    @include displaySet(
+      $dspl: flex,
+      $jusCont: center,
+      $alItms: center,
+      $txtAln: center
+    );
+    @include sizesNgaps($padding: 0 1rem, $margin: 1rem 0 0 0, $height: 3rem);
+    &:hover {
+      @include fontNtext($font-size: larger, $font-weight: 900);
+    }
+  }
 }
 /* Settings and design for all contact options */
 .contact-options-divs {
@@ -580,253 +175,169 @@ html[data-page="index-german"] .h4-title {
   gap: 3rem;
   padding: 1rem;
   border-radius: 3rem;
-}
-.contact-form,
-.contact-directly,
-.my-files {
-  @include displaySet($dspl: inline-block, $position: static, $zIndx: 900);
-  @include sizesNgaps(
-    $padding: 1.5rem,
-    $margin: 0 1rem,
-    $max-width: 40rem,
-    $min-height: 20rem
-  );
-  @include fontNtext(
-    $font-size: x-large,
-    $bgColor: #d4a3ecde,
-    $lnHeight: 3rem,
-    $border: 0.1rem solid rgba(177, 177, 177, 0.548),
-    $borderRds: 3rem,
-    $boxShdw: $mainShadow
-  );
-  a {
-    color: #000000;
-  }
-  a:hover {
-    @include fontNtext(
-      $font-size: xx-large,
-      $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
+  .contact-form,
+  .contact-directly,
+  .my-files {
+    @include displaySet($dspl: inline-block, $position: static, $zIndx: 900);
+    @include sizesNgaps(
+      $padding: 1.5rem,
+      $margin: 0 1rem,
+      $max-width: 40rem,
+      $min-height: 20rem
     );
+    @include fontNtext(
+      $font-size: x-large,
+      $bgColor: #d4a3ecde,
+      $lnHeight: 3rem,
+      $border: 0.1rem solid rgba(177, 177, 177, 0.548),
+      $borderRds: 3rem,
+      $boxShdw: $mainShadow
+    );
+    a {
+      color: #000000;
+    }
+    a:hover {
+      @include fontNtext(
+        $font-size: xx-large,
+        $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
+      );
+    }
+    i {
+      @include fontNtext($font-size: x-large, $color: $primaryColor);
+    }
+    i:hover {
+      transform: scale(1.5);
+    }
+    &:hover {
+      @include fontNtext(
+        $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
+        $boxShdw: $boxShadow
+      );
+    }
   }
-  i {
-    @include fontNtext($font-size: x-large, $color: $primaryColor);
+  .contact-options-list,
+  .files-list {
+    text-align: left;
   }
-  i:hover {
-    transform: scale(1.5);
+  /* Settings and design of the contact form */
+  .form {
+    margin: 1rem 0 0 1rem;
+    font-size: xx-large;
+    label,
+    input,
+    textarea {
+      @include displaySet($dspl: flex, $txtAln: left);
+      margin: -2rem 0;
+    }
+    input {
+      @include sizesNgaps(
+        $padding: 0.5rem,
+        $margin: 0,
+        $width: 27rem,
+        $height: 3rem
+      );
+      @include fontNtext(
+        $borderRds: 1rem,
+        $font-size: 1.2rem,
+        $boxShdw: $mainShadow
+      );
+    }
+    textarea {
+      @include sizesNgaps(
+        $padding: 0.5rem,
+        $margin: 0,
+        $width: 27rem,
+        $height: 10rem
+      );
+      border-radius: 1rem;
+      resize: none;
+      font-size: 1.2rem;
+      box-shadow: $mainShadow;
+    }
+    input:hover,
+    textarea:hover {
+      border-width: 0.5rem;
+      animation: colorWaveAnimation 6s infinite;
+      box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
+    }
   }
-  h2 {
-    margin-left: 1rem;
-  }
-}
-.contact-form:hover,
-.contact-directly:hover,
-.my-files:hover {
-  @include fontNtext(
-    $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
-    $boxShdw: $boxShadow
-  );
-}
-.contact-options-list,
-.files-list {
-  text-align: left;
-}
-/* Settings and design of the contact form */
-.form {
-  margin: 1rem 0 0 1rem;
-  font-size: xx-large;
-}
-label,
-input,
-textarea {
-  @include displaySet($dspl: flex, $txtAln: left);
-  margin: -2rem 0;
-}
-input {
-  @include sizesNgaps(
-    $padding: 0.5rem,
-    $margin: 0,
-    $width: 27rem,
-    $height: 3rem
-  );
-  @include fontNtext(
-    $borderRds: 1rem,
-    $font-size: 1.2rem,
-    $boxShdw: $mainShadow
-  );
-}
-textarea {
-  @include sizesNgaps(
-    $padding: 0.5rem,
-    $margin: 0,
-    $width: 27rem,
-    $height: 10rem
-  );
-  border-radius: 1rem;
-  resize: none;
-  font-size: 1.2rem;
-  box-shadow: $mainShadow;
-}
-input:hover,
-textarea:hover {
-  border-width: 0.5rem;
-  animation: colorWaveAnimation 6s infinite;
-  box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
 /* Settings and design of the skills table - portfolio page */
-.skills-table table {
-  @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
-  border-collapse: collapse;
-  width: 100%;
-  font-size: large;
-}
-.skills-table td {
-  @include sizesNgaps($padding: 1rem, $width: 7rem);
-  @include fontNtext($border: 0.1rem solid #ffffff00, $borderRds: 50%);
-  text-align: center;
-}
-.skills-table td:hover {
-  @include fontNtext($boxShdw: $mainShadow, $txtShdw: 50%, $font-weight: bold);
-}
-.skills-table table i {
-  @include sizesNgaps($padding: 1rem, $width: 6rem);
-  @include fontNtext(
-    $font-size: 3rem,
-    $color: $primaryColor,
-    $bgColor: #f05ce98a,
-    $borderRds: 50%
-  );
-}
-.skills-table table i:hover {
-  animation: tableAnimation 4s infinite;
+.skills-table {
+  table {
+    @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
+    border-collapse: collapse;
+    width: 100%;
+    font-size: large;
+    td {
+      @include sizesNgaps($padding: 1rem, $width: 7rem);
+      @include fontNtext($border: 0.1rem solid #ffffff00, $borderRds: 50%);
+      text-align: center;
+      &:hover {
+        @include fontNtext(
+          $boxShdw: $mainShadow,
+          $txtShdw: 50%,
+          $font-weight: bold
+        );
+      }
+    }
+    i {
+      @include sizesNgaps($padding: 1rem, $width: 6rem);
+      @include fontNtext(
+        $font-size: 3rem,
+        $color: $primaryColor,
+        $bgColor: rgba(#f05ce9, 0.54),
+        // Using rgba for transparency
+        $borderRds: 50%
+      );
+      &:hover {
+        animation: tableAnimation 4s infinite;
+      }
+    }
+  }
 }
 /* Settings and design for elements table */
-.elements-table table {
-  @include displaySet(
-    $dspl: flex,
-    $jusCont: center,
-    $alItms: center,
-    $txtAln: center
-  );
-  border-collapse: collapse;
-  width: 100%;
-  font-size: small;
-}
-.elements-table td {
-  @include sizesNgaps($padding: 0.5rem 3.5rem, $max-width: 5rem, $height: auto);
-  @include fontNtext(
-    $bgColor: #feffff00,
-    $border: 0.1rem solid #ffffff00,
-    $borderRds: 50%
-  );
-  text-align: center;
-}
-.elements-table td:hover {
-  @include fontNtext(
-    $font-size: large,
-    $font-weight: bold,
-    $txtShdw: $elementsTbHover
-  );
-}
-.elements-table table i {
-  @include displaySet($dspl: flex, $jusCont: center, $txtAln: center);
-  @include sizesNgaps($padding: 1rem, $margin: 0 0 0 0.3rem, $width: 1rem);
-  @include fontNtext($font-size: 1.5rem, $color: $primaryColor);
-  border-radius: 50%;
-}
-.elements-table table i:hover {
-  @include fontNtext($font-size: 2rem, $color: $hoverTitle);
-}
-/* Settings and design for Back to top button */
-.backtotop {
-  @include sizesNgaps(
-    $padding: 0.5rem,
-    $max-width: 10rem,
-    $top: 90%,
-    $right: 1.5rem
-  );
-  @include displaySet($position: fixed, $zIndx: 0);
-  @include fontNtext(
-    $font-size: larger,
-    $color: $primaryColor,
-    $bgImage: $floatBtnBg
-  );
-  @include fontNtext($border: $mainTextColor 0.5rem solid, $borderRds: 2rem);
-  transform: translateY(-50%);
-  animation: colorWaveAnimation 6s infinite;
-  transition: background-image 0.5s ease-in-out;
-  i {
-    color: $primaryColor;
+.elements-table {
+  table {
+    @include displaySet(
+      $dspl: flex,
+      $jusCont: center,
+      $alItms: center,
+      $txtAln: center
+    );
+    border-collapse: collapse;
+    width: 100%;
+    font-size: small;
+    td {
+      @include sizesNgaps(
+        $padding: 0.5rem 3.5rem,
+        $max-width: 5rem,
+        $height: auto
+      );
+      @include fontNtext(
+        $bgColor: rgba(#feffff, 0),
+        $border: 0.1rem solid rgba(#ffffff, 0),
+        $borderRds: 50%
+      );
+      text-align: center;
+      &:hover {
+        @include fontNtext(
+          $font-size: large,
+          $font-weight: bold,
+          $txtShdw: $elementsTbHover
+        );
+      }
+    }
+    i {
+      @include displaySet($dspl: flex, $jusCont: center, $txtAln: center);
+      @include sizesNgaps($padding: 1rem, $margin: 0 0 0 0.3rem, $width: 1rem);
+      @include fontNtext($font-size: 1.5rem, $color: $primaryColor);
+      border-radius: 50%;
+      &:hover {
+        @include fontNtext($font-size: 2rem, $color: $hoverTitle);
+      }
+    }
   }
-  i:hover {
-    transform: scale(1.2);
-  }
-}
-.backtotop:hover {
-  @include fontNtext(
-    $font-weight: bold,
-    $color: $hoverTitle,
-    $bgImage: $floatBtnBgHover,
-    $border: 1.5rem,
-    $boxShdw: $boxShadow
-  );
-  z-index: 1000;
-}
-/* Adjust the location and activity of the button "change language" */
-.languages {
-  @include sizesNgaps($padding: 0.8rem, $top: 70%, $right: 1.5rem);
-  @include displaySet($position: fixed, $zIndx: 0);
-  @include fontNtext(
-    $font-size: large,
-    $color: $primaryColor,
-    $bgImage: $floatBtnBg,
-    $border: $mainTextColor 0.5rem solid,
-    $borderRds: 2rem
-  );
-  transform: translateY(-50%);
-  animation: colorWaveAnimation 6s infinite;
-  img {
-    @include sizesNgaps($margin: 0 auto, $width: 2rem, $height: 2rem);
-    display: block;
-  }
-}
-.languages:hover {
-  @include fontNtext(
-    $font-weight: bolder,
-    $color: $hoverTitle,
-    $bgImage: $floatBtnBgHover,
-    $txtShdw: $boxShadow,
-    $border: 1.5rem,
-    $boxShdw: $boxShadow
-  );
-  z-index: 1000;
-}
-/* Settings for the Footer of the pages */
-footer {
-  @include sizesNgaps(
-    $padding: 1.5rem 0,
-    $margin: 2rem 0 0 0,
-    $width: 100%,
-    $bottom: 0
-  );
-  @include fontNtext(
-    $font-size: larger,
-    $color: $mainTextColor,
-    $bgColor: $primaryColor,
-    $ltrSpc: 0.18rem
-  );
-  text-align: center;
-  border-top: 0.5rem solid transparent;
-  animation: colorWaveAnimation 6s infinite;
-}
-footer p::before,
-footer p::after {
-  content: "\f004";
-  font-family: "FontAwesome";
-  position: relative;
-  padding: 0 15rem;
-}
-footer:hover {
-  animation: lightingAnimation 3s linear infinite;
 }
 /* General settings and adjustments for smaller and lower quality screens */
 @media screen and (max-width: 1800px) {

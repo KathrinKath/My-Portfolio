@@ -139,6 +139,288 @@
     color: rgb(68, 240, 105);
   }
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
 /* General settings and design */
 * {
   margin: 0;
@@ -186,10 +468,10 @@ h4 {
   display: inline;
   position: relative;
   color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
 }
 
 h3:hover,
@@ -209,8 +491,7 @@ h4:hover {
 .h2-title h2 {
   font-size: 3.5rem;
 }
-
-h2:hover {
+.h2-title h2:hover {
   font-size: 4rem;
   color: rgb(247, 15, 235);
   text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
@@ -220,8 +501,7 @@ h2:hover {
 .h3-title h3 {
   font-size: 2.5rem;
 }
-
-h3:hover {
+.h3-title h3:hover {
   font-size: 3rem;
   color: rgb(0, 195, 255);
 }
@@ -230,8 +510,7 @@ h3:hover {
 .h4-title h4 {
   font-size: 2rem;
 }
-
-h4:hover {
+.h4-title h4:hover {
   font-size: 2.5rem;
   color: rgb(15, 180, 0);
 }
@@ -241,6 +520,11 @@ h5 {
   font-size: xx-large;
   font-weight: bolder;
   color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
 }
 
 /* Settings and designs for all paragraphs in the website */
@@ -255,10 +539,10 @@ h5 {
   margin: 1rem 0;
   color: #000000;
   background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
   border: 0.2rem solid rgb(165, 166, 168);
   border-radius: 4rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  font-family: "Kalam", cursive;
 }
 .paragraph-div i {
   font-size: xx-large;
@@ -278,7 +562,6 @@ h5 {
   opacity: 0;
   font-size: x-large;
 }
-
 .paragraph-div:hover {
   border: 0.4rem solid rgb(165, 166, 168);
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
@@ -295,13 +578,737 @@ button {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   cursor: pointer;
 }
-
 button:hover {
   box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
   transform: scale(1.1);
 }
 
-/* pages designs and adjustments */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
+}
+
+.container {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  display: inline;
+  position: relative;
+  z-index: 900;
+  display: inline;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+}
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
+}
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
+}
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
+  border-radius: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
+}
+.paragraph-div p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
+  font-size: x-large;
+}
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
 /* header designs and settings */
 header {
   display: flex;
@@ -319,28 +1326,24 @@ header {
   background-size: 600% auto;
   animation: colorWaveAnimation 6s infinite;
 }
-
+header:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
 header h1 {
   font-size: 6rem;
   letter-spacing: 0.3rem;
+  font-family: "poetsen One";
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
   margin: 0;
-  z-index: 900;
-  font-family: "Poetsen One", sans-serif;
+  z-index: 999;
 }
-
-h1::before,
-h1::after {
+header h1::before, header h1::after {
   content: "\e682";
   position: relative;
-  z-index: 900;
+  z-index: 999;
   position: relative;
   font-family: "FontAwesome";
   padding: 0 10rem;
-}
-
-header:hover {
-  animation: lightingAnimation 3s linear infinite;
 }
 
 nav ul {
@@ -355,7 +1358,6 @@ nav ul {
   font-size: xx-large;
   margin-top: 1rem;
 }
-
 nav ul li {
   display: inline;
   position: relative;
@@ -365,14 +1367,12 @@ nav ul li {
   text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
   letter-spacing: 0.2rem;
 }
-
 nav ul li a {
   color: #fff;
   text-decoration: none;
   border-radius: 2rem;
   padding: 0.5rem;
 }
-
 nav ul li a:hover {
   font-size: 2.15rem;
   font-weight: bolder;
@@ -392,17 +1392,14 @@ nav ul li a:hover {
   border-radius: 2rem;
   transform: translateX(-50%);
 }
-
 .dropdown-portfolio li {
   display: block;
 }
-
 .dropdown-portfolio li a {
   color: #fff;
   padding: 0 0.5rem;
 }
-
-.dropdown-portfolio li a:hover {
+.dropdown-portfolio li:hover {
   position: relative;
 }
 
@@ -412,79 +1409,1635 @@ nav ul li a:hover {
   visibility: visible;
 }
 
-/* Setting for elements from main section of the website */
-/* Settings and design of the main picture */
-.profile-picture {
-  display: flex;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-picture img {
-  margin: 4rem 1rem 1rem;
-  width: 30rem;
-  height: 30rem;
-  position: static;
-  z-index: 900;
-  position: static;
-  border-radius: 50%;
-  border: 0.5rem solid #a009f7;
+/* Settings for the Footer of the pages */
+footer {
+  padding: 1.5rem 0;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  bottom: 0;
+  font-size: larger;
+  color: #fff;
+  background-color: #a009f7;
+  letter-spacing: 0.18rem;
+  text-align: center;
+  border-top: 0.5rem solid transparent;
   animation: colorWaveAnimation 6s infinite;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+footer:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
+footer p::before, footer p::after {
+  content: "\f004";
+  font-family: "FontAwesome";
+  position: relative;
+  padding: 0 15rem;
 }
 
-/* Settings and design of the images inside the about me paragraph */
-.paragraph-div img {
-  /* Settings of images inside the div paragraph, p_img_1 and p_img_2 */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
+}
+
+.container {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  display: inline;
   position: relative;
   z-index: 900;
+  display: inline;
   position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+}
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
+}
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
+}
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
   border-radius: 4rem;
-  margin: 2rem 1rem 0 2rem;
-  border: 0.5rem outset;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
+}
+.paragraph-div p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
+  font-size: x-large;
+}
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
 }
 
-.paragraph-div img:hover {
-  width: 30rem;
-  border-color: #a009f7;
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
 }
 
-.p_img_1 img {
-  width: 20rem;
-  height: 20rem;
-  border-color: rgb(219, 105, 230);
-  z-index: 3;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-.p_img_2 img {
-  width: 22rem;
-  height: auto;
-  border-color: rgb(166, 105, 223);
+:root {
+  font-size: 100%;
 }
 
-.p_img_1 img:hover {
-  height: 30rem;
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-.p_img_2 img:hover {
-  height: 50rem;
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
 }
 
+.container {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  display: inline;
+  position: relative;
+  z-index: 900;
+  display: inline;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+}
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
+}
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
+}
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
+  border-radius: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
+}
+.paragraph-div p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
+  font-size: x-large;
+}
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* header designs and settings */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #a009f7;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.5rem solid transparent;
+  background-size: 600% auto;
+  animation: colorWaveAnimation 6s infinite;
+}
+header:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
+header h1 {
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+  font-family: "poetsen One";
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  margin: 0;
+  z-index: 999;
+}
+header h1::before, header h1::after {
+  content: "\e682";
+  position: relative;
+  z-index: 999;
+  position: relative;
+  font-family: "FontAwesome";
+  padding: 0 10rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+nav ul li {
+  display: inline;
+  position: relative;
+  display: inline;
+  position: relative;
+  margin: 0 3rem;
+  text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
+  letter-spacing: 0.2rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+nav ul li a:hover {
+  font-size: 2.15rem;
+  font-weight: bolder;
+  animation: textColorChanging 6s infinite;
+}
+
+.dropdown-portfolio {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  min-width: 25rem;
+  background-color: #b48ee5;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+.dropdown-portfolio li {
+  display: block;
+}
+.dropdown-portfolio li a {
+  color: #fff;
+  padding: 0 0.5rem;
+}
+.dropdown-portfolio li:hover {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-portfolio {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Settings for the Footer of the pages */
+footer {
+  padding: 1.5rem 0;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  bottom: 0;
+  font-size: larger;
+  color: #fff;
+  background-color: #a009f7;
+  letter-spacing: 0.18rem;
+  text-align: center;
+  border-top: 0.5rem solid transparent;
+  animation: colorWaveAnimation 6s infinite;
+}
+footer:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
+footer p::before, footer p::after {
+  content: "\f004";
+  font-family: "FontAwesome";
+  position: relative;
+  padding: 0 15rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
 /* Settings fot the smiley and "hire me" boxes */
 .hire-me {
   margin: 1.5rem;
   top: 13%;
   left: 85%;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   position: fixed;
   transform: translateY(-50%);
 }
-
 .hire-me:hover {
   z-index: 1000;
+}
+.hire-me:hover .face {
+  border: 1rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+.hire-me:hover .face::before {
+  width: 3.5rem;
+  height: 2rem;
+  top: 6rem;
+  left: 3rem;
+  background-color: rgb(236, 140, 177);
+  border: 0.5rem solid rgb(236, 140, 177);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.hire-me:hover .face .eye {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
 }
 
 .hire-me-textbox {
@@ -503,7 +3056,6 @@ nav ul li a:hover {
   border-radius: 2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
 .hire-me-textbox:hover {
   text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 0.1rem solid gray;
@@ -522,7 +3074,10 @@ nav ul li a:hover {
   border-radius: 50%;
   background-color: rgba(255, 209, 5, 0.842);
 }
-
+.face:hover {
+  border: 1rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
 .face::before {
   content: "";
   width: 3rem;
@@ -536,8 +3091,6 @@ nav ul li a:hover {
   position: absolute;
   transition: 0.5s;
 }
-
-/* Hover effect */
 .face:hover::before {
   width: 4rem;
   height: 2rem;
@@ -548,12 +3101,6 @@ nav ul li a:hover {
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
-
-.face:hover {
-  border: 1rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-}
-
 .face:hover .eye {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
 }
@@ -566,7 +3113,6 @@ nav ul li a:hover {
   top: 1.5rem;
   left: 2rem;
 }
-
 .eyes .eye {
   display: block;
   position: relative;
@@ -578,7 +3124,6 @@ nav ul li a:hover {
   background-color: #fff;
   border-radius: 50%;
 }
-
 .eyes .eye::before {
   content: "";
   width: 0.75rem;
@@ -591,6 +3136,3099 @@ nav ul li a:hover {
   transform: translate(-50%, -50%);
 }
 
+/* Adjust the location and activity of the button "change language" */
+.languages {
+  padding: 0.8rem;
+  top: 70%;
+  right: 1.5rem;
+  position: fixed;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  font-size: large;
+  color: #a009f7;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
+  border-radius: 2rem;
+  animation: colorWaveAnimation 6s infinite;
+}
+.languages img {
+  margin: 0 auto;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+.languages:hover {
+  font-weight: bolder;
+  color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border: 1.5rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  z-index: 1000;
+}
+
+/* Settings and design for Back to top button */
+.backtotop {
+  padding: 0.5rem;
+  max-width: 10rem;
+  top: 90%;
+  right: 1.5rem;
+  position: fixed;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  font-size: larger;
+  color: #a009f7;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
+  border-radius: 2rem;
+  animation: colorWaveAnimation 6s infinite;
+  transition: background-image 0.5s ease-in-out;
+}
+.backtotop:hover {
+  font-weight: bold;
+  color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  border: 1.5rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  z-index: 1000;
+}
+.backtotop i {
+  color: #a009f7;
+}
+.backtotop i:hover {
+  transform: scale(1.2);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
+}
+
+.container {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  display: inline;
+  position: relative;
+  z-index: 900;
+  display: inline;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+}
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
+}
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
+}
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
+  border-radius: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
+}
+.paragraph-div p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
+  font-size: x-large;
+}
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
+}
+
+.container {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  display: inline;
+  position: relative;
+  z-index: 900;
+  display: inline;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+}
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
+}
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
+}
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
+  border-radius: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
+}
+.paragraph-div p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
+  font-size: x-large;
+}
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* header designs and settings */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #a009f7;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.5rem solid transparent;
+  background-size: 600% auto;
+  animation: colorWaveAnimation 6s infinite;
+}
+header:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
+header h1 {
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+  font-family: "poetsen One";
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  margin: 0;
+  z-index: 999;
+}
+header h1::before, header h1::after {
+  content: "\e682";
+  position: relative;
+  z-index: 999;
+  position: relative;
+  font-family: "FontAwesome";
+  padding: 0 10rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+nav ul li {
+  display: inline;
+  position: relative;
+  display: inline;
+  position: relative;
+  margin: 0 3rem;
+  text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
+  letter-spacing: 0.2rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+nav ul li a:hover {
+  font-size: 2.15rem;
+  font-weight: bolder;
+  animation: textColorChanging 6s infinite;
+}
+
+.dropdown-portfolio {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  min-width: 25rem;
+  background-color: #b48ee5;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+.dropdown-portfolio li {
+  display: block;
+}
+.dropdown-portfolio li a {
+  color: #fff;
+  padding: 0 0.5rem;
+}
+.dropdown-portfolio li:hover {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-portfolio {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Settings for the Footer of the pages */
+footer {
+  padding: 1.5rem 0;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  bottom: 0;
+  font-size: larger;
+  color: #fff;
+  background-color: #a009f7;
+  letter-spacing: 0.18rem;
+  text-align: center;
+  border-top: 0.5rem solid transparent;
+  animation: colorWaveAnimation 6s infinite;
+}
+footer:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
+footer p::before, footer p::after {
+  content: "\f004";
+  font-family: "FontAwesome";
+  position: relative;
+  padding: 0 15rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
+}
+
+.container {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  display: inline;
+  position: relative;
+  z-index: 900;
+  display: inline;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+}
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
+}
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
+}
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
+  border-radius: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
+}
+.paragraph-div p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
+  font-size: x-large;
+}
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
+}
+
+.container {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  display: inline;
+  position: relative;
+  z-index: 900;
+  display: inline;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+}
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
+}
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
+}
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
+  border-radius: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
+}
+.paragraph-div p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 900;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
+  font-size: x-large;
+}
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* header designs and settings */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #a009f7;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.5rem solid transparent;
+  background-size: 600% auto;
+  animation: colorWaveAnimation 6s infinite;
+}
+header:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
+header h1 {
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+  font-family: "poetsen One";
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  margin: 0;
+  z-index: 999;
+}
+header h1::before, header h1::after {
+  content: "\e682";
+  position: relative;
+  z-index: 999;
+  position: relative;
+  font-family: "FontAwesome";
+  padding: 0 10rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+nav ul li {
+  display: inline;
+  position: relative;
+  display: inline;
+  position: relative;
+  margin: 0 3rem;
+  text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
+  letter-spacing: 0.2rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+nav ul li a:hover {
+  font-size: 2.15rem;
+  font-weight: bolder;
+  animation: textColorChanging 6s infinite;
+}
+
+.dropdown-portfolio {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  min-width: 25rem;
+  background-color: #b48ee5;
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
+.dropdown-portfolio li {
+  display: block;
+}
+.dropdown-portfolio li a {
+  color: #fff;
+  padding: 0 0.5rem;
+}
+.dropdown-portfolio li:hover {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-portfolio {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Settings for the Footer of the pages */
+footer {
+  padding: 1.5rem 0;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  bottom: 0;
+  font-size: larger;
+  color: #fff;
+  background-color: #a009f7;
+  letter-spacing: 0.18rem;
+  text-align: center;
+  border-top: 0.5rem solid transparent;
+  animation: colorWaveAnimation 6s infinite;
+}
+footer:hover {
+  animation: lightingAnimation 3s linear infinite;
+}
+footer p::before, footer p::after {
+  content: "\f004";
+  font-family: "FontAwesome";
+  position: relative;
+  padding: 0 15rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* Settings fot the smiley and "hire me" boxes */
+.hire-me {
+  margin: 1.5rem;
+  top: 13%;
+  left: 85%;
+  position: fixed;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+}
+.hire-me:hover {
+  z-index: 1000;
+}
+.hire-me:hover .face {
+  border: 1rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
 .hire-me:hover .face::before {
   width: 3.5rem;
   height: 2rem;
@@ -601,16 +6239,312 @@ nav ul li a:hover {
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
 }
-
-.hire-me:hover .face {
-  border: 1rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-}
-
 .hire-me:hover .face .eye {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
 }
 
+.hire-me-textbox {
+  display: flex;
+  position: absolute;
+  display: flex;
+  position: absolute;
+  padding: 1rem;
+  max-width: 8rem;
+  top: -3rem;
+  right: 10rem;
+  font-size: larger;
+  font-weight: bold;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.hire-me-textbox:hover {
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border: 0.1rem solid gray;
+  box-shadow: 0rem 0rem 1rem 1rem #a4e9f5;
+}
+
+.face {
+  display: flex;
+  position: relative;
+  display: flex;
+  position: relative;
+  margin: 0 0 0 5rem;
+  width: 10rem;
+  height: 10rem;
+  border: 0.8rem solid rgba(255, 197, 5, 0.747);
+  border-radius: 50%;
+  background-color: rgba(255, 209, 5, 0.842);
+}
+.face:hover {
+  border: 1rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+.face::before {
+  content: "";
+  width: 3rem;
+  height: 0.6rem;
+  top: 5.5rem;
+  left: 2.5rem;
+  background-color: rgba(226, 125, 164, 0.692);
+  border: 0.4rem solid rgba(223, 126, 163, 0.692);
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  position: absolute;
+  transition: 0.5s;
+}
+.face:hover::before {
+  width: 4rem;
+  height: 2rem;
+  top: 6.5rem;
+  left: 2.5rem;
+  background-color: rgb(235, 99, 151);
+  border: 0.4rem solid rgb(226, 89, 142);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.face:hover .eye {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
+}
+
+.eyes {
+  display: flex;
+  position: relative;
+  display: flex;
+  position: relative;
+  top: 1.5rem;
+  left: 2rem;
+}
+.eyes .eye {
+  display: block;
+  position: relative;
+  display: block;
+  position: relative;
+  margin: 0 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.eyes .eye::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 50%;
+  left: 1rem;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Adjust the location and activity of the button "change language" */
+.languages {
+  padding: 0.8rem;
+  top: 70%;
+  right: 1.5rem;
+  position: fixed;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  font-size: large;
+  color: #a009f7;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
+  border-radius: 2rem;
+  animation: colorWaveAnimation 6s infinite;
+}
+.languages img {
+  margin: 0 auto;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+.languages:hover {
+  font-weight: bolder;
+  color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border: 1.5rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  z-index: 1000;
+}
+
+/* Settings and design for Back to top button */
+.backtotop {
+  padding: 0.5rem;
+  max-width: 10rem;
+  top: 90%;
+  right: 1.5rem;
+  position: fixed;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  font-size: larger;
+  color: #a009f7;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
+  border-radius: 2rem;
+  animation: colorWaveAnimation 6s infinite;
+  transition: background-image 0.5s ease-in-out;
+}
+.backtotop:hover {
+  font-weight: bold;
+  color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  border: 1.5rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  z-index: 1000;
+}
+.backtotop i {
+  color: #a009f7;
+}
+.backtotop i:hover {
+  transform: scale(1.2);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
   display: flex;
@@ -636,7 +6570,6 @@ nav ul li a:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: transform 0.3s;
 }
-
 .portfolio-item:hover {
   background-color: rgba(160, 235, 130, 0.5215686275);
   background-image: radial-gradient(rgb(124, 195, 243), rgba(178, 245, 116, 0.918), rgb(231, 119, 231));
@@ -645,16 +6578,20 @@ nav ul li a:hover {
   animation: colorWaveAnimation 6s infinite;
   transform: scale(1.05);
 }
-
-.portfolio-item h5 {
-  margin-bottom: 1rem;
+.portfolio-item:hover .portfolio-item-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .portfolio-item p {
   margin-bottom: 1.5rem;
   font-size: x-large;
 }
-
 .portfolio-item a {
   font-size: larger;
   font-weight: bold;
@@ -664,7 +6601,6 @@ nav ul li a:hover {
   display: inline-block;
   padding: 1rem;
 }
-
 .portfolio-item a:hover {
   font-size: x-large;
   background-color: #2eade7;
@@ -682,7 +6618,6 @@ nav ul li a:hover {
   align-items: center;
   margin-top: 1rem;
 }
-
 .portfolio-item-icons i {
   font-size: 1.5rem;
   color: #530680;
@@ -694,23 +6629,11 @@ nav ul li a:hover {
   margin: 0 0 1rem 0;
   display: none;
 }
-
 .portfolio-item-image img {
   padding: 0;
   width: 30rem;
   height: 15rem;
   border-radius: 1rem;
-}
-
-.portfolio-item:hover .portfolio-item-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .show-first {
@@ -720,9 +6643,206 @@ nav ul li a:hover {
 .show-all {
   display: none;
 }
-
 .show-all:target {
   display: flex;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(100rem) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100rem) rotateY(360deg);
+  }
+}
+@keyframes pulsate {
+  0% {
+    border-color: rgba(212, 163, 231, 0.4117647059);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(160, 9, 247, 0.4745098039);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+  }
+  100% {
+    border-color: rgba(255, 0, 255, 0.3960784314);
+    box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+  }
+}
+@keyframes lightingAnimation {
+  0% {
+    color: gray;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2rem 2rem 2rem #fff;
+  }
+}
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
+@keyframes colorListAnimation {
+  0% {
+    background-color: #e2b5b5;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: rgb(241, 186, 147);
+  }
+  100% {
+    background-color: #b4a0ec;
+  }
+}
+@keyframes textColorChanging {
+  0% {
+    color: rgb(238, 96, 219);
+  }
+  16.67% {
+    color: rgb(238, 96, 96);
+  }
+  33.33% {
+    color: rgb(235, 193, 9);
+  }
+  50% {
+    color: rgb(63, 60, 60);
+  }
+  66.67% {
+    color: rgb(51, 51, 235);
+  }
+  83.33% {
+    color: rgb(96, 233, 238);
+  }
+  100% {
+    color: rgb(68, 240, 105);
+  }
+}
+/* pages designs and adjustments */
+/* Setting for elements from main section of the website */
+/* Settings and design of the main picture */
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.profile-picture img {
+  margin: 4rem 1rem 1rem;
+  width: 30rem;
+  height: 30rem;
+  position: static;
+  z-index: 900;
+  position: static;
+  border-radius: 50%;
+  border: 0.5rem solid #a009f7;
+  animation: colorWaveAnimation 6s infinite;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* Settings and design of the images inside the about me paragraph */
+.paragraph-div img {
+  /* Settings of images inside the div paragraph, p_img_1 and p_img_2 */
+  position: relative;
+  z-index: 900;
+  position: relative;
+  border-radius: 4rem;
+  margin: 2rem 1rem 0 2rem;
+  border: 0.5rem outset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.paragraph-div img:hover {
+  width: 30rem;
+  border-color: #a009f7;
+}
+
+.p_img_1 img {
+  width: 20rem;
+  height: 20rem;
+  border-color: rgb(219, 105, 230);
+  z-index: 3;
+}
+.p_img_1 img:hover {
+  height: 30rem;
+}
+
+.p_img_2 img {
+  width: 22rem;
+  height: auto;
+  border-color: rgb(166, 105, 223);
+}
+.p_img_2 img:hover {
+  height: 50rem;
 }
 
 /* settings and design for the carousel slider presentation */
@@ -749,7 +6869,6 @@ nav ul li a:hover {
   transform-style: preserve-3d;
   animation: rotate 40s linear infinite;
 }
-
 .slider span {
   width: 100%;
   height: 100%;
@@ -762,12 +6881,10 @@ nav ul li a:hover {
   transition: 1s;
   border-radius: 3rem;
 }
-
 .slider span:hover img {
   transform: translateY(-2rem) scale(1.2);
   border: #a009f7 outset 0.5rem;
 }
-
 .slider span img {
   width: 100%;
   height: 100%;
@@ -820,17 +6937,15 @@ html[data-page=index-german] .h4-title {
   border-radius: 5rem;
   box-sizing: border-box;
 }
-
-.skill i,
-.tool i {
+.tool i,
+.skill i {
   font-size: 2rem;
   color: #fff;
   padding: 1rem;
   border-radius: 5rem;
 }
-
-.skill i:first-child,
-.tool i:first-child {
+.tool i:first-child,
+.skill i:first-child {
   width: 5rem;
   height: 4rem;
   background-color: rgba(235, 89, 240, 0.8);
@@ -839,9 +6954,8 @@ html[data-page=index-german] .h4-title {
   background-size: 300% 300%;
   animation: gradient 15s ease infinite;
 }
-
-.skill i:first-child:hover,
-.tool i:first-child:hover {
+.tool i:first-child:hover,
+.skill i:first-child:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -853,7 +6967,11 @@ html[data-page=index-german] .h4-title {
   background-color: rgba(235, 89, 240, 0.8);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
+.tool i:hover,
+.skill i:hover {
+  font-size: 3rem;
+  color: #ffd900;
+}
 .tool p,
 .skill p {
   display: flex;
@@ -868,13 +6986,6 @@ html[data-page=index-german] .h4-title {
   margin: 1rem 0 0 0;
   height: 3rem;
 }
-
-.skill i:hover,
-.tool i:hover {
-  font-size: 3rem;
-  color: #ffd900;
-}
-
 .tool p:hover,
 .skill p:hover {
   font-size: larger;
@@ -892,11 +7003,11 @@ html[data-page=index-german] .h4-title {
   gap: 3rem;
   padding: 1rem;
   border-radius: 3rem;
+  /* Settings and design of the contact form */
 }
-
-.contact-form,
-.contact-directly,
-.my-files {
+.contact-options-divs .contact-form,
+.contact-options-divs .contact-directly,
+.contact-options-divs .my-files {
   display: inline-block;
   position: static;
   z-index: 900;
@@ -913,63 +7024,52 @@ html[data-page=index-german] .h4-title {
   border-radius: 3rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.contact-form a,
-.contact-directly a,
-.my-files a {
+.contact-options-divs .contact-form a,
+.contact-options-divs .contact-directly a,
+.contact-options-divs .my-files a {
   color: #000000;
 }
-.contact-form a:hover,
-.contact-directly a:hover,
-.my-files a:hover {
+.contact-options-divs .contact-form a:hover,
+.contact-options-divs .contact-directly a:hover,
+.contact-options-divs .my-files a:hover {
   font-size: xx-large;
   text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
-.contact-form i,
-.contact-directly i,
-.my-files i {
+.contact-options-divs .contact-form i,
+.contact-options-divs .contact-directly i,
+.contact-options-divs .my-files i {
   font-size: x-large;
   color: #a009f7;
 }
-.contact-form i:hover,
-.contact-directly i:hover,
-.my-files i:hover {
+.contact-options-divs .contact-form i:hover,
+.contact-options-divs .contact-directly i:hover,
+.contact-options-divs .my-files i:hover {
   transform: scale(1.5);
 }
-.contact-form h2,
-.contact-directly h2,
-.my-files h2 {
-  margin-left: 1rem;
-}
-
-.contact-form:hover,
-.contact-directly:hover,
-.my-files:hover {
+.contact-options-divs .contact-form:hover,
+.contact-options-divs .contact-directly:hover,
+.contact-options-divs .my-files:hover {
   text-shadow: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253);
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
 }
-
-.contact-options-list,
-.files-list {
+.contact-options-divs .contact-options-list,
+.contact-options-divs .files-list {
   text-align: left;
 }
-
-/* Settings and design of the contact form */
-.form {
+.contact-options-divs .form {
   margin: 1rem 0 0 1rem;
   font-size: xx-large;
 }
-
-label,
-input,
-textarea {
+.contact-options-divs .form label,
+.contact-options-divs .form input,
+.contact-options-divs .form textarea {
   display: flex;
   text-align: left;
   display: flex;
   text-align: left;
   margin: -2rem 0;
 }
-
-input {
+.contact-options-divs .form input {
   padding: 0.5rem;
   margin: 0;
   width: 27rem;
@@ -978,8 +7078,7 @@ input {
   border-radius: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
-textarea {
+.contact-options-divs .form textarea {
   padding: 0.5rem;
   margin: 0;
   width: 27rem;
@@ -989,9 +7088,8 @@ textarea {
   font-size: 1.2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
-input:hover,
-textarea:hover {
+.contact-options-divs .form input:hover,
+.contact-options-divs .form textarea:hover {
   border-width: 0.5rem;
   animation: colorWaveAnimation 6s infinite;
   box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
@@ -1009,30 +7107,26 @@ textarea:hover {
   width: 100%;
   font-size: large;
 }
-
-.skills-table td {
+.skills-table table td {
   padding: 1rem;
   width: 7rem;
   border: 0.1rem solid rgba(255, 255, 255, 0);
   border-radius: 50%;
   text-align: center;
 }
-
-.skills-table td:hover {
+.skills-table table td:hover {
   font-weight: bold;
   text-shadow: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
 .skills-table table i {
   padding: 1rem;
   width: 6rem;
   font-size: 3rem;
   color: #a009f7;
-  background-color: rgba(240, 92, 233, 0.5411764706);
+  background-color: rgba(240, 92, 233, 0.54);
   border-radius: 50%;
 }
-
 .skills-table table i:hover {
   animation: tableAnimation 4s infinite;
 }
@@ -1051,8 +7145,7 @@ textarea:hover {
   width: 100%;
   font-size: small;
 }
-
-.elements-table td {
+.elements-table table td {
   padding: 0.5rem 3.5rem;
   max-width: 5rem;
   height: auto;
@@ -1061,13 +7154,11 @@ textarea:hover {
   border-radius: 50%;
   text-align: center;
 }
-
-.elements-table td:hover {
+.elements-table table td:hover {
   font-size: large;
   font-weight: bold;
   text-shadow: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4, 0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
 }
-
 .elements-table table i {
   display: flex;
   justify-content: center;
@@ -1082,104 +7173,9 @@ textarea:hover {
   color: #a009f7;
   border-radius: 50%;
 }
-
 .elements-table table i:hover {
   font-size: 2rem;
   color: #530680;
-}
-
-/* Settings and design for Back to top button */
-.backtotop {
-  padding: 0.5rem;
-  max-width: 10rem;
-  top: 90%;
-  right: 1.5rem;
-  position: fixed;
-  z-index: 0;
-  position: fixed;
-  font-size: larger;
-  color: #a009f7;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
-  border: #fff 0.5rem solid;
-  border-radius: 2rem;
-  transform: translateY(-50%);
-  animation: colorWaveAnimation 6s infinite;
-  transition: background-image 0.5s ease-in-out;
-}
-.backtotop i {
-  color: #a009f7;
-}
-.backtotop i:hover {
-  transform: scale(1.2);
-}
-
-.backtotop:hover {
-  font-weight: bold;
-  color: #530680;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
-  border: 1.5rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  z-index: 1000;
-}
-
-/* Adjust the location and activity of the button "change language" */
-.languages {
-  padding: 0.8rem;
-  top: 70%;
-  right: 1.5rem;
-  position: fixed;
-  z-index: 0;
-  position: fixed;
-  font-size: large;
-  color: #a009f7;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
-  border: #fff 0.5rem solid;
-  border-radius: 2rem;
-  transform: translateY(-50%);
-  animation: colorWaveAnimation 6s infinite;
-}
-.languages img {
-  margin: 0 auto;
-  width: 2rem;
-  height: 2rem;
-  display: block;
-}
-
-.languages:hover {
-  font-weight: bolder;
-  color: #530680;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
-  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  border: 1.5rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  z-index: 1000;
-}
-
-/* Settings for the Footer of the pages */
-footer {
-  padding: 1.5rem 0;
-  margin: 2rem 0 0 0;
-  width: 100%;
-  bottom: 0;
-  font-size: larger;
-  color: #fff;
-  background-color: #a009f7;
-  letter-spacing: 0.18rem;
-  text-align: center;
-  border-top: 0.5rem solid transparent;
-  animation: colorWaveAnimation 6s infinite;
-}
-
-footer p::before,
-footer p::after {
-  content: "\f004";
-  font-family: "FontAwesome";
-  position: relative;
-  padding: 0 15rem;
-}
-
-footer:hover {
-  animation: lightingAnimation 3s linear infinite;
 }
 
 /* General settings and adjustments for smaller and lower quality screens */
