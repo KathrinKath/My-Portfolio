@@ -1,20 +1,8 @@
 @import "./variables";
 @import "./mixins";
 @import "./animations";
-@import "./basicSettings";
-@import "./headerNfooter";
-@import "./stickyButtons";
-@include gradient;
-@include revealLetters;
-@include tableAnimation;
 @include colorWaveAnimation;
-@include rotate;
-@include pulsate;
-@include lightingAnimation;
 @include BlackWhiteAnimation;
-@include colorListAnimation;
-@include textColorChanging;
-
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
   @include displaySet($dspl: flex, $jusCont: space-between, $flxWrp: wrap);
@@ -44,6 +32,7 @@
       );
       animation: colorWaveAnimation 6s infinite;
       transform: scale(1.05);
+      z-index: 1000;
       .portfolio-item-image {
         @include displaySet(
           $dspl: flex,
@@ -67,6 +56,7 @@
       );
       display: inline-block;
       padding: 1rem;
+
       &:hover {
         @include fontNtext($font-size: x-large, $bgColor: #2eade7);
         box-shadow: $boxShadow;
@@ -83,15 +73,22 @@
       }
     }
     .portfolio-item-image {
-      @include sizesNgaps($padding: 0, $margin: 0 0 1rem 0);
+      @include sizesNgaps(
+        $padding: 0,
+        $margin: 0 0 1rem 0,
+        $width: 100%,
+        $max-width: 100%,
+        $height: auto
+      );
       display: none;
       img {
-        @include sizesNgaps($padding: 0, $width: 30rem, $height: 15rem);
+        @include sizesNgaps($padding: 0, $max-width: 100%, $height: auto);
         border-radius: 1rem;
       }
     }
   }
 }
+// Show all part
 .show-first {
   display: flex;
 }

@@ -1,15 +1,5 @@
 @import "./variables";
 @import "./animations";
-@include gradient;
-@include revealLetters;
-@include tableAnimation;
-@include colorWaveAnimation;
-@include rotate;
-@include pulsate;
-@include lightingAnimation;
-@include BlackWhiteAnimation;
-@include colorListAnimation;
-@include textColorChanging;
 
 @mixin displaySet(
   $padding: null,

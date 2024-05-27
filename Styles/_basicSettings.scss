@@ -3,14 +3,6 @@
 @import "./animations";
 @include gradient;
 @include revealLetters;
-@include tableAnimation;
-@include colorWaveAnimation;
-@include rotate;
-@include pulsate;
-@include lightingAnimation;
-@include BlackWhiteAnimation;
-@include colorListAnimation;
-@include textColorChanging;
 /* General settings and design */
 * {
   margin: 0;
@@ -157,5 +149,32 @@ button {
   &:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
     transform: scale(1.1);
+  }
+}
+// Responsivness
+
+@media screen and (max-width: 1400px) {
+  h2 {
+    color: $mainTextColor;
+    background-color: transparent !important;
+  }
+  h2:hover {
+    @include fontNtext(
+      $font-weight: bolder,
+      $color: $hoverTitle,
+      $txtShdw: $hHover
+    );
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    float: left;
+  }
+  section {
+    width: 120%;
+    margin-left: 15%;
   }
 }

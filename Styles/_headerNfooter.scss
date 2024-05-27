@@ -2,15 +2,8 @@
 @import "./mixins";
 @import "./animations";
 @import "./basicSettings";
-@include gradient;
-@include revealLetters;
-@include tableAnimation;
-@include colorWaveAnimation;
-@include rotate;
-@include pulsate;
+// @include colorWaveAnimation;
 @include lightingAnimation;
-@include BlackWhiteAnimation;
-@include colorListAnimation;
 @include textColorChanging;
 
 // Header part
@@ -124,5 +117,36 @@ footer {
       position: relative;
       padding: 0 15rem;
     }
+  }
+}
+// Responsivness
+@media screen and (max-width: 1800px) {
+  h1::before,
+  h1::after,
+  footer p::before,
+  footer p::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    @include displaySet(
+      $dspl: flex,
+      $flxDrc: column,
+      $jusCont: center,
+      $alItms: center,
+      $txtAln: center
+    );
+    padding-left: 0;
+    li {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  header,
+  footer {
+    width: 150%;
   }
 }

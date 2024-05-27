@@ -1,22 +1,9 @@
 @import "./variables";
 @import "./mixins";
-@import "./animations";
-@import "./basicSettings";
-@import "./headerNfooter";
-@include gradient;
-@include revealLetters;
-@include tableAnimation;
 @include colorWaveAnimation;
-@include rotate;
-@include pulsate;
-@include lightingAnimation;
-@include BlackWhiteAnimation;
-@include colorListAnimation;
-@include textColorChanging;
-
 /* Settings fot the smiley and "hire me" boxes */
 .hire-me {
-  @include sizesNgaps($margin: 1.5rem, $top: 13%, $left: 85%);
+  @include sizesNgaps($margin: 1.5rem, $top: 8rem, $right: 1rem);
   @include displaySet(
     $position: fixed,
     $zIndx: 0,
@@ -44,97 +31,96 @@
       }
     }
   }
-}
-.hire-me-textbox {
-  @include displaySet($dspl: flex, $position: absolute);
-  @include sizesNgaps(
-    $padding: 1rem,
-    $max-width: 8rem,
-    $top: -3rem,
-    $right: 10rem,
-    $zIndx: 0
-  );
-  @include fontNtext(
-    $font-size: larger,
-    $font-weight: bold,
-    $color: $mainTextColor,
-    $bgColor: $primaryColor,
-    $borderRds: 2rem,
-    $boxShdw: $mainShadow
-  );
-  &:hover {
-    @include fontNtext(
-      $txtShdw: $boxShadow,
-      $border: 0.1rem solid gray,
-      $boxShdw: 0rem 0rem 1rem 1rem #a4e9f5
-    );
-  }
-}
-.face {
-  @include displaySet($dspl: flex, $position: relative);
-  @include sizesNgaps($margin: 0 0 0 5rem, $width: 10rem, $height: 10rem);
-  border: 0.8rem solid rgba(255, 197, 5, 0.747);
-  border-radius: 50%;
-  background-color: rgba(255, 209, 5, 0.842);
-  &:hover {
-    @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
-  }
-  &::before {
-    content: "";
+  .hire-me-textbox {
+    @include displaySet($dspl: inherit, $position: absolute);
     @include sizesNgaps(
-      $width: 3rem,
-      $height: 0.6rem,
-      $top: 5.5rem,
-      $left: 2.5rem
+      $padding: 1rem,
+      $max-width: 8rem,
+      $top: -3rem,
+      $right: 10rem,
+      $zIndx: 0
     );
     @include fontNtext(
-      $bgColor: rgba(226, 125, 164, 0.692),
-      $border: 0.4rem solid rgba(223, 126, 163, 0.692)
+      $font-size: larger,
+      $font-weight: bold,
+      $color: $mainTextColor,
+      $bgColor: $primaryColor,
+      $borderRds: 2rem,
+      $boxShdw: $mainShadow
     );
-    @include borderBottomRds($bbLeftRds: 0rem, $bbRightRds: 0rem);
-    position: absolute;
-    transition: 0.5s;
+    &:hover {
+      @include fontNtext(
+        $txtShdw: $boxShadow,
+        $border: 0.1rem solid gray,
+        $boxShdw: 0rem 0rem 1rem 1rem #a4e9f5
+      );
+    }
   }
-  &:hover::before {
-    @include sizesNgaps(
-      $width: 4rem,
-      $height: 2rem,
-      $top: 6.5rem,
-      $left: 2.5rem
-    );
-    @include fontNtext(
-      $bgColor: rgb(235, 99, 151),
-      $border: 0.4rem solid rgb(226, 89, 142)
-    );
-    @include borderBottomRds($bbLeftRds: 1.5rem, $bbRightRds: 1.5rem);
-  }
-  &:hover .eye {
-    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
-  }
-}
-.eyes {
-  @include displaySet($dspl: flex, $position: relative);
-  @include sizesNgaps($top: 1.5rem, $left: 2rem);
-  .eye {
-    @include displaySet($dspl: block, $position: relative);
-    @include sizesNgaps($margin: 0 0.25rem, $width: 2rem, $height: 2rem);
-    @include fontNtext($bgColor: $mainTextColor, $borderRds: 50%);
-
+  .face {
+    @include displaySet($dspl: flex, $position: relative);
+    @include sizesNgaps($margin: 0 0 0 5rem, $width: 10rem, $height: 10rem);
+    border: 0.8rem solid rgba(255, 197, 5, 0.747);
+    border-radius: 50%;
+    background-color: rgba(255, 209, 5, 0.842);
+    &:hover {
+      @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
+    }
     &::before {
       content: "";
       @include sizesNgaps(
-        $width: 0.75rem,
-        $height: 0.75rem,
-        $top: 50%,
-        $left: 1rem
+        $width: 3rem,
+        $height: 0.6rem,
+        $top: 5.5rem,
+        $left: 2.5rem
       );
-      @include fontNtext($bgColor: #000000, $borderRds: 50%);
+      @include fontNtext(
+        $bgColor: rgba(226, 125, 164, 0.692),
+        $border: 0.4rem solid rgba(223, 126, 163, 0.692)
+      );
+      @include borderBottomRds($bbLeftRds: 0rem, $bbRightRds: 0rem);
       position: absolute;
-      transform: translate(-50%, -50%);
+      transition: 0.5s;
+    }
+    &:hover::before {
+      @include sizesNgaps(
+        $width: 4rem,
+        $height: 2rem,
+        $top: 6.5rem,
+        $left: 2.5rem
+      );
+      @include fontNtext(
+        $bgColor: rgb(235, 99, 151),
+        $border: 0.4rem solid rgb(226, 89, 142)
+      );
+      @include borderBottomRds($bbLeftRds: 1.5rem, $bbRightRds: 1.5rem);
+    }
+    &:hover .eye {
+      box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
+    }
+    .eyes {
+      @include displaySet($dspl: flex, $position: relative);
+      @include sizesNgaps($top: 1.5rem, $left: 2rem);
+      .eye {
+        @include displaySet($dspl: block, $position: relative);
+        @include sizesNgaps($margin: 0 0.25rem, $width: 2rem, $height: 2rem);
+        @include fontNtext($bgColor: $mainTextColor, $borderRds: 50%);
+
+        &::before {
+          content: "";
+          @include sizesNgaps(
+            $width: 0.75rem,
+            $height: 0.75rem,
+            $top: 50%,
+            $left: 1rem
+          );
+          @include fontNtext($bgColor: #000000, $borderRds: 50%);
+          position: absolute;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
   }
 }
-
 /* Adjust the location and activity of the button "change language" */
 .languages {
   @include sizesNgaps($padding: 0.8rem, $top: 70%, $right: 1.5rem);
@@ -204,5 +190,29 @@
     &:hover {
       transform: scale(1.2);
     }
+  }
+}
+// Responsivness
+@media screen and (max-width: 768px) {
+  .languages {
+    p {
+      display: none;
+    }
+    img {
+      @include sizesNgaps($margin: 0 auto, $width: 2rem, $height: 2rem);
+      display: block;
+      &:hover {
+        @include sizesNgaps($width: 3rem, $height: 3rem);
+      }
+    }
+  }
+  .backtotop a {
+    text-transform: capitalize;
+    .back-to {
+      display: none;
+    }
+  }
+  .hire-me {
+    transform: translateY(-50%) scale(0.8);
   }
 }
