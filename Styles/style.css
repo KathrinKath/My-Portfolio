@@ -58,8 +58,6 @@ section {
 h2,
 h3,
 h4 {
-  display: inline;
-  position: relative;
   z-index: 900;
   display: inline;
   position: relative;
@@ -128,9 +126,6 @@ h5:hover {
   display: flex;
   justify-content: center;
   text-align: left;
-  display: flex;
-  justify-content: center;
-  text-align: left;
   padding: 0.5rem;
   margin: 1rem 0;
   color: #000000;
@@ -145,9 +140,6 @@ h5:hover {
   color: #a009f7;
 }
 .paragraph-div p {
-  display: flex;
-  flex-direction: column;
-  position: relative;
   z-index: 900;
   display: flex;
   position: relative;
@@ -262,8 +254,6 @@ section {
 h2,
 h3,
 h4 {
-  display: inline;
-  position: relative;
   z-index: 900;
   display: inline;
   position: relative;
@@ -332,9 +322,6 @@ h5:hover {
   display: flex;
   justify-content: center;
   text-align: left;
-  display: flex;
-  justify-content: center;
-  text-align: left;
   padding: 0.5rem;
   margin: 1rem 0;
   color: #000000;
@@ -349,9 +336,6 @@ h5:hover {
   color: #a009f7;
 }
 .paragraph-div p {
-  display: flex;
-  flex-direction: column;
-  position: relative;
   z-index: 900;
   display: flex;
   position: relative;
@@ -443,9 +427,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #fff;
   background-color: #a009f7;
   border-bottom-left-radius: 1rem;
@@ -468,7 +449,6 @@ header h1 {
 }
 header h1::before, header h1::after {
   content: "\e682";
-  position: relative;
   z-index: 999;
   position: relative;
   font-family: "FontAwesome";
@@ -480,16 +460,10 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-size: xx-large;
   margin-top: 1rem;
 }
 nav ul li {
-  display: inline;
-  position: relative;
   display: inline;
   position: relative;
   margin: 0 3rem;
@@ -509,8 +483,6 @@ nav ul li a:hover {
 }
 
 .dropdown-portfolio {
-  display: none;
-  position: absolute;
   z-index: 1000;
   display: none;
   position: absolute;
@@ -577,11 +549,6 @@ footer p::before, footer p::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding-left: 0;
   }
   nav ul li {
@@ -595,385 +562,258 @@ footer p::before, footer p::after {
     width: 150%;
   }
 }
-@keyframes colorWaveAnimation {
+@keyframes gradient {
   0% {
-    border-color: rgb(238, 96, 219);
-  }
-  16.67% {
-    border-color: rgb(238, 96, 96);
-  }
-  33.33% {
-    border-color: rgb(138, 41, 230);
+    background-position: 0% 50%;
   }
   50% {
-    border-color: rgb(96, 174, 238);
-  }
-  66.67% {
-    border-color: rgb(51, 51, 235);
-  }
-  83.33% {
-    border-color: rgb(96, 233, 238);
+    background-position: 100% 50%;
   }
   100% {
-    border-color: rgb(68, 240, 105);
+    background-position: 0% 50%;
   }
 }
-/* Settings fot the smiley and "hire me" boxes */
-.hire-me {
-  margin: 1.5rem;
-  top: 8rem;
-  right: 1rem;
-  position: fixed;
-  z-index: 0;
-  position: fixed;
-  transform: translateY(-50%);
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.hire-me:hover {
-  z-index: 1000;
-}
-.hire-me:hover .face {
-  border: 1rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-}
-.hire-me:hover .face::before {
-  width: 3.5rem;
-  height: 2rem;
-  top: 6rem;
-  left: 3rem;
-  background-color: rgb(236, 140, 177);
-  border: 0.5rem solid rgb(236, 140, 177);
-  border-bottom-left-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-}
-.hire-me:hover .face .eye {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
-}
-.hire-me .hire-me-textbox {
-  display: inherit;
-  position: absolute;
-  display: inherit;
-  position: absolute;
-  padding: 1rem;
-  max-width: 8rem;
-  top: -3rem;
-  right: 10rem;
-  font-size: larger;
-  font-weight: bold;
-  color: #fff;
-  background-color: #a009f7;
-  border-radius: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.hire-me .hire-me-textbox:hover {
-  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  border: 0.1rem solid gray;
-  box-shadow: 0rem 0rem 1rem 1rem #a4e9f5;
-}
-.hire-me .face {
-  display: flex;
-  position: relative;
-  display: flex;
-  position: relative;
-  margin: 0 0 0 5rem;
-  width: 10rem;
-  height: 10rem;
-  border: 0.8rem solid rgba(255, 197, 5, 0.747);
-  border-radius: 50%;
-  background-color: rgba(255, 209, 5, 0.842);
-}
-.hire-me .face:hover {
-  border: 1rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-}
-.hire-me .face::before {
-  content: "";
-  width: 3rem;
-  height: 0.6rem;
-  top: 5.5rem;
-  left: 2.5rem;
-  background-color: rgba(226, 125, 164, 0.692);
-  border: 0.4rem solid rgba(223, 126, 163, 0.692);
-  border-bottom-left-radius: 0rem;
-  border-bottom-right-radius: 0rem;
-  position: absolute;
-  transition: 0.5s;
-}
-.hire-me .face:hover::before {
-  width: 4rem;
-  height: 2rem;
-  top: 6.5rem;
-  left: 2.5rem;
-  background-color: rgb(235, 99, 151);
-  border: 0.4rem solid rgb(226, 89, 142);
-  border-bottom-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-}
-.hire-me .face:hover .eye {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
-}
-.hire-me .face .eyes {
-  display: flex;
-  position: relative;
-  display: flex;
-  position: relative;
-  top: 1.5rem;
-  left: 2rem;
-}
-.hire-me .face .eyes .eye {
-  display: block;
-  position: relative;
-  display: block;
-  position: relative;
-  margin: 0 0.25rem;
-  width: 2rem;
-  height: 2rem;
-  background-color: #fff;
-  border-radius: 50%;
-}
-.hire-me .face .eyes .eye::before {
-  content: "";
-  width: 0.75rem;
-  height: 0.75rem;
-  top: 50%;
-  left: 1rem;
-  background-color: #000000;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+/* General settings and design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-/* Adjust the location and activity of the button "change language" */
-.languages {
-  padding: 0.8rem;
-  top: 70%;
-  right: 1.5rem;
-  position: fixed;
-  z-index: 0;
-  position: fixed;
-  transform: translateY(-50%);
-  font-size: large;
-  color: #a009f7;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
-  border: #fff 0.5rem solid;
-  border-radius: 2rem;
-  animation: colorWaveAnimation 6s infinite;
+:root {
+  font-size: 100%;
 }
-.languages img {
+
+body {
+  font-family: "Courgette", cursive;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+section {
+  padding: 3.2rem 0;
+  margin: 2rem;
+  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
+}
+
+.container {
+  padding: 0 1.25rem;
   margin: 0 auto;
-  width: 2rem;
-  height: 2rem;
-  display: block;
+  max-width: 100%;
+  text-align: center;
 }
-.languages:hover {
-  font-weight: bolder;
-  color: #530680;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+
+h2,
+h3,
+h4 {
+  z-index: 900;
+  display: inline;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.2rem;
   text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  border: 1.5rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  z-index: 1000;
-}
-
-/* Settings and design for Back to top button */
-.backtotop {
-  padding: 0.5rem;
-  max-width: 10rem;
-  top: 90%;
-  right: 1.5rem;
-  position: fixed;
-  z-index: 0;
-  position: fixed;
-  transform: translateY(-50%);
-  font-size: larger;
-  color: #a009f7;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
-  border: #fff 0.5rem solid;
   border-radius: 2rem;
-  animation: colorWaveAnimation 6s infinite;
-  transition: background-image 0.5s ease-in-out;
-}
-.backtotop:hover {
-  font-weight: bold;
-  color: #530680;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
-  border: 1.5rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  z-index: 1000;
-}
-.backtotop i {
-  color: #a009f7;
-}
-.backtotop i:hover {
-  transform: scale(1.2);
+  padding: 0.5rem 1rem;
 }
 
-@media screen and (max-width: 768px) {
-  .languages p {
-    display: none;
-  }
-  .languages img {
-    margin: 0 auto;
-    width: 2rem;
-    height: 2rem;
-    display: block;
-  }
-  .languages img:hover {
-    width: 3rem;
-    height: 3rem;
-  }
-  .backtotop a {
-    text-transform: capitalize;
-  }
-  .backtotop a .back-to {
-    display: none;
-  }
-  .hire-me {
-    transform: translateY(-50%) scale(0.8);
-  }
+h3:hover,
+h4:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
 }
-@keyframes colorWaveAnimation {
-  0% {
-    border-color: rgb(238, 96, 219);
-  }
-  16.67% {
-    border-color: rgb(238, 96, 96);
-  }
-  33.33% {
-    border-color: rgb(138, 41, 230);
-  }
-  50% {
-    border-color: rgb(96, 174, 238);
-  }
-  66.67% {
-    border-color: rgb(51, 51, 235);
-  }
-  83.33% {
-    border-color: rgb(96, 233, 238);
-  }
-  100% {
-    border-color: rgb(68, 240, 105);
-  }
+
+.h2-title,
+.h3-title,
+.h4-title {
+  margin: 1.5rem 0 2rem;
+  z-index: 900;
 }
-@keyframes BlackWhiteAnimation {
-  0% {
-    border-color: rgb(255, 253, 253);
-  }
-  25% {
-    border-color: rgb(190, 188, 188);
-  }
-  50% {
-    border-color: rgb(117, 116, 116);
-  }
-  75% {
-    border-color: rgb(190, 188, 188);
-  }
-  100% {
-    border-color: rgb(255, 253, 253);
-  }
+
+/*Settings and design for all the H2 titles */
+.h2-title h2 {
+  font-size: 3.5rem;
 }
-/* Settings and design for all portfolio items in the website */
-.portfolio-items {
+.h2-title h2:hover {
+  font-size: 4rem;
+  color: rgb(247, 15, 235);
+  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+}
+
+/*Settings and design for all the H3 titles */
+.h3-title h3 {
+  font-size: 2.5rem;
+}
+.h3-title h3:hover {
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+}
+
+/*Settings and design for all the H4 titles */
+.h4-title h4 {
+  font-size: 2rem;
+}
+.h4-title h4:hover {
+  font-size: 2.5rem;
+  color: rgb(15, 180, 0);
+}
+
+/* settings for all h5 (project titles) in the website */
+h5 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
+  margin-bottom: 1rem;
+}
+h5:hover {
+  font-size: 3rem;
+  color: #530680;
+}
+
+/* Settings and designs for all paragraphs in the website */
+.paragraph-div {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 1rem;
-  margin: 1.5rem 0 0 0;
-}
-.portfolio-items .portfolio-item {
-  padding: 1rem;
-  margin: 0 0 2rem 0;
-  width: calc(33.33% - 1.25rem);
-  max-width: 35rem;
-  min-width: 25rem;
-  min-height: 19rem;
-  background-color: #c6acf0;
-  border: 0.8rem outset rgba(213, 95, 236, 0.6156862745);
-  border-radius: 1.5rem;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: rgba(212, 163, 236, 0.8705882353);
+  font-family: "Kalam";
+  border: 0.2rem solid rgb(165, 166, 168);
+  border-radius: 4rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  transition: transform 0.3s;
 }
-.portfolio-items .portfolio-item:hover {
-  background-color: rgba(160, 235, 130, 0.5215686275);
-  background-image: radial-gradient(rgb(124, 195, 243), rgba(178, 245, 116, 0.918), rgb(231, 119, 231));
-  border: 1rem outset transparent;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  animation: colorWaveAnimation 6s infinite;
-  transform: scale(1.05);
-  z-index: 1000;
+.paragraph-div i {
+  font-size: xx-large;
+  color: #a009f7;
 }
-.portfolio-items .portfolio-item:hover .portfolio-item-image {
+.paragraph-div p {
+  z-index: 900;
   display: flex;
+  position: relative;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.portfolio-items .portfolio-item p {
-  margin-bottom: 1.5rem;
+  padding: 1.5rem 0;
+  margin: 0 0 0 1rem;
+  animation: revealLetters 3s forwards;
+  opacity: 0;
   font-size: x-large;
 }
-.portfolio-items .portfolio-item a {
-  font-size: larger;
-  font-weight: bold;
+.paragraph-div:hover {
+  border: 0.4rem solid rgb(165, 166, 168);
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+
+/* Settings and design for all buttons in the website */
+button {
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: xx-large;
   color: #fff;
   background-color: #a009f7;
-  border-radius: 1.5rem;
-  display: inline-block;
-  padding: 1rem;
-}
-.portfolio-items .portfolio-item a:hover {
-  font-size: x-large;
-  background-color: #2eade7;
+  border-radius: 2rem;
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  border: 0.5rem solid #fff;
-  animation: BlackWhiteAnimation 4s infinite;
+  cursor: pointer;
 }
-.portfolio-items .portfolio-item .portfolio-item-icons {
+button:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1400px) {
+  h2 {
+    color: #fff;
+    background-color: transparent !important;
+  }
+  h2:hover {
+    font-weight: bolder;
+    color: #530680;
+    text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    float: left;
+  }
+  section {
+    width: 120%;
+    margin-left: 15%;
+  }
+}
+/* Settings and design of the main picture */
+.profile-picture {
   display: flex;
   justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
 }
-.portfolio-items .portfolio-item .portfolio-item-icons i {
-  font-size: 1.5rem;
-  color: #530680;
-  margin: 0.7rem 0.5rem 0 0.5rem;
+.profile-picture img {
+  margin: 4rem 1rem 1rem;
+  width: 30rem;
+  height: 30rem;
+  z-index: 900;
+  position: static;
+  border-radius: 50%;
+  border: 0.5rem solid #a009f7;
+  animation: colorWaveAnimation 6s infinite;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.portfolio-items .portfolio-item .portfolio-item-image {
-  padding: 0;
-  margin: 0 0 1rem 0;
-  width: 100%;
-  max-width: 100%;
+
+/* Settings and design of the images inside the about me paragraph */
+.paragraph-div img {
+  /* Settings of images inside the div paragraph, p_img_1 and p_img_2 */
+  z-index: 900;
+  position: relative;
+  border-radius: 4rem;
+  margin: 2rem 1rem 0 2rem;
+  border: 0.5rem outset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.paragraph-div img:hover {
+  width: 30rem;
+  border-color: #a009f7;
+}
+
+.p_img_1 img {
+  width: 20rem;
+  height: 20rem;
+  border-color: rgb(219, 105, 230);
+  z-index: 3;
+}
+.p_img_1 img:hover {
+  height: 30rem;
+}
+
+.p_img_2 img {
+  width: 22rem;
   height: auto;
-  display: none;
+  border-color: rgb(166, 105, 223);
 }
-.portfolio-items .portfolio-item .portfolio-item-image img {
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-  border-radius: 1rem;
+.p_img_2 img:hover {
+  height: 50rem;
 }
 
-.show-first {
-  display: flex;
+@media screen and (max-width: 1800px) {
+  .paragraph-div img {
+    display: none;
+  }
 }
-
-.show-all {
-  display: none;
-}
-.show-all:target {
-  display: flex;
-}
-
 @keyframes rotate {
   0% {
     transform: perspective(100rem) rotateY(0deg);
@@ -989,10 +829,6 @@ footer p::before, footer p::after {
   padding: 10rem;
 }
 .slider-box .slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   z-index: 900;
   display: flex;
   position: relative;
@@ -1120,9 +956,6 @@ html[data-page=index-german] .h4-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-collapse: collapse;
   width: 100%;
   font-size: large;
@@ -1157,10 +990,6 @@ html[data-page=index-german] .h4-title {
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   border-collapse: collapse;
   width: 100%;
   font-size: small;
@@ -1183,9 +1012,6 @@ html[data-page=index-german] .h4-title {
   display: flex;
   justify-content: center;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   padding: 1rem;
   margin: 0 0 0 0.3rem;
   width: 1rem;
@@ -1205,270 +1031,172 @@ html[data-page=index-german] .h4-title {
     display: none;
   }
 }
-@keyframes gradient {
+@keyframes colorWaveAnimation {
   0% {
-    background-position: 0% 50%;
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
   }
   50% {
-    background-position: 100% 50%;
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
   }
   100% {
-    background-position: 0% 50%;
+    border-color: rgb(68, 240, 105);
   }
 }
-@keyframes revealLetters {
+@keyframes BlackWhiteAnimation {
   0% {
-    opacity: 0;
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
   }
   100% {
-    opacity: 1;
+    border-color: rgb(255, 253, 253);
   }
 }
-/* General settings and design */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-:root {
-  font-size: 100%;
-}
-
-body {
-  font-family: "Courgette", cursive;
-  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235));
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-section {
-  padding: 3.2rem 0;
-  margin: 2rem;
-  background-image: linear-gradient(-45deg, rgb(124, 195, 243), rgba(225, 245, 116, 0.918), rgb(253, 54, 253));
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
-  border-radius: 3rem;
-  box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
-}
-
-.container {
-  padding: 0 1.25rem;
-  margin: 0 auto;
-  max-width: 100%;
-  text-align: center;
-}
-
-h2,
-h3,
-h4 {
-  display: inline;
-  position: relative;
-  z-index: 900;
-  display: inline;
-  position: relative;
-  color: #fff;
-  letter-spacing: 0.2rem;
-  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
-}
-
-h3:hover,
-h4:hover {
-  font-weight: bolder;
-  text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
-}
-
-.h2-title,
-.h3-title,
-.h4-title {
-  margin: 1.5rem 0 2rem;
-  z-index: 900;
-}
-
-/*Settings and design for all the H2 titles */
-.h2-title h2 {
-  font-size: 3.5rem;
-}
-.h2-title h2:hover {
-  font-size: 4rem;
-  color: rgb(247, 15, 235);
-  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
-}
-
-/*Settings and design for all the H3 titles */
-.h3-title h3 {
-  font-size: 2.5rem;
-}
-.h3-title h3:hover {
-  font-size: 3rem;
-  color: rgb(0, 195, 255);
-}
-
-/*Settings and design for all the H4 titles */
-.h4-title h4 {
-  font-size: 2rem;
-}
-.h4-title h4:hover {
-  font-size: 2.5rem;
-  color: rgb(15, 180, 0);
-}
-
-/* settings for all h5 (project titles) in the website */
-h5 {
-  font-size: xx-large;
-  font-weight: bolder;
-  color: #443e3e;
-  margin-bottom: 1rem;
-}
-h5:hover {
-  font-size: 3rem;
-  color: #530680;
-}
-
-/* Settings and designs for all paragraphs in the website */
-.paragraph-div {
+/* Settings and design for all portfolio items in the website */
+.portfolio-items {
   display: flex;
-  justify-content: center;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  padding: 0.5rem;
-  margin: 1rem 0;
-  color: #000000;
-  background-color: rgba(212, 163, 236, 0.8705882353);
-  font-family: "Kalam";
-  border: 0.2rem solid rgb(165, 166, 168);
-  border-radius: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  margin: 1.5rem 0 0 0;
+}
+.portfolio-items .portfolio-item {
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+  width: calc(33.33% - 1.25rem);
+  max-width: 35rem;
+  min-width: 25rem;
+  min-height: 19rem;
+  background-color: #c6acf0;
+  border: 0.8rem outset rgba(213, 95, 236, 0.6156862745);
+  border-radius: 1.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: transform 0.3s;
 }
-.paragraph-div i {
-  font-size: xx-large;
-  color: #a009f7;
+.portfolio-items .portfolio-item:hover {
+  background-color: rgba(160, 235, 130, 0.5215686275);
+  background-image: radial-gradient(rgb(124, 195, 243), rgba(178, 245, 116, 0.918), rgb(231, 119, 231));
+  border: 1rem outset transparent;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  animation: colorWaveAnimation 6s infinite;
+  transform: scale(1.05);
+  z-index: 1000;
 }
-.paragraph-div p {
+.portfolio-items .portfolio-item:hover .portfolio-item-image {
   display: flex;
   flex-direction: column;
-  position: relative;
-  z-index: 900;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  padding: 1.5rem 0;
-  margin: 0 0 0 1rem;
-  animation: revealLetters 3s forwards;
-  opacity: 0;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-items .portfolio-item p {
+  margin-bottom: 1.5rem;
   font-size: x-large;
 }
-.paragraph-div:hover {
-  border: 0.4rem solid rgb(165, 166, 168);
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-}
-
-/* Settings and design for all buttons in the website */
-button {
-  padding: 1rem;
-  margin: 1rem 0 1.5rem;
-  font-size: xx-large;
+.portfolio-items .portfolio-item a {
+  font-size: larger;
+  font-weight: bold;
   color: #fff;
   background-color: #a009f7;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
+  display: inline-block;
+  padding: 1rem;
+}
+.portfolio-items .portfolio-item a:hover {
+  font-size: x-large;
+  background-color: #2eade7;
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-  cursor: pointer;
+  border: 0.5rem solid #fff;
+  animation: BlackWhiteAnimation 4s infinite;
 }
-button:hover {
-  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 1400px) {
-  h2 {
-    color: #fff;
-    background-color: transparent !important;
-  }
-  h2:hover {
-    font-weight: bolder;
-    color: #530680;
-    text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
-  }
-}
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  body {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    float: left;
-  }
-  section {
-    width: 120%;
-    margin-left: 15%;
-  }
-}
-/* Settings and design of the main picture */
-.profile-picture {
+.portfolio-items .portfolio-item .portfolio-item-icons {
   display: flex;
   justify-content: center;
-  display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
-.profile-picture img {
-  margin: 4rem 1rem 1rem;
-  width: 30rem;
-  height: 30rem;
-  position: static;
-  z-index: 900;
-  position: static;
-  border-radius: 50%;
-  border: 0.5rem solid #a009f7;
-  animation: colorWaveAnimation 6s infinite;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+.portfolio-items .portfolio-item .portfolio-item-icons i {
+  font-size: 1.5rem;
+  color: #530680;
+  margin: 0.7rem 0.5rem 0 0.5rem;
 }
-
-/* Settings and design of the images inside the about me paragraph */
-.paragraph-div img {
-  /* Settings of images inside the div paragraph, p_img_1 and p_img_2 */
-  position: relative;
-  z-index: 900;
-  position: relative;
-  border-radius: 4rem;
-  margin: 2rem 1rem 0 2rem;
-  border: 0.5rem outset;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-.paragraph-div img:hover {
-  width: 30rem;
-  border-color: #a009f7;
-}
-
-.p_img_1 img {
-  width: 20rem;
-  height: 20rem;
-  border-color: rgb(219, 105, 230);
-  z-index: 3;
-}
-.p_img_1 img:hover {
-  height: 30rem;
-}
-
-.p_img_2 img {
-  width: 22rem;
+.portfolio-items .portfolio-item .portfolio-item-image {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  border-color: rgb(166, 105, 223);
+  display: none;
 }
-.p_img_2 img:hover {
-  height: 50rem;
+.portfolio-items .portfolio-item .portfolio-item-image img {
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
-
-@media screen and (max-width: 1800px) {
-  .paragraph-div img {
-    display: none;
+@media (max-width: 840px) {
+  .portfolio-items .portfolio-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio-items .portfolio-item {
+    margin: 1rem 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-items .portfolio-item-image {
+    display: block;
   }
 }
+@media (max-width: 480px) {
+  .portfolio-items .portfolio-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio-items .portfolio-item {
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+  }
+  .portfolio-items a {
+    padding: 0.5rem;
+  }
+}
+
+.show-first {
+  display: flex;
+}
+
+.show-all {
+  display: none;
+}
+.show-all:target {
+  display: flex;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -1487,18 +1215,10 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .tool,
 .skill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1531,9 +1251,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 6rem;
   height: 6rem;
   background-color: rgba(235, 89, 240, 0.8);
@@ -1546,10 +1263,6 @@ button:hover {
 }
 .tool p,
 .skill p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1587,12 +1300,8 @@ button:hover {
     border-color: rgb(68, 240, 105);
   }
 }
-/* Setting for elements from main section of the website */
 /* Settings and design for all contact options */
 .contact-options-divs {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1600,12 +1309,13 @@ button:hover {
   padding: 1rem;
   border-radius: 3rem;
   /* Settings and design of the contact form */
+  /* Media query for tablets and smaller desktops */
+  /* Media query for tablets and larger smartphones */
+  /* Media query for mobile phones */
 }
 .contact-options-divs .contact-form,
 .contact-options-divs .contact-directly,
 .contact-options-divs .my-files {
-  display: inline-block;
-  position: static;
   z-index: 900;
   display: inline-block;
   position: static;
@@ -1654,12 +1364,11 @@ button:hover {
 }
 .contact-options-divs .form {
   margin: 1rem 0 0 1rem;
-  font-size: xx-large;
+  font-size: x-large;
 }
 .contact-options-divs .form label,
 .contact-options-divs .form input,
 .contact-options-divs .form textarea {
-  display: flex;
   display: flex;
   margin: -2rem 0;
 }
@@ -1688,95 +1397,282 @@ button:hover {
   animation: colorWaveAnimation 6s infinite;
   box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
-
-/* General settings and adjustments for smaller and lower quality screens */
-@media screen and (max-width: 1800px) {
-  .paragraph-div img {
-    display: none;
-  }
+@media screen and (max-width: 1450px) {
   .contact-options-divs {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 2rem;
   }
-  .contact-form,
-  .contact-directly,
-  .my-files {
-    width: 40rem;
+  .contact-options-divs .contact-form,
+  .contact-options-divs .contact-directly,
+  .contact-options-divs .my-files {
+    max-width: 30rem;
+    min-height: 15rem;
+    font-size: x-large;
   }
-}
-@media screen and (max-width: 1400px) {
-  .profile-picture img {
-    max-width: 20rem;
-    max-height: 20rem;
+  .contact-options-divs .form input,
+  .contact-options-divs .form textarea {
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .contact-form,
-  .contact-directly,
-  .my-files {
-    width: 30rem;
-  }
-  .form {
-    display: flex;
+  .contact-options-divs {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 40rem;
+    gap: 1rem;
   }
-  input,
-  textarea {
-    max-width: 25rem;
+  .contact-options-divs .contact-form,
+  .contact-options-divs .contact-directly,
+  .contact-options-divs .my-files {
+    padding: 1rem;
+    margin: 0;
+    max-width: 100%;
   }
-}
-@media screen and (min-width: 481px) and (max-width: 550px) {
-  .contact-form,
-  .contact-directly,
-  .my-files {
-    max-width: 20rem;
-  }
-  .contact-form {
-    min-height: 46rem;
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-  }
-  input,
-  textarea {
-    width: 18rem;
-  }
-}
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  .contact-form,
-  .contact-directly,
-  .my-files {
+  .contact-options-divs .form input,
+  .contact-options-divs .form textarea {
     width: 100%;
   }
-  .form input,
-  textarea {
+}
+@media screen and (max-width: 480px) {
+  .contact-options-divs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .contact-options-divs .contact-form,
+  .contact-options-divs .contact-directly,
+  .contact-options-divs .my-files {
+    padding: 0.5rem;
+    margin: 0;
+    max-width: 100%;
+  }
+  .contact-options-divs .form input,
+  .contact-options-divs .form textarea {
     width: 100%;
   }
-  label,
-  input,
-  textarea {
-    text-align: left;
-    display: flex;
-    margin-left: -1.5rem;
-    width: 10%;
+}
+
+@keyframes colorWaveAnimation {
+  0% {
+    border-color: rgb(238, 96, 219);
+  }
+  16.67% {
+    border-color: rgb(238, 96, 96);
+  }
+  33.33% {
+    border-color: rgb(138, 41, 230);
+  }
+  50% {
+    border-color: rgb(96, 174, 238);
+  }
+  66.67% {
+    border-color: rgb(51, 51, 235);
+  }
+  83.33% {
+    border-color: rgb(96, 233, 238);
+  }
+  100% {
+    border-color: rgb(68, 240, 105);
+  }
+}
+/* Settings fot the smiley and "hire me" boxes */
+.hire-me {
+  margin: 1.5rem;
+  top: 8rem;
+  right: 1rem;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+}
+.hire-me:hover {
+  z-index: 1000;
+}
+.hire-me:hover .face {
+  border: 1rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+.hire-me:hover .face::before {
+  width: 3.5rem;
+  height: 2rem;
+  top: 6rem;
+  left: 3rem;
+  background-color: rgb(236, 140, 177);
+  border: 0.5rem solid rgb(236, 140, 177);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.hire-me:hover .face .eye {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
+}
+.hire-me .hire-me-textbox {
+  display: inherit;
+  position: absolute;
+  padding: 1rem;
+  max-width: 8rem;
+  top: -3rem;
+  right: 10rem;
+  font-size: larger;
+  font-weight: bold;
+  color: #fff;
+  background-color: #a009f7;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.hire-me .hire-me-textbox:hover {
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border: 0.1rem solid gray;
+  box-shadow: 0rem 0rem 1rem 1rem #a4e9f5;
+}
+.hire-me .face {
+  display: flex;
+  position: relative;
+  margin: 0 0 0 5rem;
+  width: 10rem;
+  height: 10rem;
+  border: 0.8rem solid rgba(255, 197, 5, 0.747);
+  border-radius: 50%;
+  background-color: rgba(255, 209, 5, 0.842);
+}
+.hire-me .face:hover {
+  border: 1rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+}
+.hire-me .face::before {
+  content: "";
+  width: 3rem;
+  height: 0.6rem;
+  top: 5.5rem;
+  left: 2.5rem;
+  background-color: rgba(226, 125, 164, 0.692);
+  border: 0.4rem solid rgba(223, 126, 163, 0.692);
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  position: absolute;
+  transition: 0.5s;
+}
+.hire-me .face:hover::before {
+  width: 4rem;
+  height: 2rem;
+  top: 6.5rem;
+  left: 2.5rem;
+  background-color: rgb(235, 99, 151);
+  border: 0.4rem solid rgb(226, 89, 142);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.hire-me .face:hover .eye {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
+}
+.hire-me .face .eyes {
+  display: flex;
+  position: relative;
+  top: 1.5rem;
+  left: 2rem;
+}
+.hire-me .face .eyes .eye {
+  display: block;
+  position: relative;
+  margin: 0 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.hire-me .face .eyes .eye::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 50%;
+  left: 1rem;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Adjust the location and activity of the button "change language" */
+.languages {
+  padding: 0.8rem;
+  top: 70%;
+  right: 1.5rem;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  font-size: large;
+  color: #a009f7;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
+  border-radius: 2rem;
+  animation: colorWaveAnimation 6s infinite;
+}
+.languages img {
+  margin: 0 auto;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+.languages:hover {
+  font-weight: bolder;
+  color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  border: 1.5rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  z-index: 1000;
+}
+
+/* Settings and design for Back to top button */
+.backtotop {
+  padding: 0.5rem;
+  max-width: 10rem;
+  top: 90%;
+  right: 1.5rem;
+  z-index: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  font-size: larger;
+  color: #a009f7;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
+  border-radius: 2rem;
+  animation: colorWaveAnimation 6s infinite;
+  transition: background-image 0.5s ease-in-out;
+}
+.backtotop:hover {
+  font-weight: bold;
+  color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  border: 1.5rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  z-index: 1000;
+}
+.backtotop i {
+  color: #a009f7;
+}
+.backtotop i:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .languages p {
+    display: none;
+  }
+  .languages img {
+    margin: 0 auto;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+  }
+  .languages img:hover {
+    width: 3rem;
+    height: 3rem;
+  }
+  .backtotop a {
+    text-transform: capitalize;
+  }
+  .backtotop a .back-to {
+    display: none;
+  }
+  .hire-me {
+    transform: translateY(-50%) scale(0.8);
   }
 }/*# sourceMappingURL=style.css.map */

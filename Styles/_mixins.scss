@@ -1,6 +1,5 @@
 @import "./variables";
-@import "./animations";
-
+// Mixins scss
 @mixin displaySet(
   $padding: null,
   $margin: null,
@@ -25,26 +24,41 @@
   $transform: null,
   $gap: null
 ) {
-  @if $dspl != null {
-    display: $dspl;
+  @if $padding != null {
+    padding: $padding;
   }
-  @if $flxDrc != null {
-    flex-direction: $flxDrc;
+  @if $margin != null {
+    margin: $margin;
   }
-  @if $jusCont != null {
-    justify-content: $jusCont;
+  @if $width != null {
+    width: $width;
   }
-  @if $alItms != null {
-    align-items: $alItms;
+  @if $max-width != null {
+    max-width: $max-width;
   }
-  @if $txtAln != null {
-    text-align: $txtAln;
+  @if $height != null {
+    height: $height;
   }
-  @if $position != null {
-    position: $position;
+  @if $max-height != null {
+    max-height: $max-height;
   }
-  @if $flxWrp != null {
-    flex-wrap: $flxWrp;
+  @if $top != null {
+    top: $top;
+  }
+  @if $left != null {
+    left: $left;
+  }
+  @if $right != null {
+    right: $right;
+  }
+  @if $bottom != null {
+    bottom: $bottom;
+  }
+  @if $min-width != null {
+    min-width: $min-width;
+  }
+  @if $min-height != null {
+    min-height: $min-height;
   }
   @if $zIndx != null {
     z-index: $zIndx;
