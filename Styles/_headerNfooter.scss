@@ -20,6 +20,15 @@ header {
   &:hover {
     animation: lightingAnimation 3s linear infinite;
   }
+  .icon-drculady {
+    display: block;
+    padding: 0;
+    width: 25%;
+    margin: 0 35%;
+    img {
+      width: 100%;
+    }
+  }
   h1 {
     @include fontNtext(
       $font-size: 6rem,
@@ -29,6 +38,7 @@ header {
     );
     margin: 0;
     z-index: 999;
+
     &::before,
     &::after {
       content: "\e682";
@@ -36,6 +46,9 @@ header {
       font-family: "FontAwesome";
       padding: 0 10rem;
     }
+  }
+  h1:hover .icon-drculady {
+    display: block;
   }
 }
 nav ul {
@@ -108,6 +121,9 @@ footer {
   animation: colorWaveAnimation 6s infinite;
   &:hover {
     animation: lightingAnimation 3s linear infinite;
+    .logo {
+      display: block;
+    }
   }
   p {
     &::before,
@@ -116,6 +132,20 @@ footer {
       font-family: "FontAwesome";
       position: relative;
       padding: 0 15rem;
+    }
+  }
+  .logo {
+    display: none;
+    margin-top: 1.5rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: $mainShadow;
+    padding: 0;
+    width: 40%;
+    border-radius: 10%;
+
+    img {
+      width: 100%;
     }
   }
 }

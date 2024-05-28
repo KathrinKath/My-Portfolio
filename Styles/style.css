@@ -417,6 +417,15 @@ header {
 header:hover {
   animation: lightingAnimation 3s linear infinite;
 }
+header .icon-drculady {
+  display: block;
+  padding: 0;
+  width: 25%;
+  margin: 0 35%;
+}
+header .icon-drculady img {
+  width: 100%;
+}
 header h1 {
   font-size: 6rem;
   letter-spacing: 0.3rem;
@@ -431,6 +440,9 @@ header h1::before, header h1::after {
   position: relative;
   font-family: "FontAwesome";
   padding: 0 10rem;
+}
+header h1:hover .icon-drculady {
+  display: block;
 }
 
 nav ul {
@@ -505,11 +517,27 @@ footer {
 footer:hover {
   animation: lightingAnimation 3s linear infinite;
 }
+footer:hover .logo {
+  display: block;
+}
 footer p::before, footer p::after {
   content: "\f004";
   font-family: "FontAwesome";
   position: relative;
   padding: 0 15rem;
+}
+footer .logo {
+  display: none;
+  margin-top: 1.5rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 0;
+  width: 40%;
+  border-radius: 10%;
+}
+footer .logo img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1800px) {
