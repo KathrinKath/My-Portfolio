@@ -23,8 +23,7 @@
       $borderRds: 1.5rem,
       $boxShdw: $mainShadow
     );
-    transition: transform 0.3s;
-
+    transition: transform 1s;
     &:hover {
       @include fontNtext(
         $bgColor: #a0eb8285,
@@ -63,6 +62,7 @@
         box-shadow: $boxShadow;
         border: 0.5rem solid $mainTextColor;
         animation: BlackWhiteAnimation 4s infinite;
+        transition: 1s;
       }
     }
     .portfolio-item-icons {

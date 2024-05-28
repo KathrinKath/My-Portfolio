@@ -1061,7 +1061,7 @@ html[data-page=index-german] .h4-title {
   border: 0.8rem outset #a009f7;
   border-radius: 1.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  transition: transform 0.3s;
+  transition: transform 1s;
 }
 .portfolio-items .portfolio-item:hover {
   background-color: rgba(160, 235, 130, 0.5215686275);
@@ -1097,6 +1097,7 @@ html[data-page=index-german] .h4-title {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 0.5rem solid #fff;
   animation: BlackWhiteAnimation 4s infinite;
+  transition: 1s;
 }
 .portfolio-items .portfolio-item .portfolio-item-icons {
   display: flex;
