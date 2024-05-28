@@ -66,8 +66,8 @@
       }
     }
     .portfolio-item-icons {
-      @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
-      margin-top: 1rem;
+      @include displaySet($dspl: flex, $jusCont: center);
+      margin-top: auto;
       i {
         @include fontNtext($font-size: 1.5rem, $color: $hoverTitle);
         margin: 0.7rem 0.5rem 0 0.5rem;

@@ -171,17 +171,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 1400px) {
-  h2 {
-    color: #fff;
-    background-color: transparent !important;
-  }
-  h2:hover {
-    font-weight: bolder;
-    color: #530680;
-    text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
-  }
-}
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
     overflow-x: hidden;
@@ -367,17 +356,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 1400px) {
-  h2 {
-    color: #fff;
-    background-color: transparent !important;
-  }
-  h2:hover {
-    font-weight: bolder;
-    color: #530680;
-    text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
-  }
-}
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
     overflow-x: hidden;
@@ -735,17 +713,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 1400px) {
-  h2 {
-    color: #fff;
-    background-color: transparent !important;
-  }
-  h2:hover {
-    font-weight: bolder;
-    color: #530680;
-    text-shadow: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6, 0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
-  }
-}
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
     overflow-x: hidden;
@@ -1134,8 +1101,7 @@ html[data-page=index-german] .h4-title {
 .portfolio-items .portfolio-item .portfolio-item-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+  margin-top: auto;
 }
 .portfolio-items .portfolio-item .portfolio-item-icons i {
   font-size: 1.5rem;
@@ -1686,6 +1652,6 @@ html[data-page=index-german] .h4-title {
     transform: translateY(-50%) scale(0.7);
     margin: 1rem;
     top: 6rem;
-    right: 0.5rem;
+    right: 0.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

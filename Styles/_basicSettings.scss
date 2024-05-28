@@ -154,19 +154,6 @@ button {
 }
 // Responsivness
 
-@media screen and (max-width: 1400px) {
-  h2 {
-    color: $mainTextColor;
-    background-color: transparent !important;
-  }
-  h2:hover {
-    @include fontNtext(
-      $font-weight: bolder,
-      $color: $hoverTitle,
-      $txtShdw: $hHover
-    );
-  }
-}
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
     overflow-x: hidden;
