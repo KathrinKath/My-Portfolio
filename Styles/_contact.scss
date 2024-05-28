@@ -138,7 +138,7 @@
   }
   /* Media query for mobile phones */
   @media screen and (max-width: 480px) {
-    @include displaySet($flxDrc: column, $gap: 0.5rem);
+    @include displaySet($flxDrc: column, $gap: 1rem);
     .contact-form,
     .contact-directly,
     .my-files {

@@ -14,12 +14,12 @@
       $margin: 0 0 2rem 0,
       $width: calc(33.33% - 1.25rem),
       $max-width: 35rem,
-      $min-width: 25rem,
+      $min-width: 20rem,
       $min-height: 19rem
     );
     @include fontNtext(
       $bgColor: #c6acf0,
-      $border: 0.8rem outset #d55fec9d,
+      $border: 0.8rem outset $primaryColor,
       $borderRds: 1.5rem,
       $boxShdw: $mainShadow
     );
@@ -88,45 +88,54 @@
       }
     }
   }
-  // Responsiveness
-  @media (max-width: 840px) {
-    .portfolio-items {
-      @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
-    }
-    .portfolio-item {
-      @include sizesNgaps($width: 80%, $margin: 1rem 0);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .portfolio-item-image {
-      display: block;
-    }
-  }
-  @media (max-width: 480px) {
-    .portfolio-items {
-      @include displaySet(
-        $dspl: flex,
-        $jusCont: center,
-        $alItms: center,
-        $flxDrc: column
-      );
-    }
-    .portfolio-item {
-      @include sizesNgaps($padding: 0.5rem, $margin: 0 0 1rem 0, $width: 100%);
-    }
-    a {
-      padding: 0.5rem;
-    }
-  }
 }
 // Show all part
 .show-first {
   display: flex;
 }
 .show-all {
+  margin-top: -1rem;
   display: none;
   &:target {
     display: flex;
+  }
+}
+// Responsiveness
+@media (max-width: 1026px) {
+  .portfolio-items {
+    @include displaySet(
+      $dspl: flex,
+      $flxDrc: column,
+      $jusCont: center,
+      $alItms: center
+    );
+    @include sizesNgaps($padding: 0, $margin: 1rem 0);
+    .portfolio-item {
+      @include sizesNgaps($width: 80%, $margin: 1rem 0);
+    }
+  }
+}
+@media (min-width: 650px) and (max-width: 1025px) {
+  .portfolio-items {
+    @include displaySet(
+      $dspl: flex,
+      $flxDrc: column,
+      $jusCont: center,
+      $alItms: center,
+      $gap: 1rem
+    );
+    margin-left: 15%;
+    margin-right: 15%;
+    .portfolio-item {
+      @include sizesNgaps($width: 100%);
+    }
+  }
+}
+@media (max-width: 480px) and (orientation: portrait) {
+  .portfolio-item {
+    @include sizesNgaps($padding: 0.5rem, $margin: 1rem, $max-width: 80%);
+    a {
+      padding: 0.5rem;
+    }
   }
 }

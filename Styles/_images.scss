@@ -47,4 +47,7 @@
   .paragraph-div img {
     display: none;
   }
+  .profile-picture img {
+    @include sizesNgaps($max-width: 20rem, $max-height: 20rem);
+  }
 }

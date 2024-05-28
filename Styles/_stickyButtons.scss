@@ -213,6 +213,7 @@
     }
   }
   .hire-me {
-    transform: translateY(-50%) scale(0.8);
+    transform: translateY(-50%) scale(0.7);
+    @include sizesNgaps($margin: 1rem, $top: 6rem, $right: 0.5rem);
   }
 }

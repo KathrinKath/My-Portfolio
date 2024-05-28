@@ -813,6 +813,10 @@ button:hover {
   .paragraph-div img {
     display: none;
   }
+  .profile-picture img {
+    max-width: 20rem;
+    max-height: 20rem;
+  }
 }
 @keyframes rotate {
   0% {
@@ -1084,10 +1088,10 @@ html[data-page=index-german] .h4-title {
   margin: 0 0 2rem 0;
   width: calc(33.33% - 1.25rem);
   max-width: 35rem;
-  min-width: 25rem;
+  min-width: 20rem;
   min-height: 19rem;
   background-color: #c6acf0;
-  border: 0.8rem outset rgba(213, 95, 236, 0.6156862745);
+  border: 0.8rem outset #a009f7;
   border-radius: 1.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: transform 0.3s;
@@ -1152,51 +1156,57 @@ html[data-page=index-german] .h4-title {
   height: auto;
   border-radius: 1rem;
 }
-@media (max-width: 840px) {
-  .portfolio-items .portfolio-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio-items .portfolio-item {
-    margin: 1rem 0;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .portfolio-items .portfolio-item-image {
-    display: block;
-  }
-}
-@media (max-width: 480px) {
-  .portfolio-items .portfolio-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio-items .portfolio-item {
-    padding: 0.5rem;
-    margin: 0 0 1rem 0;
-    width: 100%;
-  }
-  .portfolio-items a {
-    padding: 0.5rem;
-  }
-}
 
 .show-first {
   display: flex;
 }
 
 .show-all {
+  margin-top: -1rem;
   display: none;
 }
 .show-all:target {
   display: flex;
 }
 
+@media (max-width: 1026px) {
+  .portfolio-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  .portfolio-items .portfolio-item {
+    margin: 1rem 0;
+    width: 80%;
+  }
+}
+@media (min-width: 650px) and (max-width: 1025px) {
+  .portfolio-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .portfolio-items .portfolio-item {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) and (orientation: portrait) {
+  .portfolio-item {
+    padding: 0.5rem;
+    margin: 1rem;
+    max-width: 80%;
+  }
+  .portfolio-item a {
+    padding: 0.5rem;
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -1436,7 +1446,7 @@ html[data-page=index-german] .h4-title {
 @media screen and (max-width: 480px) {
   .contact-options-divs {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
   .contact-options-divs .contact-form,
   .contact-options-divs .contact-directly,
@@ -1673,6 +1683,9 @@ html[data-page=index-german] .h4-title {
     display: none;
   }
   .hire-me {
-    transform: translateY(-50%) scale(0.8);
+    transform: translateY(-50%) scale(0.7);
+    margin: 1rem;
+    top: 6rem;
+    right: 0.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
