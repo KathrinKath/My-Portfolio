@@ -24,7 +24,10 @@ header {
     display: none;
     padding: 0;
     width: 35%;
-    margin: 0 35%;
+    margin: 2% 35%;
+    border-radius: 50%;
+    background-color: $icon-bg;
+    box-shadow: $icon-shadow;
     img {
       width: 100%;
     }
@@ -33,7 +36,10 @@ header {
     display: block;
     padding: 0;
     width: 35%;
-    margin: 0 32%;
+    margin: 2% 32%;
+    border-radius: 50%;
+    background-color: $icon-bg;
+    box-shadow: $icon-shadow;
     img {
       width: 100%;
     }
