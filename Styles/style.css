@@ -417,13 +417,22 @@ header {
 header:hover {
   animation: lightingAnimation 3s linear infinite;
 }
-header .icon-drculady {
-  display: block;
+header .icon-top-draculady {
+  display: none;
   padding: 0;
-  width: 25%;
+  width: 35%;
   margin: 0 35%;
 }
-header .icon-drculady img {
+header .icon-top-draculady img {
+  width: 100%;
+}
+header .icon-draculady {
+  display: block;
+  padding: 0;
+  width: 35%;
+  margin: 0 32%;
+}
+header .icon-draculady img {
   width: 100%;
 }
 header h1 {
@@ -440,9 +449,6 @@ header h1::before, header h1::after {
   position: relative;
   font-family: "FontAwesome";
   padding: 0 10rem;
-}
-header h1:hover .icon-drculady {
-  display: block;
 }
 
 nav ul {
@@ -549,6 +555,12 @@ footer .logo img {
   }
 }
 @media screen and (max-width: 768px) {
+  .icon-draculady {
+    display: none !important;
+  }
+  .icon-top-draculady {
+    display: block !important;
+  }
   nav ul {
     display: flex;
     flex-direction: column;
