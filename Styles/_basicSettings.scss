@@ -49,6 +49,7 @@ h4 {
 h3:hover,
 h4:hover {
   @include fontNtext($font-weight: bolder, $txtShdw: $hHover);
+  transition: 2s;
 }
 .h2-title,
 .h3-title,
@@ -66,6 +67,7 @@ h4:hover {
         $color: rgb(247, 15, 235),
         $txtShdw: $h2Hover
       );
+      transition: 2s;
     }
   }
 }
@@ -99,6 +101,7 @@ h5 {
   margin-bottom: 1rem;
   &:hover {
     @include fontNtext($font-size: 3rem, $color: $hoverTitle);
+    transition: 2s;
   }
 }
 /* Settings and designs for all paragraphs in the website */
@@ -151,6 +154,7 @@ button {
   &:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
     transform: scale(1.1);
+    transition: 1s;
   }
 }
 // Responsivness

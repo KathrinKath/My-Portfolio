@@ -38,10 +38,12 @@
         @include sizesNgaps($width: 6rem, $height: 6rem);
         background-color: #eb59f0cc;
         box-shadow: $mainShadow;
+        transition: 1s;
       }
     }
     &:hover {
       @include fontNtext($font-size: 3rem, $color: #ffd900);
+      transition: 1s;
     }
   }
   p {

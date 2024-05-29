@@ -51,6 +51,7 @@ header {
     }
     &:hover {
       box-shadow: $icon-glowing-shadow;
+      transition: box-shadow 3s ease-in-out;
     }
   }
   h1 {
@@ -118,10 +119,9 @@ nav ul {
   display: block;
   opacity: 1;
   visibility: visible;
+  animation: dropdown 1s ease-out forwards;
 }
-
 //Footer part
-
 /* Settings for the Footer of the pages */
 footer {
   @include sizesNgaps(
