@@ -165,6 +165,7 @@ button {
   border-radius: 2rem;
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   cursor: pointer;
+  font-family: "Courgette";
 }
 button:hover {
   box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
@@ -350,6 +351,7 @@ button {
   border-radius: 2rem;
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   cursor: pointer;
+  font-family: "Courgette";
 }
 button:hover {
   box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
@@ -418,24 +420,24 @@ header:hover {
   animation: lightingAnimation 3s linear infinite;
 }
 header .icon-top-draculady {
-  display: none;
   padding: 0;
-  width: 35%;
   margin: 2% 35%;
-  border-radius: 50%;
+  width: 35%;
+  display: none;
   background-color: #9d62eb;
+  border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-top-draculady img {
   width: 100%;
 }
 header .icon-draculady {
-  display: block;
   padding: 0;
-  width: 35%;
   margin: 2% 32%;
-  border-radius: 50%;
+  width: 35%;
+  display: block;
   background-color: #9d62eb;
+  border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-draculady img {
@@ -539,14 +541,12 @@ footer p::before, footer p::after {
   padding: 0 15rem;
 }
 footer .logo {
-  display: none;
-  margin-top: 1.5rem;
-  margin-left: 30%;
-  margin-right: 30%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   padding: 0;
+  margin: 1.5% 30%;
   width: 40%;
+  display: none;
   border-radius: 10%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 footer .logo img {
   width: 100%;
@@ -753,6 +753,7 @@ button {
   border-radius: 2rem;
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   cursor: pointer;
+  font-family: "Courgette";
 }
 button:hover {
   box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);

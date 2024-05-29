@@ -21,25 +21,28 @@ header {
     animation: lightingAnimation 3s linear infinite;
   }
   .icon-top-draculady {
-    display: none;
-    padding: 0;
-    width: 35%;
-    margin: 2% 35%;
-    border-radius: 50%;
-    background-color: $icon-bg;
-    box-shadow: $icon-shadow;
+    @include displaySet($dspl: none, $padding: 0, $width: 35%, $margin: 2% 35%);
+    @include fontNtext(
+      $borderRds: 50%,
+      $bgColor: $icon-bg,
+      $boxShdw: $icon-shadow
+    );
     img {
       width: 100%;
     }
   }
   .icon-draculady {
-    display: block;
-    padding: 0;
-    width: 35%;
-    margin: 2% 32%;
-    border-radius: 50%;
-    background-color: $icon-bg;
-    box-shadow: $icon-shadow;
+    @include displaySet(
+      $dspl: block,
+      $padding: 0,
+      $width: 35%,
+      $margin: 2% 32%
+    );
+    @include fontNtext(
+      $borderRds: 50%,
+      $bgColor: $icon-bg,
+      $boxShdw: $icon-shadow
+    );
     img {
       width: 100%;
     }
@@ -146,15 +149,13 @@ footer {
     }
   }
   .logo {
-    display: none;
-    margin-top: 1.5rem;
-    margin-left: 30%;
-    margin-right: 30%;
-    box-shadow: $mainShadow;
-    padding: 0;
-    width: 40%;
-    border-radius: 10%;
-
+    @include displaySet(
+      $dspl: none,
+      $margin: 1.5% 30%,
+      $padding: 0,
+      $width: 40%
+    );
+    @include fontNtext($boxShdw: $mainShadow, $borderRds: 10%);
     img {
       width: 100%;
     }
