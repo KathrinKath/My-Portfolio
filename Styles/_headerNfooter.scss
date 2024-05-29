@@ -152,10 +152,14 @@ footer {
     @include displaySet(
       $dspl: none,
       $margin: 1.5% 30%,
-      $padding: 0,
+      $padding: 0.5rem,
       $width: 40%
     );
-    @include fontNtext($boxShdw: $mainShadow, $borderRds: 10%);
+    @include fontNtext(
+      $boxShdw: $mainShadow,
+      $borderRds: 10%,
+      $bgColor: $icon-bg
+    );
     img {
       width: 100%;
     }
