@@ -30,6 +30,9 @@ header {
     img {
       width: 100%;
     }
+    &:hover {
+      box-shadow: $icon-glowing-shadow;
+    }
   }
   .icon-draculady {
     @include displaySet(
@@ -46,6 +49,9 @@ header {
     img {
       width: 100%;
     }
+    &:hover {
+      box-shadow: $icon-glowing-shadow;
+    }
   }
   h1 {
     @include fontNtext(
@@ -54,7 +60,7 @@ header {
       $txtShdw: $h1Shadow,
       $fontFmly: "poetsen One"
     );
-    margin: 0;
+    margin: 3% 0;
     z-index: 999;
     &::before,
     &::after {
@@ -137,6 +143,7 @@ footer {
     animation: lightingAnimation 3s linear infinite;
     .logo {
       display: block;
+      box-shadow: $icon-glowing-shadow;
     }
   }
   p {

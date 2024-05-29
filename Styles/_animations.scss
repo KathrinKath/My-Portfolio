@@ -153,11 +153,14 @@
 @mixin lightingAnimation {
   @keyframes lightingAnimation {
     0% {
-      color: gray;
+      color: $mainTextColor;
+    }
+    50% {
+      color: rgb(133, 127, 127);
     }
     100% {
       color: $mainTextColor;
-      text-shadow: 2rem 2rem 2rem $mainTextColor;
+      // text-shadow: 2rem 2rem 2rem $mainTextColor;
     }
   }
 }
