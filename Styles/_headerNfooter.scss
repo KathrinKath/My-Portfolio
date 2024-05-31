@@ -10,7 +10,12 @@
 
 /* header designs and settings */
 header {
-  @include displaySet($dspl: flex, $jusCont: space-between, $alItms: center);
+  @include displaySet(
+    $dspl: flex,
+    $jusCont: space-between,
+    $alItms: center,
+    $zIndx: 999
+  );
   @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
   @include borderBottomRds($bbLeftRds: 1rem, $bbRightRds: 1rem);
   padding: 1.25rem 0;
@@ -31,6 +36,8 @@ header {
       width: 100%;
     }
     &:hover {
+      transition: 2s;
+      transform: scale(1.05);
       box-shadow: $icon-glowing-shadow;
     }
   }
@@ -51,7 +58,8 @@ header {
     }
     &:hover {
       box-shadow: $icon-glowing-shadow;
-      transition: box-shadow 3s ease-in-out;
+      transition: 2s;
+      transform: scale(1.05);
     }
   }
   h1 {
@@ -63,10 +71,11 @@ header {
     );
     margin: 3% 0;
     z-index: 999;
+    position: relative;
     &::before,
     &::after {
       content: "\e682";
-      @include displaySet($position: relative, $zIndx: 999);
+      @include displaySet($position: relative, $zIndx: 1000);
       font-family: "FontAwesome";
       padding: 0 10rem;
     }
@@ -169,6 +178,10 @@ footer {
     );
     img {
       width: 100%;
+    }
+    &:hover {
+      transition: 2s;
+      transform: scale(1.05);
     }
   }
 }

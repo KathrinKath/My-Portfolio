@@ -35,7 +35,7 @@
     }
     a:hover {
       @include fontNtext(
-        $font-size: xx-large,
+        $font-weight: bolder,
         $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
       );
     }
@@ -58,21 +58,22 @@
   }
   /* Settings and design of the contact form */
   .form {
-    margin: 1rem 0 0 1rem;
+    margin: 1rem 0 0 0;
     font-size: x-large;
+    @include displaySet(
+      $dspl: flex,
+      $jusCont: center,
+      $alItms: center,
+      $flxDrc: column
+    );
     label,
     input,
     textarea {
-      @include displaySet($dspl: flex);
+      @include displaySet($dspl: flex, $width: 100%);
       margin: -2rem 0;
     }
     input {
-      @include sizesNgaps(
-        $padding: 0.5rem,
-        $margin: 0,
-        $width: 27rem,
-        $height: 3rem
-      );
+      @include sizesNgaps($padding: 0.5rem, $margin: 0, $height: 3rem);
       @include fontNtext(
         $borderRds: 1rem,
         $font-size: 1.2rem,
@@ -115,9 +116,7 @@
     .form {
       input,
       textarea {
-        @include sizesNgaps(
-          $width: 100%
-        ); // Adjusted width for inputs and textareas
+        @include sizesNgaps($width: 25rem);
       }
     }
   }
@@ -127,7 +126,7 @@
     .contact-form,
     .contact-directly,
     .my-files {
-      @include sizesNgaps($padding: 1rem, $margin: 0, $max-width: 100%);
+      @include sizesNgaps($padding: 1rem, $margin: 0, $max-width: 20rem);
     }
     .form {
       input,

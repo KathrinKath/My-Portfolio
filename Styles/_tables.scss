@@ -18,6 +18,7 @@
           $txtShdw: 50%,
           $font-weight: bold
         );
+        transition: 1s;
       }
     }
     i {
@@ -65,6 +66,7 @@
           $font-weight: bold,
           $txtShdw: $elementsTbHover
         );
+        transition: 1s;
       }
     }
     i {
@@ -74,6 +76,7 @@
       border-radius: 50%;
       &:hover {
         @include fontNtext($font-size: 2rem, $color: $hoverTitle);
+        transition: 1s;
       }
     }
   }

@@ -455,6 +455,7 @@ button:hover {
 }
 /* header designs and settings */
 header {
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -483,6 +484,8 @@ header .icon-top-draculady img {
   width: 100%;
 }
 header .icon-top-draculady:hover {
+  transition: 2s;
+  transform: scale(1.05);
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 header .icon-draculady {
@@ -499,7 +502,8 @@ header .icon-draculady img {
 }
 header .icon-draculady:hover {
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-  transition: box-shadow 3s ease-in-out;
+  transition: 2s;
+  transform: scale(1.05);
 }
 header h1 {
   font-size: 6rem;
@@ -508,10 +512,11 @@ header h1 {
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
   margin: 3% 0;
   z-index: 999;
+  position: relative;
 }
 header h1::before, header h1::after {
   content: "\e682";
-  z-index: 999;
+  z-index: 1000;
   position: relative;
   font-family: "FontAwesome";
   padding: 0 10rem;
@@ -611,6 +616,10 @@ footer .logo {
 }
 footer .logo img {
   width: 100%;
+}
+footer .logo:hover {
+  transition: 2s;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1800px) {
@@ -1089,6 +1098,7 @@ html[data-page=index-german] .h4-title {
   font-weight: bold;
   text-shadow: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 1s;
 }
 .skills-table table i {
   padding: 1rem;
@@ -1125,6 +1135,7 @@ html[data-page=index-german] .h4-title {
   font-size: large;
   font-weight: bold;
   text-shadow: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4, 0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
+  transition: 1s;
 }
 .elements-table table i {
   display: flex;
@@ -1140,6 +1151,7 @@ html[data-page=index-german] .h4-title {
 .elements-table table i:hover {
   font-size: 2rem;
   color: #530680;
+  transition: 1s;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1226,6 +1238,7 @@ html[data-page=index-german] .h4-title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 .portfolio-items .portfolio-item p {
   margin-bottom: 1.5rem;
@@ -1470,7 +1483,7 @@ html[data-page=index-german] .h4-title {
 .contact-options-divs .contact-form a:hover,
 .contact-options-divs .contact-directly a:hover,
 .contact-options-divs .my-files a:hover {
-  font-size: xx-large;
+  font-weight: bolder;
   text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
 .contact-options-divs .contact-form i,
@@ -1495,19 +1508,23 @@ html[data-page=index-german] .h4-title {
   text-align: left;
 }
 .contact-options-divs .form {
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 0;
   font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contact-options-divs .form label,
 .contact-options-divs .form input,
 .contact-options-divs .form textarea {
+  width: 100%;
   display: flex;
   margin: -2rem 0;
 }
 .contact-options-divs .form input {
   padding: 0.5rem;
   margin: 0;
-  width: 27rem;
   height: 3rem;
   font-size: 1.2rem;
   border-radius: 1rem;
@@ -1545,7 +1562,7 @@ html[data-page=index-german] .h4-title {
   }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {
-    width: 100%;
+    width: 25rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1558,7 +1575,7 @@ html[data-page=index-german] .h4-title {
   .contact-options-divs .my-files {
     padding: 1rem;
     margin: 0;
-    max-width: 100%;
+    max-width: 20rem;
   }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {
