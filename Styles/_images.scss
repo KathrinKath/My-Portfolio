@@ -1,7 +1,6 @@
 @import "./variables";
 @import "./mixins";
 @import "./animations";
-@import "./basicSettings";
 /* Settings and design of the main picture */
 .profile-picture {
   @include displaySet($dspl: flex, $jusCont: center);
