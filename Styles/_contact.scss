@@ -84,7 +84,7 @@
       @include sizesNgaps(
         $padding: 0.5rem,
         $margin: 0,
-        $width: 27rem,
+        $width: 32rem,
         $height: 10rem
       );
       border-radius: 1rem;
@@ -126,12 +126,16 @@
     .contact-form,
     .contact-directly,
     .my-files {
-      @include sizesNgaps($padding: 1rem, $margin: 0, $max-width: 20rem);
+      @include sizesNgaps(
+        $padding: 1rem,
+        $margin: 1.5rem 0.5rem,
+        $width: 26rem
+      );
     }
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 100%);
+        @include sizesNgaps($width: 22rem);
       }
     }
   }
@@ -141,12 +145,16 @@
     .contact-form,
     .contact-directly,
     .my-files {
-      @include sizesNgaps($padding: 0.5rem, $margin: 0, $max-width: 100%);
+      @include sizesNgaps(
+        $padding: 0.5rem,
+        $margin: 1.5rem 0.5rem,
+        $max-width: 25rem
+      );
     }
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 100%);
+        @include sizesNgaps($width: 20rem);
       }
     }
   }

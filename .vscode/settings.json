@@ -92,5 +92,6 @@
     "Weiterbildung",
     "Werkzeuge",
     "Zweck"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
