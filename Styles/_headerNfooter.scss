@@ -25,7 +25,14 @@ header {
     animation: lightingAnimation 3s linear infinite;
   }
   .icon-top-draculady {
-    @include displaySet($dspl: none, $padding: 0, $width: 35%, $margin: 2% 35%);
+    @include displaySet(
+      $dspl: none,
+      $padding: 0,
+      $width: 35%,
+      $margin: 2% 35%,
+      $position: relative,
+      $zIndx: 999
+    );
     @include fontNtext(
       $borderRds: 50%,
       $bgColor: $icon-bg,
@@ -45,7 +52,9 @@ header {
       $dspl: block,
       $padding: 0,
       $width: 35%,
-      $margin: 2% 32%
+      $margin: 2% 32%,
+      $position: relative,
+      $zIndx: 999
     );
     @include fontNtext(
       $borderRds: 50%,
@@ -85,7 +94,9 @@ nav ul {
     $dspl: flex,
     $flxDrc: row,
     $jusCont: center,
-    $alItms: center
+    $alItms: center,
+    $position: relative,
+    $zIndx: 999
   );
   font-size: xx-large;
   margin-top: 1rem;
