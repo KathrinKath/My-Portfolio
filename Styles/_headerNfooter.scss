@@ -101,7 +101,7 @@ nav ul {
   font-size: xx-large;
   margin-top: 1rem;
   li {
-    @include displaySet($dspl: inline, $position: relative);
+    @include displaySet($dspl: inline, $position: relative, $zIndx: 999);
     margin: 0 3rem;
     text-shadow: $navShadow;
     letter-spacing: 0.2rem;
