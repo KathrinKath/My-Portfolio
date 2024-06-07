@@ -31,7 +31,7 @@ header {
       $width: 35%,
       $margin: 2% 35%,
       $position: relative,
-      $zIndx: 999
+      $zIndx: 500
     );
     @include fontNtext(
       $borderRds: 50%,
@@ -54,7 +54,7 @@ header {
       $width: 35%,
       $margin: 2% 32%,
       $position: relative,
-      $zIndx: 999
+      $zIndx: 500
     );
     @include fontNtext(
       $borderRds: 50%,
