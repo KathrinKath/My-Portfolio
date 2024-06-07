@@ -272,7 +272,7 @@ header .icon-top-draculady {
   padding: 0;
   margin: 2% 35%;
   width: 35%;
-  z-index: 999;
+  z-index: 500;
   display: none;
   position: relative;
   background-color: #9d62eb;
@@ -291,7 +291,7 @@ header .icon-draculady {
   padding: 0;
   margin: 2% 32%;
   width: 35%;
-  z-index: 999;
+  z-index: 100 !important;
   display: block;
   position: relative;
   background-color: #9d62eb;
@@ -334,6 +334,7 @@ nav ul {
   margin-top: 1rem;
 }
 nav ul li {
+  z-index: 999;
   display: inline;
   position: relative;
   margin: 0 3rem;
@@ -372,6 +373,7 @@ nav ul li a:hover {
 }
 .dropdown-portfolio li:hover {
   position: relative;
+  z-index: 1000;
 }
 
 .dropdown:hover .dropdown-portfolio {
