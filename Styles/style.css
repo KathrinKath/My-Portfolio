@@ -291,7 +291,7 @@ header .icon-draculady {
   padding: 0;
   margin: 2% 32%;
   width: 35%;
-  z-index: 100 !important;
+  z-index: 100;
   display: block;
   position: relative;
   background-color: #9d62eb;
@@ -317,14 +317,14 @@ header h1 {
 }
 header h1::before, header h1::after {
   content: "\e682";
-  z-index: 1000;
+  z-index: 999;
   position: relative;
   font-family: "FontAwesome";
   padding: 0 10rem;
 }
 
 nav ul {
-  z-index: 999;
+  z-index: 500;
   display: flex;
   position: relative;
   flex-direction: row;
@@ -334,7 +334,7 @@ nav ul {
   margin-top: 1rem;
 }
 nav ul li {
-  z-index: 999;
+  z-index: 500;
   display: inline;
   position: relative;
   margin: 0 3rem;
@@ -346,6 +346,8 @@ nav ul li a {
   text-decoration: none;
   border-radius: 2rem;
   padding: 0.5rem;
+  position: relative;
+  z-index: 500;
 }
 nav ul li a:hover {
   font-size: 2.15rem;
@@ -354,7 +356,7 @@ nav ul li a:hover {
 }
 
 .dropdown-portfolio {
-  z-index: 1000;
+  z-index: 1000 !important;
   display: none;
   position: absolute;
   top: 75%;
@@ -366,10 +368,14 @@ nav ul li a:hover {
 }
 .dropdown-portfolio li {
   display: block;
+  position: relative;
+  z-index: 1000;
 }
 .dropdown-portfolio li a {
   color: #fff;
   padding: 0 0.5rem;
+  position: relative;
+  z-index: 1000;
 }
 .dropdown-portfolio li:hover {
   position: relative;
@@ -381,6 +387,8 @@ nav ul li a:hover {
   opacity: 1;
   visibility: visible;
   animation: dropdown 1s ease-out forwards;
+  position: absolute;
+  z-index: 1000;
 }
 
 /* Settings for the Footer of the pages */
@@ -453,6 +461,10 @@ footer .logo:hover {
   nav ul li {
     display: block;
     margin: 1rem 0;
+  }
+  .dropdown:hover .dropdown-portfolio {
+    position: relative;
+    z-index: 1000;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {

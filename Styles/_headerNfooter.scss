@@ -54,7 +54,7 @@ header {
       $width: 35%,
       $margin: 2% 32%,
       $position: relative,
-      $zIndx: 100 !important
+      $zIndx: 100
     );
     @include fontNtext(
       $borderRds: 50%,
@@ -83,7 +83,7 @@ header {
     &::before,
     &::after {
       content: "\e682";
-      @include displaySet($position: relative, $zIndx: 1000);
+      @include displaySet($position: relative, $zIndx: 999);
       font-family: "FontAwesome";
       padding: 0 10rem;
     }
@@ -96,12 +96,12 @@ nav ul {
     $jusCont: center,
     $alItms: center,
     $position: relative,
-    $zIndx: 999
+    $zIndx: 500
   );
   font-size: xx-large;
   margin-top: 1rem;
   li {
-    @include displaySet($dspl: inline, $position: relative, $zIndx: 999);
+    @include displaySet($dspl: inline, $position: relative, $zIndx: 500);
     margin: 0 3rem;
     text-shadow: $navShadow;
     letter-spacing: 0.2rem;
@@ -110,6 +110,8 @@ nav ul {
       text-decoration: none;
       border-radius: 2rem;
       padding: 0.5rem;
+      position: relative;
+      z-index: 500;
       &:hover {
         @include fontNtext($font-size: 2.15rem, $font-weight: bolder);
         animation: textColorChanging 6s infinite;
@@ -118,16 +120,24 @@ nav ul {
   }
 }
 .dropdown-portfolio {
-  @include displaySet($dspl: none, $position: absolute, $zIndx: 1000);
+  @include displaySet(
+    $dspl: none,
+    $position: absolute,
+    $zIndx: 1000 !important
+  );
   @include sizesNgaps($top: 75%, $left: 50%, $min-width: 25rem);
   background-color: #b48ee5;
   border-radius: 2rem;
   transform: translateX(-50%);
   li {
     display: block;
+    position: relative;
+    z-index: 1000;
     a {
       color: $mainTextColor;
       padding: 0 0.5rem;
+      position: relative;
+      z-index: 1000;
     }
     &:hover {
       position: relative;
@@ -140,6 +150,8 @@ nav ul {
   opacity: 1;
   visibility: visible;
   animation: dropdown 1s ease-out forwards;
+  position: absolute;
+  z-index: 1000;
 }
 //Footer part
 /* Settings for the Footer of the pages */
@@ -225,6 +237,10 @@ footer {
       display: block;
       margin: 1rem 0;
     }
+  }
+  .dropdown:hover .dropdown-portfolio {
+    position: relative;
+    z-index: 1000;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
